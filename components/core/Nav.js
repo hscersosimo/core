@@ -1,9 +1,9 @@
 import Link from 'next/link'
 
-export default function NavCore() {
-  return (
+const NavCore = ( ) => {
+
+  return ( 
     <nav>
-      <input placeholder="Search..." />
       <Link href="/">
         <a>Home</a>
       </Link>
@@ -14,5 +14,7 @@ export default function NavCore() {
         <a>Contact</a>
       </Link>
     </nav>
-  )
+   );
 }
+
+export default NavCore;

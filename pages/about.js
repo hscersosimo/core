@@ -1,5 +1,5 @@
-import Layout from "../components/layout/layout";
-import NavCore from "../components/layout/nav_core";
+import Layout from "../components/core/Layout";
+import Header from "../components/core/Header";
 
 const About = () => {
     return ( 
@@ -11,7 +11,7 @@ export default About;
 About.getLayout = function getLayout(page) {
     return (
       <Layout>
-        <NavCore />
+        <Header />
         {page}
       </Layout>
     )

@@ -8,6 +8,8 @@ const Layout = ({ children }) => {
         <>
         <Head>
             <title>{ pageTitle }</title>
+            <link rel="preconnect" href="https://rsms.me/" />
+            <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
         </Head>
         <main>{ children }</main>
         </>

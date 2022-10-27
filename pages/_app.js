@@ -3,9 +3,14 @@
 
 // Import Global Styles
 import '../styles/styles.scss';
+
+// FontAwesome Icons
+import '../public/fonts/fontawesome/css/fontawesome.min.css';
+  // Change or Add files if you need a different style  
+  import '../public/fonts/fontawesome/css/light.min.css';
+
+
 import { useEffect } from "react";
-
-
 
 function MyApp({ Component, pageProps }) {
 

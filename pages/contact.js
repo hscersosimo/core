@@ -1,5 +1,5 @@
 import Layout from "../components/core/Layout";
-import Header from "../components/core/Header";
+import PageHeader from "../components/core/PageHeader";
 
 const Contact = () => {
     return ( 
@@ -12,7 +12,7 @@ export default Contact;
 Contact.getLayout = function getLayout(page){
     return (
         <Layout>
-            <Header />
+            <PageHeader />
             {page}
         </Layout>
     )

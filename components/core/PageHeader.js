@@ -16,7 +16,7 @@ const PageHeader = () => {
                 <div className="collapse navbar-collapse" id="navbar01">
                     <ul className="navbar-nav me-auto mb-2 mb-sm-0">
                         <li className="nav-item">
-                            <Link href="/design-system/designSystem"><a className="nav-link" aria-current="page">Docs</a></Link>
+                            <Link href="/designSystem/designSystem"><a className="nav-link" aria-current="page">Docs</a></Link>
                         </li>
 
                         <li className="nav-item dropdown">
@@ -34,7 +34,7 @@ const PageHeader = () => {
                         <li className="nav-item">
                             <Link href="/contact"><a className="nav-link">Contact</a></Link>
                         </li>
-                        
+
                     </ul>
 
                     <form>

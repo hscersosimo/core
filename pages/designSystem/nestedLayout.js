@@ -1,5 +1,5 @@
 
-const moduleLayout = ({ children }) => {
+const nestedLayout = ({ children }) => {
 
     const pageTitle = 'Layout Core';
 
@@ -10,4 +10,4 @@ const moduleLayout = ({ children }) => {
      );
 }
  
-export default moduleLayout;
+export default nestedLayout;

@@ -1,5 +1,5 @@
 import Layout from '../components/core/Layout';
-import Header from '../components/core/PageHeader';
+import PageHeader from '../components/core/PageHeader';
 
 const Home = () => {
 
@@ -17,7 +17,7 @@ export default Home;
 Home.getLayout = function getLayout(page) {
   return (
     <Layout>
-      <Header />
+      <PageHeader />
       {page}
     </Layout>
   )

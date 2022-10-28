@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import Layout from "../../components/core/Layout";
-import Header from "../../components/core/PageHeader";
+import PageHeader from "../../components/core/PageHeader";
 import Typography from "./content/typography";
 import Images from "./content/images";
 import Tables from "./content/tables";
@@ -69,7 +69,7 @@ export default DesignSystem;
 DesignSystem.getLayout = function getLayout(page) {
     return (
       <Layout>
-        <Header />
+        <PageHeader />
         {page}
       </Layout>
     )

@@ -1,16 +1,16 @@
 import { useRouter } from "next/router";
 import Layout from "../../components/core/Layout";
 import Header from "../../components/core/PageHeader";
-import Typography from "./Typography";
-import Images from "./Images";
-import Tables from "./Tables";
-import Forms from "./Forms";
-import Select from "./Select";
-import ChecksRadios from "./ChecksRadios";
-import Range from "./Range";
-import Buttons from "./Buttons";
-import Dropdowns from "./Dropdowns";
-import Validations from "./Validations";
+import Typography from "./content/typography";
+import Images from "./content/images";
+import Tables from "./content/tables";
+import Forms from "./content/forms";
+import Select from "./content/select";
+import ChecksRadios from "./content/checksRadios";
+import Range from "./content/range";
+import Buttons from "./content/buttons";
+import Dropdowns from "./content/dropDowns";
+import Validations from "./content/validations";
 
 const DesignSystem = () => {
 
@@ -25,7 +25,8 @@ const DesignSystem = () => {
               <p className="lead mt-3">
                   Based on Bootstrap v5.2 - <a href="https://getbootstrap.com/docs" target="_blank">Check the docs</a>
               </p>
-          </div>        
+          </div>
+        
           <div className="mb-6">
             <Typography />
           </div>

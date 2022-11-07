@@ -1,15 +1,14 @@
 import Link from "next/link";
 
-const CoreNav = () => {
+const Nav = () => {
   return (
     <>
       <ul className="navbar-nav me-auto mb-2 mb-sm-0">
         <li className="nav-item">
-          <Link href="/designSystem/designSystem" className="nav-link" aria-current="page">
-              Docs
+          <Link href="/docs" className="nav-link" aria-current="page">
+            Docs
           </Link>
         </li>
-
         <li className="nav-item dropdown">
           <a
             className="nav-link dropdown-toggle"
@@ -18,17 +17,17 @@ const CoreNav = () => {
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Apps
+            Sections
           </a>
           <ul className="dropdown-menu" aria-labelledby="dropdown03">
             <li>
-              <a className="dropdown-item" href="#">
-                Action
-              </a>
+              <Link className="dropdown-item" href="/docs/content/typography">
+                Typography
+              </Link>
             </li>
             <li>
-              <a className="dropdown-item" href="#">
-                Another action
+              <a className="dropdown-item" href="/docs/content/images">
+                Images
               </a>
             </li>
             <li>
@@ -37,17 +36,6 @@ const CoreNav = () => {
               </a>
             </li>
           </ul>
-        </li>
-
-        <li className="nav-item">
-          <Link href="/about" className="nav-link">
-            About
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link href="/contact" className="nav-link">
-            Contact
-          </Link>
         </li>
       </ul>
 
@@ -63,4 +51,4 @@ const CoreNav = () => {
   );
 };
 
-export default CoreNav;
+export default Nav;

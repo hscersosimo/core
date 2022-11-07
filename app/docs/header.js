@@ -1,9 +1,7 @@
 import Link from "next/link";
-import CoreNav from "./CoreNav";
+import Nav from "./nav";
 
-const appName = "Core App";
-
-const PageHeader = () => {
+const Header = () => {
   return (
     <>
       <nav
@@ -12,7 +10,7 @@ const PageHeader = () => {
       >
         <div className="container-fluid">
           <Link href="/" className="navbar-brand">
-            {appName}
+            Core
           </Link>
           <button
             className="navbar-toggler"
@@ -27,7 +25,7 @@ const PageHeader = () => {
           </button>
 
           <div className="collapse navbar-collapse" id="navbar01">
-            <CoreNav />
+            <Nav />
           </div>
         </div>
       </nav>
@@ -35,4 +33,4 @@ const PageHeader = () => {
   );
 };
 
-export default PageHeader;
+export default Header;

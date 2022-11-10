@@ -15,6 +15,10 @@ You'll need to download and install all required node modules first. You can do 
 
 `git push heroku main` - Pushes the same content to Heroku. Typing `heroku open` will open the URL in your browser.
 
-## Naming conventions
+## Naming Conventions
 
 `lowercase` for file names and folders, and `PascalCase` for component names. For example, a page (or a folder) can be named `designsystem`, and a component `PageHeader`.
+
+## File Formatting
+
+Make sure you install `prettier` as an extension in VSCode, and set it as the default formatter. Check this URL for step by step instructions https://www.alphr.com/use-prettier-vs-code/

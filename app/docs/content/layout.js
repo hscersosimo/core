@@ -1,14 +1,18 @@
-import ContentSidebar from "./sidebar";
+import Link from "next/link";
 
 const ContentLayout = ({ children }) => {
   return (
     <>
       <div className="container">
-        <div className="row">
-          <div className="col-3">
-            <ContentSidebar />
+        <div className="row justify-content-center">
+          <div className="col-8">
+            <div className="mt-5 mb-2 fs-7">
+              <Link href="/docs">
+                <i className="fa-solid fa-arrow-left"></i> Back to Docs
+              </Link>
+            </div>
+            <div>{children}</div>
           </div>
-          <div className="col-9">{children}</div>
         </div>
       </div>
     </>

@@ -1,17 +1,20 @@
-import Link from "next/link";
+import LoadSections from "./content/loadSections";
 
 const Docs = () => {
   return (
     <>
       <div className="container">
-        <div className="row my-5">
-          <div className="col-6">
-            <h1>Welcome to Docs</h1>
-            <p>
+        <div className="row justify-content-center">
+          <div className="col-8">
+            <h1 className="mt-5">Welcome to Docs</h1>
+            <p className="mb-5">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
               explicabo itaque doloribus eos quasi dolor aliquid suscipit quas
               totam natus.
             </p>
+            <div>
+              <LoadSections section="All" />
+            </div>
           </div>
         </div>
       </div>

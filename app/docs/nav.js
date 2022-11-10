@@ -26,14 +26,9 @@ const Nav = () => {
               </Link>
             </li>
             <li>
-              <a className="dropdown-item" href="/docs/content/images">
+              <Link className="dropdown-item" href="/docs/content/images">
                 Images
-              </a>
-            </li>
-            <li>
-              <a className="dropdown-item" href="#">
-                Something else here
-              </a>
+              </Link>
             </li>
           </ul>
         </li>

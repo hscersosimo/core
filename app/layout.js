@@ -20,6 +20,8 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Design System Docs</title>
         <meta name="description" content="Design System Docs" key="desc" />
+        <link rel="preconnect" href="https://rsms.me/" />
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
       </head>
       <body>{children}</body>
     </html>

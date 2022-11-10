@@ -1,40 +1,36 @@
-"use client";
 import React from "react";
-import { useState } from "react";
 import Typography from "./typography/page";
 import Images from "./images/page";
 import Tables from "./tables/page";
 
-// Load sections
-// If the module gets a parameter,
-// we load that specific section.
-// Otherwise we load ALL by default.
-
 const LoadSection = (props) => {
   // First we define our ListOfSections
   // Modify this list if you need to add/remove sections.
-  const listOfSections = [<Typography />, <Images />, <Tables />];
-  // const listOfSections = [
-  //   { section: "Typography", component: <Typography /> },
-  //   { section: "Images", component: <Images /> },
-  //   { section: "Tables", component: <Tables /> },
-  // ];
+  const listOfSections = [
+    { name: "Typography", component: <Typography /> },
+    { name: "Images", component: <Images /> },
+    { name: "Tables", component: <Tables /> },
+  ];
 
-  // We receive a props.section and do something with it
-  const section = props.section;
-  if (section == "All") {
-    // If section = ALL we load everything
-    // We also pass an array with the entire list of sections to the function
-    return listOfSections;
-  } else {
-    // Otherwise we load a specific one
-    return loadSpecificSection(section, listOfSections);
-  }
+  // We receive a section name to be displayed
+  const targetSection = props.targetSection;
+  return fetchSection(targetSection, listOfSections);
 };
 
-// Function to load a specific section
-const loadSpecificSection = (props) => {
-  console.log(section);
+// Function to fetch the section's content
+const fetchSection = (targetSection, listOfSections) => {
+  return (
+    <>
+      {/* First we go through the entire list/array of sections */}
+      {listOfSections.map((section) => {
+        if (section.name === targetSection || targetSection === "All") {
+          // If section name = the target section (OR if we need to display all sections)
+          // Then we render that element from the array
+          return <div key={section.name}>{section.component}</div>;
+        }
+      })}
+    </>
+  );
 };
 
 export default LoadSection;

@@ -1,4 +1,4 @@
-import LoadSections from "./content/loadSections";
+import LoadSections from "./content/LoadSections";
 
 const Docs = () => {
   return (
@@ -13,7 +13,7 @@ const Docs = () => {
               totam natus.
             </p>
             <div>
-              <LoadSections section="All" />
+              <LoadSections targetSection="All" />
             </div>
           </div>
         </div>

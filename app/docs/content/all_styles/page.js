@@ -1,9 +1,9 @@
-import LoadSections from "../LoadSections";
+import LoadSection from "../LoadSection";
 
 const AllStyles = () => {
   return (
     <>
-      <LoadSections type="styles" targetSection="All" />
+      <LoadSection type="styles" targetSection="All" />
     </>
   );
 };

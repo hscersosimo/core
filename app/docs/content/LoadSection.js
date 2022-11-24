@@ -14,7 +14,7 @@ const LoadSection = (props) => {
   // First we define our ListOfSections
   // Modify this list if you need to add/remove sections.
   const type = props.type;
-  console.log(type);
+
   let listOfSections = [];
   if (type === "styles") {
     // List of sections for the 'Styles' group

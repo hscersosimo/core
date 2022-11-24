@@ -1,16 +1,38 @@
 import React from "react";
+import Fonts from "./fonts/page";
 import Typography from "./typography/page";
 import Images from "./images/page";
 import Tables from "./tables/page";
+import Buttons from "./buttons/page";
+import Forms from "./forms/page";
+import ChecksRadios from "./checks_radios/page";
+import SelectDropdown from "./select_dropdown/page";
+import Sliders from "./sliders/page";
+import Validations from "./validations/page";
 
 const LoadSection = (props) => {
   // First we define our ListOfSections
   // Modify this list if you need to add/remove sections.
-  const listOfSections = [
-    { name: "Typography", component: <Typography /> },
-    { name: "Images", component: <Images /> },
-    { name: "Tables", component: <Tables /> },
-  ];
+  const type = props.type;
+  console.log(type);
+  let listOfSections = [];
+  if (type === "styles") {
+    // List of sections for the 'Styles' group
+    listOfSections = [{ name: "Fonts", component: <Fonts /> }];
+  } else {
+    // List of sections for the 'Components' group
+    listOfSections = [
+      { name: "Typography", component: <Typography /> },
+      { name: "Buttons", component: <Buttons /> },
+      { name: "Images", component: <Images /> },
+      { name: "Tables", component: <Tables /> },
+      { name: "Forms", component: <Forms /> },
+      { name: "Checks & Radios", component: <ChecksRadios /> },
+      { name: "Select & Dropdowns", component: <SelectDropdown /> },
+      { name: "Sliders", component: <Sliders /> },
+      { name: "Validations", component: <Validations /> },
+    ];
+  }
 
   // We receive a section name to be displayed
   const targetSection = props.targetSection;

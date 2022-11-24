@@ -1,9 +1,11 @@
+import SectionHeader from "../_ui/SectionHeader";
+
 const Images = () => {
-  return ( 
+  return (
     <>
-    <h1>Images</h1>
+      <SectionHeader name="Images" icon="image" />
     </>
-   );
-}
- 
+  );
+};
+
 export default Images;

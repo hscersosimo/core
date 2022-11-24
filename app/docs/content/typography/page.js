@@ -1,29 +1,30 @@
+import SectionHeader from "../_ui/SectionHeader";
+import Container from "../_ui/Container";
+
 const Typography = () => {
   return (
     <>
-      <h1 className="mb-4">
-        <i className="fa-light fa-book"></i> Typography
-      </h1>
+      <SectionHeader name="Typography" icon="book" />
 
-      <div className="mb-4 p-5 shadow-sm">
+      <Container>
         <p className="display-1 pb-3 mb-3 border-bottom">Display 1</p>
         <p className="display-2 pb-3 mb-3 border-bottom">Display 2</p>
         <p className="display-3 pb-3 mb-3 border-bottom">Display 3</p>
         <p className="display-4 pb-3 mb-3 border-bottom">Display 4</p>
         <p className="display-5 pb-3 mb-3 border-bottom">Display 5</p>
         <p className="display-6">Display 6</p>
-      </div>
+      </Container>
 
-      <div className="mb-4 p-5 shadow-sm">
+      <Container>
         <p className="h1 pb-3 mb-3 border-bottom">h1. Heading 1</p>
         <p className="h2 pb-3 mb-3 border-bottom">h2. Heading 2</p>
         <p className="h3 pb-3 mb-3 border-bottom">h3. Heading 3</p>
         <p className="h4 pb-3 mb-3 border-bottom">h4. Heading 4</p>
         <p className="h5 pb-3 mb-3 border-bottom">h5. Heading 5</p>
         <p className="h6">h6. Heading 6</p>
-      </div>
+      </Container>
 
-      <div className="mb-4 p-5 shadow-sm">
+      <Container>
         <h3>
           Fancy display heading
           <small className="fw-normal text-muted">
@@ -31,9 +32,9 @@ const Typography = () => {
             With faded secondary text
           </small>
         </h3>
-      </div>
+      </Container>
 
-      <div className="mb-4 p-5 shadow-sm">
+      <Container>
         <p className="lead">
           This is a lead paragraph. It stands out from regular paragraphs.
         </p>
@@ -64,18 +65,18 @@ const Typography = () => {
         <p>
           <em>This line rendered as italicized text.</em>
         </p>
-      </div>
+      </Container>
 
-      <div className="mb-4 p-5 shadow-sm">
+      <Container>
         <blockquote className="blockquote">
           <p>A well-known quote, contained in a blockquote element.</p>
           <footer className="blockquote-footer">
             Someone famous in <cite title="Source Title">Source Title</cite>
           </footer>
         </blockquote>
-      </div>
+      </Container>
 
-      <div className="mb-4 p-5 shadow-sm">
+      <Container>
         <p className="fs-1 pb-3 mb-3 border-bottom">
           FontSize1. Lorem ipsum dolor sit.
         </p>
@@ -122,9 +123,9 @@ const Typography = () => {
           </a>
           .
         </p>
-      </div>
+      </Container>
 
-      <div className="mb-4 p-5 shadow-sm">
+      <Container>
         <h5 className="mb-4">Font weight and italics</h5>
         <table className="table mb-4">
           <tbody>
@@ -198,9 +199,9 @@ const Typography = () => {
           appear (depending on the selected font-family, font sizes, font color,
           background, etc).
         </p>
-      </div>
+      </Container>
 
-      <div className="mb-4 p-5 shadow-sm">
+      <Container>
         <ul className="list-unstyled pb-3 mb-3 border-bottom">
           <li>This is a list.</li>
           <li>It appears completely unstyled.</li>
@@ -221,9 +222,9 @@ const Typography = () => {
           <li className="list-inline-item">And another one.</li>
           <li className="list-inline-item">But they're displayed inline.</li>
         </ul>
-      </div>
+      </Container>
 
-      <div className="mb-4 p-5 shadow-sm">
+      <Container>
         <dl className="row">
           <dt className="col-sm-3">Description lists</dt>
           <dd className="col-sm-9">
@@ -248,7 +249,7 @@ const Typography = () => {
             This can be useful when space is tight. Adds an ellipsis at the end.
           </dd>
         </dl>
-      </div>
+      </Container>
     </>
   );
 };

@@ -13,7 +13,6 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "case-sensitive-paths-webpack-plugin": "^2.4.0",
     "prettier": "2.7.1",
     "sass": "^1.55.0"
   }

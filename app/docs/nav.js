@@ -30,6 +30,11 @@ const Nav = () => {
                 Fonts
               </Link>
             </li>
+            <li>
+              <Link className="dropdown-item" href="/docs/content/icons">
+                Icons
+              </Link>
+            </li>
           </ul>
         </li>
         <li className="nav-item dropdown">

@@ -149,10 +149,10 @@ const Tables = () => {
           <code>caption</code> on the top of the table with{" "}
           <code>.caption-top</code>.
         </p>
-        <table class="table">
+        <table className="table">
           <caption>List of users</caption>
 
-          <thead class="table-light">
+          <thead className="table-light">
             <tr>
               <th scope="col">#</th>
               <th scope="col">First</th>
@@ -226,7 +226,7 @@ const Tables = () => {
         <table className="table table-hover">
           <thead className="table-dark">
             <tr>
-              <th scope="col">Class</th>
+              <th scope="col">className</th>
               <th scope="col">Heading</th>
               <th scope="col">Heading</th>
             </tr>
@@ -442,9 +442,9 @@ const Tables = () => {
           <code>thead, tbody, and tfoot</code>—with{" "}
           <code>.table-group-divider</code>. Customize the color by changing the{" "}
           <code>border-top-color</code> (which we don’t currently provide a
-          utility class for at this time).
+          utility className for at this time).
         </p>
-        <table class="table">
+        <table className="table">
           <thead>
             <tr>
               <th scope="col">#</th>
@@ -453,7 +453,7 @@ const Tables = () => {
               <th scope="col">Handle</th>
             </tr>
           </thead>
-          <tbody class="table-group-divider">
+          <tbody className="table-group-divider">
             <tr>
               <th scope="row">1</th>
               <td>Mark</td>
@@ -481,19 +481,19 @@ const Tables = () => {
           alignment from <code>&lt;table&gt;</code> and are aligned to the top
           by default. Use the vertical align classes to re-align where needed.
         </p>
-        <table class="table align-middle">
+        <table className="table align-middle">
           <thead>
             <tr>
-              <th scope="col" class="w-25">
+              <th scope="col" className="w-25">
                 Heading 1
               </th>
-              <th scope="col" class="w-25">
+              <th scope="col" className="w-25">
                 Heading 2
               </th>
-              <th scope="col" class="w-25">
+              <th scope="col" className="w-25">
                 Heading 3
               </th>
-              <th scope="col" class="w-25">
+              <th scope="col" className="w-25">
                 Heading 4
               </th>
             </tr>
@@ -518,7 +518,7 @@ const Tables = () => {
                 works in the preceding cells.
               </td>
             </tr>
-            <tr class="align-bottom">
+            <tr className="align-bottom">
               <td>
                 This cell inherits <code>vertical-align: bottom;</code> from the
                 table row
@@ -546,7 +546,7 @@ const Tables = () => {
                 This cell inherits <code>vertical-align: middle;</code> from the
                 table
               </td>
-              <td class="align-top">This cell is aligned to the top.</td>
+              <td className="align-top">This cell is aligned to the top.</td>
               <td>
                 This here is some placeholder text, intended to take up quite a
                 bit of vertical space, to demonstrate how the vertical alignment
@@ -564,8 +564,8 @@ const Tables = () => {
           responsive tables up to a particular breakpoint. From that breakpoint
           and up, the table will behave normally and not scroll horizontally.
         </p>
-        <div class="table-responsive">
-          <table class="table">
+        <div className="table-responsive">
+          <table className="table">
             <thead>
               <tr>
                 <th scope="col">#</th>

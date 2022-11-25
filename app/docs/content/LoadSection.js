@@ -1,5 +1,6 @@
 import React from "react";
 import Fonts from "./fonts/page";
+import Icons from "./icons/page";
 import Typography from "./typography/page";
 import Images from "./images/page";
 import Tables from "./tables/page";
@@ -18,7 +19,10 @@ const LoadSection = (props) => {
   let listOfSections = [];
   if (type === "styles") {
     // List of sections for the 'Styles' group
-    listOfSections = [{ name: "Fonts", component: <Fonts /> }];
+    listOfSections = [
+      { name: "Fonts", component: <Fonts /> },
+      { name: "Icons", component: <Icons /> },
+    ];
   } else {
     // List of sections for the 'Components' group
     listOfSections = [

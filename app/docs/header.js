@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <>
       <nav
-        className="navbar navbar-expand-sm navbar-light"
+        className="navbar navbar-expand-sm navbar-light mb-5"
         aria-label="Third navbar example"
       >
         <div className="container-fluid">

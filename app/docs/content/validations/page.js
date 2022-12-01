@@ -1,5 +1,28 @@
+"use client";
+import { useState } from "react";
 import Container from "../_ui/Container";
 import SectionHeader from "../_ui/SectionHeader";
+
+function handleClick() {
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll(".needs-validation");
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms).forEach(function (form) {
+    form.addEventListener(
+      "submit",
+      function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+
+        form.classList.add("was-validated");
+      },
+      false
+    );
+  });
+}
 
 const Validations = () => {
   return (
@@ -12,35 +35,35 @@ const Validations = () => {
         form validation APIs in JavaScript.
       </p>
       <Container>
-        <form className="row g-3 needs-validation" novalidate>
+        <form className="row g-3 needs-validation" noValidate>
           <div className="col-md-4">
-            <label for="validationCustom01" className="form-label">
+            <label htmlFor="validationCustom01" className="form-label">
               First name
             </label>
             <input
               type="text"
               className="form-control"
               id="validationCustom01"
-              value="Mark"
+              defaultValue="Mark"
               required
             />
             <div className="valid-feedback">Looks good!</div>
           </div>
           <div className="col-md-4">
-            <label for="validationCustom02" className="form-label">
+            <label htmlFor="validationCustom02" className="form-label">
               Last name
             </label>
             <input
               type="text"
               className="form-control"
               id="validationCustom02"
-              value="Otto"
+              defaultValue="Otto"
               required
             />
             <div className="valid-feedback">Looks good!</div>
           </div>
           <div className="col-md-4">
-            <label for="validationCustomUsername" className="form-label">
+            <label htmlFor="validationCustomUsername" className="form-label">
               Username
             </label>
             <div className="input-group has-validation">
@@ -58,7 +81,7 @@ const Validations = () => {
             </div>
           </div>
           <div className="col-md-6">
-            <label for="validationCustom03" className="form-label">
+            <label htmlFor="validationCustom03" className="form-label">
               City
             </label>
             <input
@@ -70,11 +93,11 @@ const Validations = () => {
             <div className="invalid-feedback">Please provide a valid city.</div>
           </div>
           <div className="col-md-3">
-            <label for="validationCustom04" className="form-label">
+            <label htmlFor="validationCustom04" className="form-label">
               State
             </label>
             <select className="form-select" id="validationCustom04" required>
-              <option selected disabled value="">
+              <option defaultChecked disabled value="">
                 Choose...
               </option>
               <option>...</option>
@@ -82,7 +105,7 @@ const Validations = () => {
             <div className="invalid-feedback">Please select a valid state.</div>
           </div>
           <div className="col-md-3">
-            <label for="validationCustom05" className="form-label">
+            <label htmlFor="validationCustom05" className="form-label">
               Zip
             </label>
             <input
@@ -90,8 +113,8 @@ const Validations = () => {
               className="form-control"
               id="validationCustom05"
               required
-              minlength="6"
-              maxlength="6"
+              minLength="6"
+              maxLength="6"
             />
             <div className="invalid-feedback">Please provide a valid zip.</div>
           </div>
@@ -104,7 +127,7 @@ const Validations = () => {
                 id="invalidCheck"
                 required
               />
-              <label className="form-check-label" for="invalidCheck">
+              <label className="form-check-label" htmlFor="invalidCheck">
                 Agree to terms and conditions
               </label>
               <div className="invalid-feedback">
@@ -113,7 +136,7 @@ const Validations = () => {
             </div>
           </div>
           <div className="col-12">
-            <button className="btn btn-primary" type="submit">
+            <button className="btn btn-primary" onClick={handleClick}>
               Submit form
             </button>
           </div>

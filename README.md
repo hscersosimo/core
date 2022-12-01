@@ -17,15 +17,15 @@ You'll need to download and install all required node modules first. You can do 
 
 ## Naming Conventions
 
-`lowercase` for file names and folders, and `PascalCase` for component names. For example, a page (or a folder) can be named `designsystem`, and a component `PageHeader`.
+`lower_case` for file names and folders, and `PascalCase` for component names. For example, a page (or a folder) can be named `design_system`, and a component `PageHeader`.
 
 ## File Formatting
 
 Make sure you install `prettier` as an extension in VSCode, and set it as the default formatter. Check this URL for step by step instructions https://www.alphr.com/use-prettier-vs-code/
 
-## React vs HTML attributes names
+## React vs HTML attributes
 
 Remember that all HTML tags need closure. For example, an `<input>` must have a slash at it's end (`<input />` or `</input>`).
-Some HTML attributes must be defined differently when compared to pure HTML; most classes use a camelCase version instead of the usual name.
 
-Here's a list with the most usual cases: `className` (instead of `class`), `colSpan`, `defaultValue` (instead of `value`), `htmlFor` (instead of `for`), `readOnly`, `defaultChecked` (instead of `checked`), `autoComplete`,
+Some HTML attributes must be defined differently when compared to pure HTML; most classes use a camelCase version instead of the usual name.
+Here's a list with the most usual cases: `className` (instead of `class`), `colSpan`, `defaultValue` (instead of `value` or `selected`), `htmlFor` (instead of `for`), `readOnly`, `defaultChecked` (instead of `checked`), `autoComplete`,

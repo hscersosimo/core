@@ -22,3 +22,10 @@ You'll need to download and install all required node modules first. You can do 
 ## File Formatting
 
 Make sure you install `prettier` as an extension in VSCode, and set it as the default formatter. Check this URL for step by step instructions https://www.alphr.com/use-prettier-vs-code/
+
+## React vs HTML attributes names
+
+Remember that all HTML tags need closure. For example, an `<input>` must have a slash at it's end (`<input />` or `</input>`).
+Some HTML attributes must be defined differently when compared to pure HTML; most classes use a camelCase version instead of the usual name.
+
+Here's a list with the most usual cases: `className` (instead of `class`), `colSpan`, `defaultValue` (instead of `value`), `htmlFor` (instead of `for`), `readOnly`, `defaultChecked` (instead of `checked`), `autoComplete`,

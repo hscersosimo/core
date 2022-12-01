@@ -81,7 +81,7 @@ const Fonts = () => {
             </p>
           </div>
           <div className="col">
-            <p className="fs-6">
+            <div className="fs-6">
               <div className="py-1 mb-2 fs-7 border-top text-secondary">
                 Regular - Font size 6 (medium)
               </div>
@@ -91,7 +91,7 @@ const Fonts = () => {
               mazim cu mea. Saepe postea voluptaria sea id, et mea oratio
               praesent. Est elitr necessitatibus ea. Mea eu legendos
               eloquentiam, nam id fabulas posidonium, an quis omnium.
-            </p>
+            </div>
           </div>
           <div className="col">
             <div className="py-1 mb-2 fs-7 border-top text-secondary">

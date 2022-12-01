@@ -195,9 +195,8 @@ const Typography = () => {
           <strong>
             <i className="fa-regular fa-triangle-exclamation"></i> Attention:
           </strong>
-          <code> fw-lighter</code> should be avoided since legibility issues may
-          appear (depending on the selected font-family, font sizes, font color,
-          background, etc).
+          <code> fw-lighter</code> should be avoided due to legibility/contrast
+          issues.
         </p>
       </Container>
 

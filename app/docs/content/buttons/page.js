@@ -5,7 +5,6 @@ const Buttons = () => {
   return (
     <>
       <SectionHeader name="Buttons & Links" icon="standard-definition" />
-      <Container></Container>
     </>
   );
 };

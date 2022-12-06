@@ -9,7 +9,7 @@ const SelectDropdown = () => {
         <h5>Select</h5>
         <div className="mb-5">
           <select className="form-select" aria-label="Default select example">
-            <option selected>Open this select menu</option>
+            <option defaultValue>Open this select menu</option>
             <option value="1">One</option>
             <option value="2">Two</option>
             <option value="3">Three</option>
@@ -21,7 +21,7 @@ const SelectDropdown = () => {
             className="form-select form-select-lg mb-3"
             aria-label=".form-select-lg example"
           >
-            <option selected>Open this select menu</option>
+            <option defaultValue>Open this select menu</option>
             <option value="1">One</option>
             <option value="2">Two</option>
             <option value="3">Three</option>
@@ -30,7 +30,7 @@ const SelectDropdown = () => {
             className="form-select form-select-sm"
             aria-label=".form-select-sm example"
           >
-            <option selected>Open this select menu</option>
+            <option defaultValue>Open this select menu</option>
             <option value="1">One</option>
             <option value="2">Two</option>
             <option value="3">Three</option>
@@ -46,7 +46,7 @@ const SelectDropdown = () => {
             size="3"
             aria-label="size 3 select example"
           >
-            <option selected>Open this select menu</option>
+            <option defaultValue>Open this select menu</option>
             <option value="1">One</option>
             <option value="2">Two</option>
             <option value="3">Three</option>
@@ -60,7 +60,7 @@ const SelectDropdown = () => {
           aria-label="Disabled select example"
           disabled
         >
-          <option selected>Open this select menu</option>
+          <option defaultValue>Open this select menu</option>
           <option value="1">One</option>
           <option value="2">Two</option>
           <option value="3">Three</option>

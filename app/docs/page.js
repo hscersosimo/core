@@ -21,7 +21,7 @@ const Docs = () => {
               <div className="col">
                 <div className="text-center p-4 border">
                   <div className="fs-1">
-                    <i class="fa-light fa-palette"></i>
+                    <i className="fa-light fa-palette"></i>
                   </div>
                   <Link className="fs-3" href="/docs/content/all_styles">
                     Styles
@@ -31,7 +31,7 @@ const Docs = () => {
               <div className="col">
                 <div className="text-center p-4 border">
                   <div className="fs-1">
-                    <i class="fa-light fa-list"></i>
+                    <i className="fa-light fa-list"></i>
                   </div>
                   <Link className="fs-3" href="/docs/content/all_components">
                     Components

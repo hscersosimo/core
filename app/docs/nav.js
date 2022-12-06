@@ -1,6 +1,7 @@
 import Link from "next/link";
 import NavStyles from "./_nav/nav_styles";
 import NavSections from "./_nav/nav_sections";
+import NavComponents from "./_nav/nav_components";
 
 const Nav = () => {
   return (
@@ -30,8 +31,9 @@ const Nav = () => {
                 </Link>
               </li>
 
-              <NavStyles></NavStyles>
-              <NavSections></NavSections>
+              <NavStyles />
+              <NavSections />
+              <NavComponents />
             </ul>
           </div>
         </div>

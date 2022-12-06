@@ -15,8 +15,8 @@ const NavSections = () => {
         </a>
         <ul className="dropdown-menu" aria-labelledby="dropdown03">
           <li>
-            <Link className="dropdown-item" href="/docs/content/all_components">
-              All Components
+            <Link className="dropdown-item" href="/docs/content/all_sections">
+              All Sections
             </Link>
           </li>
           <li>

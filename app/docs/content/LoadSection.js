@@ -10,6 +10,7 @@ import ChecksRadios from "./checks_radios/page";
 import SelectDropdown from "./select_dropdown/page";
 import Sliders from "./sliders/page";
 import Validations from "./validations/page";
+import Accordion from "./accordion/page";
 
 const LoadSection = (props) => {
   // First we define our ListOfSections
@@ -23,8 +24,8 @@ const LoadSection = (props) => {
       { name: "Fonts", component: <Fonts /> },
       { name: "Icons", component: <Icons /> },
     ];
-  } else {
-    // List of sections for the 'Components' group
+  } else if (type === "sections") {
+    // List of sections for the 'Sections' group
     listOfSections = [
       { name: "Typography", component: <Typography /> },
       { name: "Buttons", component: <Buttons /> },
@@ -36,6 +37,9 @@ const LoadSection = (props) => {
       { name: "Sliders", component: <Sliders /> },
       { name: "Validations", component: <Validations /> },
     ];
+  } else {
+    // List of sections for the 'Components' group
+    listOfSections = [{ name: "Accordion", component: <Accordion /> }];
   }
 
   // We receive a section name to be displayed

@@ -12,6 +12,7 @@ export default function RootLayout({ children }) {
   /* Load Bootstrap JS file */
   useEffect(() => {
     require("bootstrap/dist/js/bootstrap.bundle.min.js");
+    require("masonry-layout/dist/masonry.pkgd.min.js");
   }, []);
 
   return (

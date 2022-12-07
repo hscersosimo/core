@@ -25,11 +25,6 @@ const NavSections = () => {
             </Link>
           </li>
           <li>
-            <Link className="dropdown-item" href="/docs/content/buttons">
-              Buttons & Links
-            </Link>
-          </li>
-          <li>
             <Link className="dropdown-item" href="/docs/content/images">
               Images
             </Link>
@@ -65,6 +60,11 @@ const NavSections = () => {
           <li>
             <Link className="dropdown-item" href="/docs/content/validations">
               Validations
+            </Link>
+          </li>
+          <li>
+            <Link className="dropdown-item" href="/docs/content/cards">
+              Cards
             </Link>
           </li>
         </ul>

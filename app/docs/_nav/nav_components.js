@@ -24,6 +24,37 @@ const NavComponents = () => {
               Accordion
             </Link>
           </li>
+          <li>
+            <Link className="dropdown-item" href="/docs/content/alerts">
+              Alerts
+            </Link>
+          </li>
+          <li>
+            <Link className="dropdown-item" href="/docs/content/badge">
+              Badges
+            </Link>
+          </li>
+          <li>
+            <Link className="dropdown-item" href="/docs/content/buttons">
+              Buttons
+            </Link>
+          </li>
+          <li>
+            <Link className="dropdown-item" href="/docs/content/button_group">
+              Button group
+            </Link>
+          </li>
+
+          <li>
+            <Link className="dropdown-item" href="/docs/content/carousel">
+              Carousel
+            </Link>
+          </li>
+          <li>
+            <Link className="dropdown-item" href="/docs/content/masonry">
+              Masonry
+            </Link>
+          </li>
         </ul>
       </li>
     </>

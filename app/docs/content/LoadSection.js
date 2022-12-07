@@ -5,12 +5,18 @@ import Typography from "./typography/page";
 import Images from "./images/page";
 import Tables from "./tables/page";
 import Buttons from "./buttons/page";
+import ButtonGroup from "./button_group/page";
 import Forms from "./forms/page";
 import ChecksRadios from "./checks_radios/page";
 import SelectDropdown from "./select_dropdown/page";
 import Sliders from "./sliders/page";
 import Validations from "./validations/page";
 import Accordion from "./accordion/page";
+import Alerts from "./alerts/page";
+import Badge from "./badge/page";
+import Cards from "./cards/page";
+import Carousel from "./carousel/page";
+import Masonry from "./masonry/page";
 
 const LoadSection = (props) => {
   // First we define our ListOfSections
@@ -36,10 +42,19 @@ const LoadSection = (props) => {
       { name: "Select & Dropdowns", component: <SelectDropdown /> },
       { name: "Sliders", component: <Sliders /> },
       { name: "Validations", component: <Validations /> },
+      { name: "Cards", component: <Cards /> },
     ];
   } else {
     // List of sections for the 'Components' group
-    listOfSections = [{ name: "Accordion", component: <Accordion /> }];
+    listOfSections = [
+      { name: "Accordion", component: <Accordion /> },
+      { name: "Alerts", component: <Alerts /> },
+      { name: "Badge", component: <Badge /> },
+      { name: "Buttons", component: <Buttons /> },
+      { name: "Button Group", component: <ButtonGroup /> },
+      { name: "Carousel", component: <Carousel /> },
+      { name: "Masonry", component: <Masonry /> },
+    ];
   }
 
   // We receive a section name to be displayed

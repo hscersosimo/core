@@ -28,4 +28,4 @@ Make sure you install `prettier` as an extension in VSCode, and set it as the de
 Remember that all HTML tags need closure. For example, an `<input>` must have a slash at it's end (`<input />` or `</input>`).
 
 Some HTML attributes must be defined differently when compared to pure HTML; most classes use a camelCase version instead of the usual name.
-Here's a list with the most usual cases: `className` (instead of `class`), `colSpan`, `defaultValue` (instead of `value` or `selected`), `htmlFor` (instead of `for`), `readOnly`, `defaultChecked` (instead of `checked`), `autoComplete`, `minLenght`, `maxLenght`
+Here's a list with the most usual cases: `className` (instead of `class`), `colSpan`, `defaultValue` (instead of `value` or `selected`), `htmlFor` (instead of `for`), `readOnly`, `defaultChecked` (instead of `checked`), `autoComplete`, `minLenght`, `maxLenght`, `tabIndex`.

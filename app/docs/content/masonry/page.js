@@ -5,12 +5,16 @@ const Masonry = () => {
   return (
     <>
       <SectionHeader name="Masonry" icon="grid" />
-      <p className="mb-5">
+      <p className="m-0">
         Integrate{" "}
         <a href="https://masonry.desandro.com/" target="_blank">
           Masonry
         </a>{" "}
-        with the Bootstrap grid system and cards component. More info{" "}
+        with the Bootstrap grid system and cards component. Resize your browser
+        to see it in action.{" "}
+      </p>
+      <p className="mb-5">
+        More info about Masonry and Bootstrap{" "}
         <a href="https://getbootstrap.com/docs/5.0/examples/masonry/">here</a>
       </p>
 

@@ -18,7 +18,7 @@ const Carousel = () => {
             <div className="carousel-item active">
               <Image
                 alt="Example 04"
-                src="/../public/images/examples/1300x400-04.jpeg"
+                src="/images/examples/1300x400-04.jpeg"
                 width={1400}
                 height={400}
               />
@@ -26,7 +26,7 @@ const Carousel = () => {
             <div className="carousel-item">
               <Image
                 alt="Example 05"
-                src="/../public/images/examples/1300x400-05.jpeg"
+                src="/images/examples/1300x400-05.jpeg"
                 width={1400}
                 height={400}
               />
@@ -34,7 +34,7 @@ const Carousel = () => {
             <div className="carousel-item">
               <Image
                 alt="Example 06"
-                src="/../public/images/examples/1300x400-06.jpeg"
+                src="/images/examples/1300x400-06.jpeg"
                 width={1400}
                 height={400}
               />
@@ -78,7 +78,7 @@ const Carousel = () => {
             <div className="carousel-item">
               <Image
                 alt="Example 01"
-                src="/../public/images/examples/1300x400-01.jpeg"
+                src="/images/examples/1300x400-01.jpeg"
                 width={1400}
                 height={400}
               />
@@ -86,7 +86,7 @@ const Carousel = () => {
             <div className="carousel-item active">
               <Image
                 alt="Example 02"
-                src="/../public/images/examples/1300x400-02.jpeg"
+                src="/images/examples/1300x400-02.jpeg"
                 width={1400}
                 height={400}
               />
@@ -94,7 +94,7 @@ const Carousel = () => {
             <div className="carousel-item">
               <Image
                 alt="Example 03"
-                src="/../public/images/examples/1300x400-03.jpeg"
+                src="/images/examples/1300x400-03.jpeg"
                 width={1400}
                 height={400}
               />
@@ -162,7 +162,7 @@ const Carousel = () => {
             <div className="carousel-item">
               <Image
                 alt="Example 04"
-                src="/../public/images/examples/1300x400-04.jpeg"
+                src="/images/examples/1300x400-04.jpeg"
                 width={1400}
                 height={400}
               />
@@ -170,7 +170,7 @@ const Carousel = () => {
             <div className="carousel-item active carousel-item-start">
               <Image
                 alt="Example 05"
-                src="/../public/images/examples/1300x400-05.jpeg"
+                src="/images/examples/1300x400-05.jpeg"
                 width={1400}
                 height={400}
               />
@@ -178,7 +178,7 @@ const Carousel = () => {
             <div className="carousel-item carousel-item-next carousel-item-start">
               <Image
                 alt="Example 06"
-                src="/../public/images/examples/1300x400-06.jpeg"
+                src="/images/examples/1300x400-06.jpeg"
                 width={1400}
                 height={400}
               />
@@ -246,7 +246,7 @@ const Carousel = () => {
             <div className="carousel-item active">
               <Image
                 alt="Example 07"
-                src="/../public/images/examples/1300x400-07.jpeg"
+                src="/images/examples/1300x400-07.jpeg"
                 width={1400}
                 height={400}
               />
@@ -261,7 +261,7 @@ const Carousel = () => {
             <div className="carousel-item">
               <Image
                 alt="Example 08"
-                src="/../public/images/examples/1300x400-08.jpeg"
+                src="/images/examples/1300x400-08.jpeg"
                 width={1400}
                 height={400}
               />
@@ -276,7 +276,7 @@ const Carousel = () => {
             <div className="carousel-item">
               <Image
                 alt="Example 09"
-                src="/../public/images/examples/1300x400-09.jpeg"
+                src="/images/examples/1300x400-09.jpeg"
                 width={1400}
                 height={400}
               />
@@ -351,7 +351,7 @@ const Carousel = () => {
             <div className="carousel-item active" data-bs-interval="10000">
               <Image
                 alt="Example 01"
-                src="/../public/images/examples/1300x400-01.jpeg"
+                src="/images/examples/1300x400-01.jpeg"
                 width={1400}
                 height={400}
               />
@@ -366,7 +366,7 @@ const Carousel = () => {
             <div className="carousel-item" data-bs-interval="2000">
               <Image
                 alt="Example 02"
-                src="/../public/images/examples/1300x400-02.jpeg"
+                src="/images/examples/1300x400-02.jpeg"
                 width={1400}
                 height={400}
               />
@@ -381,7 +381,7 @@ const Carousel = () => {
             <div className="carousel-item">
               <Image
                 alt="Example 03"
-                src="/../public/images/examples/1300x400-03.jpeg"
+                src="/images/examples/1300x400-03.jpeg"
                 width={1400}
                 height={400}
               />

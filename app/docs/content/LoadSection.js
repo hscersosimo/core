@@ -6,9 +6,10 @@ import Images from "./images/page";
 import Tables from "./tables/page";
 import Buttons from "./buttons/page";
 import ButtonGroup from "./button_group/page";
+import Dropdown from "./dropdown/page";
 import Forms from "./forms/page";
 import ChecksRadios from "./checks_radios/page";
-import SelectDropdown from "./select_dropdown/page";
+import Select from "./select/page";
 import Sliders from "./sliders/page";
 import Validations from "./validations/page";
 import Accordion from "./accordion/page";
@@ -17,6 +18,7 @@ import Badge from "./badge/page";
 import Cards from "./cards/page";
 import Carousel from "./carousel/page";
 import Masonry from "./masonry/page";
+import ExpandCollapse from "./expand_collapse/page";
 
 const LoadSection = (props) => {
   // First we define our ListOfSections
@@ -39,7 +41,7 @@ const LoadSection = (props) => {
       { name: "Tables", component: <Tables /> },
       { name: "Forms", component: <Forms /> },
       { name: "Checks & Radios", component: <ChecksRadios /> },
-      { name: "Select & Dropdowns", component: <SelectDropdown /> },
+      { name: "Select", component: <Select /> },
       { name: "Sliders", component: <Sliders /> },
       { name: "Validations", component: <Validations /> },
       { name: "Cards", component: <Cards /> },
@@ -48,10 +50,12 @@ const LoadSection = (props) => {
     // List of sections for the 'Components' group
     listOfSections = [
       { name: "Accordion", component: <Accordion /> },
+      { name: "Expand/Collapse", component: <ExpandCollapse /> },
       { name: "Alerts", component: <Alerts /> },
       { name: "Badge", component: <Badge /> },
       { name: "Buttons", component: <Buttons /> },
       { name: "Button Group", component: <ButtonGroup /> },
+      { name: "Dropdown", component: <Dropdown /> },
       { name: "Carousel", component: <Carousel /> },
       { name: "Masonry", component: <Masonry /> },
     ];

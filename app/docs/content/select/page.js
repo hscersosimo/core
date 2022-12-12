@@ -1,9 +1,9 @@
 import Container from "../_ui/Container";
 import SectionHeader from "../_ui/SectionHeader";
-const SelectDropdown = () => {
+const Select = () => {
   return (
     <>
-      <SectionHeader name="Select &amp; Dropdowns" icon="list-dropdown" />
+      <SectionHeader name="Select" icon="list-dropdown" />
 
       <Container>
         <h5>Select</h5>
@@ -70,4 +70,4 @@ const SelectDropdown = () => {
   );
 };
 
-export default SelectDropdown;
+export default Select;

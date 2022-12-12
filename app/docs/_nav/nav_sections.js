@@ -45,11 +45,8 @@ const NavSections = () => {
             </Link>
           </li>
           <li>
-            <Link
-              className="dropdown-item"
-              href="/docs/content/select_dropdown"
-            >
-              Select &amp; Dropdowns
+            <Link className="dropdown-item" href="/docs/content/select">
+              Select
             </Link>
           </li>
           <li>

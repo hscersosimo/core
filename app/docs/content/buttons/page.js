@@ -210,7 +210,7 @@ const Buttons = () => {
         <p>
           Add <code>data-bs-toggle="button"</code> to toggle a button’s{" "}
           <code>active</code> state. If you’re pre-toggling a button, you must
-          manually add the <code>.active</code> class and{" "}
+          manually add the <code>.active</code> className and{" "}
           <code>aria-pressed="true"</code> to ensure that it is conveyed
           appropriately to assistive technologies.
         </p>
@@ -240,6 +240,37 @@ const Buttons = () => {
         >
           Disabled toggle button
         </button>
+      </Container>
+
+      <Container>
+        <h5>Close button</h5>
+        <div className="mb-3 p-3 border">
+          <button
+            type="button"
+            className="btn-close"
+            aria-label="Close"
+          ></button>
+          <button
+            type="button"
+            className="btn-close"
+            disabled
+            aria-label="Close"
+          ></button>
+        </div>
+
+        <div className="mb-3 p-3 bg-dark">
+          <button
+            type="button"
+            className="btn-close btn-close-white"
+            aria-label="Close"
+          ></button>
+          <button
+            type="button"
+            className="btn-close btn-close-white"
+            disabled
+            aria-label="Close"
+          ></button>
+        </div>
       </Container>
     </>
   );

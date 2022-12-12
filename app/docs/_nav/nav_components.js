@@ -25,6 +25,14 @@ const NavComponents = () => {
             </Link>
           </li>
           <li>
+            <Link
+              className="dropdown-item"
+              href="/docs/content/expand_collapse"
+            >
+              Expand/Collapse
+            </Link>
+          </li>
+          <li>
             <Link className="dropdown-item" href="/docs/content/alerts">
               Alerts
             </Link>
@@ -44,7 +52,11 @@ const NavComponents = () => {
               Button group
             </Link>
           </li>
-
+          <li>
+            <Link className="dropdown-item" href="/docs/content/dropdown">
+              Dropdown
+            </Link>
+          </li>
           <li>
             <Link className="dropdown-item" href="/docs/content/carousel">
               Carousel

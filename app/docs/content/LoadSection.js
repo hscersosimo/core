@@ -19,6 +19,7 @@ import Cards from "./cards/page";
 import Carousel from "./carousel/page";
 import Masonry from "./masonry/page";
 import ExpandCollapse from "./expand_collapse/page";
+import ListGroups from "./list_group/page";
 
 const LoadSection = (props) => {
   // First we define our ListOfSections
@@ -57,6 +58,7 @@ const LoadSection = (props) => {
       { name: "Button Group", component: <ButtonGroup /> },
       { name: "Dropdown", component: <Dropdown /> },
       { name: "Carousel", component: <Carousel /> },
+      { name: "List Group", component: <ListGroups /> },
       { name: "Masonry", component: <Masonry /> },
     ];
   }

@@ -63,6 +63,11 @@ const NavComponents = () => {
             </Link>
           </li>
           <li>
+            <Link className="dropdown-item" href="/docs/content/list_group">
+              List Groups
+            </Link>
+          </li>
+          <li>
             <Link className="dropdown-item" href="/docs/content/masonry">
               Masonry
             </Link>

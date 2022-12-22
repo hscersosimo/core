@@ -1076,7 +1076,7 @@ const Dropdown = () => {
             data-popper-placement="bottom-start"
           >
             <div className="mb-3">
-              <label for="exampleDropdownFormEmail2" className="form-label">
+              <label htmlFor="exampleDropdownFormEmail2" className="form-label">
                 Email address
               </label>
               <input
@@ -1087,7 +1087,10 @@ const Dropdown = () => {
               />
             </div>
             <div className="mb-3">
-              <label for="exampleDropdownFormPassword2" className="form-label">
+              <label
+                htmlFor="exampleDropdownFormPassword2"
+                className="form-label"
+              >
                 Password
               </label>
               <input
@@ -1104,7 +1107,7 @@ const Dropdown = () => {
                   className="form-check-input"
                   id="dropdownCheck2"
                 />
-                <label className="form-check-label" for="dropdownCheck2">
+                <label className="form-check-label" htmlFor="dropdownCheck2">
                   Remember me
                 </label>
               </div>

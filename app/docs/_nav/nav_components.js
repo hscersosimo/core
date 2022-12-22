@@ -68,6 +68,11 @@ const NavComponents = () => {
             </Link>
           </li>
           <li>
+            <Link className="dropdown-item" href="/docs/content/modal">
+              Modals
+            </Link>
+          </li>
+          <li>
             <Link className="dropdown-item" href="/docs/content/masonry">
               Masonry
             </Link>

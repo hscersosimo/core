@@ -21,6 +21,8 @@ import Masonry from "./masonry/page";
 import ExpandCollapse from "./expand_collapse/page";
 import ListGroups from "./list_group/page";
 import Modal from "./modal/page";
+import Navbar from "./navbar/page";
+import Tabs from "./tabs/page";
 
 const LoadSection = (props) => {
   // First we define our ListOfSections
@@ -62,6 +64,8 @@ const LoadSection = (props) => {
       { name: "List Group", component: <ListGroups /> },
       { name: "Modal", component: <Modal /> },
       { name: "Masonry", component: <Masonry /> },
+      { name: "Navbar", component: <Navbar /> },
+      { name: "Tabs", component: <Tabs /> },
     ];
   }
 

@@ -77,6 +77,16 @@ const NavComponents = () => {
               Masonry
             </Link>
           </li>
+          <li>
+            <Link className="dropdown-item" href="/docs/content/navbar">
+              Navbar
+            </Link>
+          </li>
+          <li>
+            <Link className="dropdown-item" href="/docs/content/tabs">
+              Tabs
+            </Link>
+          </li>
         </ul>
       </li>
     </>

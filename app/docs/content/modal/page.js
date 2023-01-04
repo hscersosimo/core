@@ -1,5 +1,6 @@
 import Container from "../_ui/Container";
 import SectionHeader from "../_ui/SectionHeader";
+
 const Modal = () => {
   return (
     <>
@@ -457,7 +458,16 @@ const Modal = () => {
         >
           Launch demo modal
         </button>
-        <div className="alert alert-danger">To be reviewed</div>
+        <div className="alert alert-danger">
+          To be reviewed. Check the{" "}
+          <a
+            href="https://getbootstrap.com/docs/5.2/components/modal/"
+            target="_blank"
+          >
+            Bootstrap Docs
+          </a>{" "}
+          for more examples.
+        </div>
       </Container>
     </>
   );

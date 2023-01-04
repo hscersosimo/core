@@ -23,6 +23,7 @@ import ListGroups from "./list_group/page";
 import Modal from "./modal/page";
 import Navbar from "./navbar/page";
 import Tabs from "./tabs/page";
+import Offcanvas from "./offcanvas/page";
 
 const LoadSection = (props) => {
   // First we define our ListOfSections
@@ -66,6 +67,7 @@ const LoadSection = (props) => {
       { name: "Masonry", component: <Masonry /> },
       { name: "Navbar", component: <Navbar /> },
       { name: "Tabs", component: <Tabs /> },
+      { name: "Offcanvas", component: <Offcanvas /> },
     ];
   }
 

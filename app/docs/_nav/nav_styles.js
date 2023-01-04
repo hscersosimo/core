@@ -11,7 +11,7 @@ const NavStyles = () => {
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
-          Styles
+          Brand Styles
         </a>
         <ul className="dropdown-menu" aria-labelledby="dropdown03">
           <li>

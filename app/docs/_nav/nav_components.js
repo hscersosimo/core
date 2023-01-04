@@ -87,6 +87,11 @@ const NavComponents = () => {
               Tabs
             </Link>
           </li>
+          <li>
+            <Link className="dropdown-item" href="/docs/content/offcanvas">
+              Offcanvas
+            </Link>
+          </li>
         </ul>
       </li>
     </>

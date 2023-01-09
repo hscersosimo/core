@@ -5,12 +5,12 @@ import { useEffect } from "react";
 
 const Tooltips = () => {
   useEffect(() => {
-    const tooltipTriggerList = document.querySelectorAll(
-      '[data-bs-toggle="tooltip"]'
-    );
-    const tooltipList = [...tooltipTriggerList].map(
-      (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
-    );
+    // const tooltipTriggerList = document.querySelectorAll(
+    //   '[data-bs-toggle="tooltip"]'
+    // );
+    // const tooltipList = [...tooltipTriggerList].map(
+    //   (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+    // );
   });
 
   return (

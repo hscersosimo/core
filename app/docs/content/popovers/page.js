@@ -1,13 +1,13 @@
 import SectionHeader from "../_ui/SectionHeader";
 import Container from "../_ui/Container";
 
-const Popover = () => {
+const Popovers = () => {
   return (
     <>
-      <SectionHeader name="Popover" icon="sidebar-flip" />
+      <SectionHeader name="Popovers" icon="sidebar-flip" />
       <Container></Container>
     </>
   );
 };
 
-export default Popover;
+export default Popovers;

@@ -73,11 +73,6 @@ const NavComponents = () => {
             </Link>
           </li>
           <li>
-            <Link className="dropdown-item" href="/docs/content/masonry">
-              Masonry
-            </Link>
-          </li>
-          <li>
             <Link className="dropdown-item" href="/docs/content/navbar">
               Navbar
             </Link>
@@ -98,8 +93,13 @@ const NavComponents = () => {
             </Link>
           </li>
           <li>
-            <Link className="dropdown-item" href="/docs/content/popover">
-              Popover
+            <Link className="dropdown-item" href="/docs/content/popovers">
+              Popovers
+            </Link>
+          </li>
+          <li>
+            <Link className="dropdown-item" href="/docs/content/tooltips">
+              Tooltips
             </Link>
           </li>
         </ul>

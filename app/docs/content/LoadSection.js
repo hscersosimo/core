@@ -17,7 +17,6 @@ import Alerts from "./alerts/page";
 import Badge from "./badge/page";
 import Cards from "./cards/page";
 import Carousel from "./carousel/page";
-import Masonry from "./masonry/page";
 import ExpandCollapse from "./expand_collapse/page";
 import ListGroups from "./list_group/page";
 import Modal from "./modal/page";
@@ -25,7 +24,8 @@ import Navbar from "./navbar/page";
 import Tabs from "./tabs/page";
 import Offcanvas from "./offcanvas/page";
 import Pagination from "./pagination/page";
-import Popover from "./popover/page";
+import Popovers from "./popovers/page";
+import Tooltips from "./tooltips/page";
 
 const LoadSection = (props) => {
   // First we define our ListOfSections
@@ -66,12 +66,12 @@ const LoadSection = (props) => {
       { name: "Carousel", component: <Carousel /> },
       { name: "List Group", component: <ListGroups /> },
       { name: "Modal", component: <Modal /> },
-      { name: "Masonry", component: <Masonry /> },
       { name: "Navbar", component: <Navbar /> },
       { name: "Tabs", component: <Tabs /> },
       { name: "Offcanvas", component: <Offcanvas /> },
       { name: "Pagination", component: <Pagination /> },
-      { name: "Popover", component: <Popover /> },
+      { name: "Popovers", component: <Popovers /> },
+      { name: "Tooltips", component: <Tooltips /> },
     ];
   }
 

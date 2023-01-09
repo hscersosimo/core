@@ -5,15 +5,15 @@ import { useEffect } from "react";
 import "../styles/styles.scss";
 import "../public/fonts/fontawesome/css/fontawesome.min.css";
 import "../public/fonts/fontawesome/css/light.min.css";
-import * as bootstrap from "bootstrap";
+//import * as bootstrap from "bootstrap";
 
 // Root layout (app/layout.js)
 // - Applies to all routes
 export default function RootLayout({ children }) {
-  window.bootstrap = bootstrap;
+  //window.bootstrap = bootstrap;
 
   useEffect(() => {
-    //require("bootstrap/dist/js/bootstrap.bundle.min.js");
+    require("bootstrap/dist/js/bootstrap.bundle.min.js");
   }, []);
 
   return (

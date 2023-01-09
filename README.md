@@ -29,3 +29,9 @@ Remember that all HTML tags need closure. For example, an `<input>` must have a 
 
 Some HTML attributes must be defined differently when compared to pure HTML; most classes use a camelCase version instead of the usual name.
 Here's a list with the most usual cases: `className` (instead of `class`), `colSpan`, `defaultValue` (instead of `value` or `selected`), `htmlFor` (instead of `for`), `readOnly`, `defaultChecked` (instead of `checked`), `autoComplete`, `minLenght`, `maxLenght`, `tabIndex`.
+
+## Notes
+
+There's a console warning related to dropdown-menus: "Popper: CSS "margin" styles cannot be used to apply padding between the popper and its reference element or boundary. To replicate margin, use the `offset` modifier, as well as the `padding` option in the `preventOverflow` and `flip` modifiers.".
+
+This seems to be a Bootstrap related issue, see https://github.com/twbs/bootstrap/issues/36789

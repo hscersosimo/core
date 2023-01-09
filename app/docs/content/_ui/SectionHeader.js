@@ -6,9 +6,9 @@ const SectionHeader = (props) => {
 
   return (
     <>
-      <h5 className="mb-4 pb-1 border-bottom">
+      <h3 className="mb-4 pb-1 border-bottom">
         <i className={icon}></i> {name}
-      </h5>
+      </h3>
     </>
   );
 };

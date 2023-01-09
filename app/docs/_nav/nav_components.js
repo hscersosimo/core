@@ -92,6 +92,16 @@ const NavComponents = () => {
               Offcanvas
             </Link>
           </li>
+          <li>
+            <Link className="dropdown-item" href="/docs/content/pagination">
+              Pagination
+            </Link>
+          </li>
+          <li>
+            <Link className="dropdown-item" href="/docs/content/popover">
+              Popover
+            </Link>
+          </li>
         </ul>
       </li>
     </>

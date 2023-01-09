@@ -24,6 +24,8 @@ import Modal from "./modal/page";
 import Navbar from "./navbar/page";
 import Tabs from "./tabs/page";
 import Offcanvas from "./offcanvas/page";
+import Pagination from "./pagination/page";
+import Popover from "./popover/page";
 
 const LoadSection = (props) => {
   // First we define our ListOfSections
@@ -68,6 +70,8 @@ const LoadSection = (props) => {
       { name: "Navbar", component: <Navbar /> },
       { name: "Tabs", component: <Tabs /> },
       { name: "Offcanvas", component: <Offcanvas /> },
+      { name: "Pagination", component: <Pagination /> },
+      { name: "Popover", component: <Popover /> },
     ];
   }
 

@@ -26,6 +26,10 @@ import Offcanvas from "./offcanvas/page";
 import Pagination from "./pagination/page";
 import Popovers from "./popovers/page";
 import Tooltips from "./tooltips/page";
+import ProgressBars from "./progress/page";
+import ScrollSpyPage from "./scrollspy/page";
+import SpinnersPage from "./spinners/page";
+import ToastsPage from "./toasts/page";
 
 const LoadSection = (props) => {
   // First we define our ListOfSections
@@ -72,6 +76,10 @@ const LoadSection = (props) => {
       { name: "Pagination", component: <Pagination /> },
       { name: "Popovers", component: <Popovers /> },
       { name: "Tooltips", component: <Tooltips /> },
+      { name: "Progress Bars", component: <ProgressBars /> },
+      { name: "Scroll Spy", component: <ScrollSpyPage /> },
+      { name: "Spinners", component: <SpinnersPage /> },
+      { name: "Toasts", component: <ToastsPage /> },
     ];
   }
 

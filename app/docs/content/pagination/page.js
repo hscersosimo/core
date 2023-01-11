@@ -4,7 +4,7 @@ import Container from "../_ui/Container";
 const Pagination = () => {
   return (
     <>
-      <SectionHeader name="Pagination" icon="sidebar-flip" />
+      <SectionHeader name="Pagination" icon="input-numeric" />
       <Container>
         <nav aria-label="Page navigation example">
           <ul className="pagination">

@@ -8,7 +8,7 @@ import { Button } from "react-bootstrap";
 const Tooltips = () => {
   return (
     <>
-      <SectionHeader name="Tooltips" icon="sidebar-flip" />
+      <SectionHeader name="Tooltips" icon="comment-middle" />
       <p>
         Check the{" "}
         <a

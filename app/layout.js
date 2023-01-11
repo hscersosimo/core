@@ -10,10 +10,10 @@ import "../public/fonts/fontawesome/css/light.min.css";
 // Root layout (app/layout.js)
 // - Applies to all routes
 export default function RootLayout({ children }) {
-  //window.bootstrap = bootstrap;
-
   useEffect(() => {
     require("bootstrap/dist/js/bootstrap.bundle.min.js");
+    //window.bootstrap = require("bootstrap/dist/js/bootstrap.bundle.js");
+    //window.bootstrap = bootstrap;
   }, []);
 
   return (

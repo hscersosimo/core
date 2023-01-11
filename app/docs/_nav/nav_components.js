@@ -102,6 +102,26 @@ const NavComponents = () => {
               Tooltips
             </Link>
           </li>
+          <li>
+            <Link className="dropdown-item" href="/docs/content/progress">
+              Progress Bars
+            </Link>
+          </li>
+          <li>
+            <Link className="dropdown-item" href="/docs/content/scrollspy">
+              Scroll Spy
+            </Link>
+          </li>
+          <li>
+            <Link className="dropdown-item" href="/docs/content/spinners">
+              Spinners
+            </Link>
+          </li>
+          <li>
+            <Link className="dropdown-item" href="/docs/content/toasts">
+              Toasts
+            </Link>
+          </li>
         </ul>
       </li>
     </>

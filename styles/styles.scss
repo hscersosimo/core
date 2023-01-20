@@ -25,7 +25,7 @@
 @import "../node_modules/bootstrap/scss/buttons";
 @import "../node_modules/bootstrap/scss/transitions";
 @import "../node_modules/bootstrap/scss/dropdown";
-@import "/node_modules/bootstrap/scss/button-group";
+@import "../node_modules/bootstrap/scss/button-group";
 @import "../node_modules/bootstrap/scss/nav";
 @import "../node_modules/bootstrap/scss/navbar";
 @import "../node_modules/bootstrap/scss/card";
@@ -59,4 +59,9 @@
   border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
   border-radius: 5px;
   padding: 15px 20px;
+}
+
+.bg-custom {
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(239,240,249,1) 50%, rgba(255,255,255,1) 100%);
 }

@@ -25,7 +25,8 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://rsms.me/" />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
       </head>
-      <body>{children}</body>
+
+      <body className="bg-custom">{children}</body>
     </html>
   );
 }

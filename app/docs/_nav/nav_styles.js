@@ -29,6 +29,11 @@ const NavStyles = () => {
               Icons
             </Link>
           </li>
+          <li>
+            <Link className="dropdown-item" href="/docs/content/color">
+              Color
+            </Link>
+          </li>
         </ul>
       </li>
     </>

@@ -1279,6 +1279,38 @@ const Forms = () => {
           </div>
         </form>
       </Container>
+      <Container>
+        <h5>Stacks</h5>
+        <p>
+          Use <code>.vstack</code> to stack buttons and other elements:
+        </p>
+        <div className="vstack gap-2 col-md-5 mx-auto my-5">
+          <button type="button" className="btn btn-secondary">
+            Save changes
+          </button>
+          <button type="button" className="btn btn-outline-secondary">
+            Cancel
+          </button>
+        </div>
+        <p>
+          Create an inline form with <code>.hstack</code>:
+        </p>
+        <div className="hstack gap-3 mt-3">
+          <input
+            className="form-control me-auto"
+            type="text"
+            placeholder="Add your item here..."
+            aria-label="Add your item here..."
+          />
+          <button type="button" className="btn btn-secondary">
+            Submit
+          </button>
+          <div className="vr"></div>
+          <button type="button" className="btn btn-outline-danger">
+            Reset
+          </button>
+        </div>
+      </Container>
     </>
   );
 };

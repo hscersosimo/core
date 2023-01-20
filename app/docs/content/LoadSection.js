@@ -30,6 +30,10 @@ import ProgressBars from "./progress/page";
 import ScrollSpyPage from "./scrollspy/page";
 import SpinnersPage from "./spinners/page";
 import ToastsPage from "./toasts/page";
+import ColorPage from "./color/page";
+import LinksPage from "./links/page";
+import BordersPage from "./borders/page";
+import UtilitiesPage from "./utilities/page";
 
 const LoadSection = (props) => {
   // First we define our ListOfSections
@@ -42,11 +46,13 @@ const LoadSection = (props) => {
     listOfSections = [
       { name: "Fonts", component: <Fonts /> },
       { name: "Icons", component: <Icons /> },
+      { name: "Color", component: <ColorPage /> },
     ];
   } else if (type === "sections") {
     // List of sections for the 'Sections' group
     listOfSections = [
       { name: "Typography", component: <Typography /> },
+      { name: "Links", component: <LinksPage /> },
       { name: "Buttons", component: <Buttons /> },
       { name: "Images", component: <Images /> },
       { name: "Tables", component: <Tables /> },
@@ -56,6 +62,7 @@ const LoadSection = (props) => {
       { name: "Sliders", component: <Sliders /> },
       { name: "Validations", component: <Validations /> },
       { name: "Cards", component: <Cards /> },
+      { name: "Borders", component: <BordersPage /> },
     ];
   } else {
     // List of sections for the 'Components' group
@@ -80,6 +87,7 @@ const LoadSection = (props) => {
       { name: "Scroll Spy", component: <ScrollSpyPage /> },
       { name: "Spinners", component: <SpinnersPage /> },
       { name: "Toasts", component: <ToastsPage /> },
+      { name: "Utilities", component: <UtilitiesPage /> },
     ];
   }
 

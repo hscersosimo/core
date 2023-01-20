@@ -65,6 +65,17 @@ const Typography = () => {
         <p>
           <em>This line rendered as italicized text.</em>
         </p>
+
+        <h5 className="mt-5">Text decoration</h5>
+        <p className="text-decoration-underline">
+          This text has a line underneath it.
+        </p>
+        <p className="text-decoration-line-through">
+          This text has a line going through it.
+        </p>
+        <a href="#" className="text-decoration-none">
+          This link has its text decoration removed
+        </a>
       </Container>
 
       <Container>
@@ -248,6 +259,109 @@ const Typography = () => {
             This can be useful when space is tight. Adds an ellipsis at the end.
           </dd>
         </dl>
+      </Container>
+      <Container>
+        <h5>Text truncation</h5>
+        <p>Truncate long strings of text with an ellipsis.</p>
+        <div className="row mb-1">
+          <div className="col-2 text-truncate">
+            Lorem ipsum dolor sit amet, an latine aperiam maluisset his, possit
+            facilis graecis per ad. In augue suavitate eos, integre deserunt
+            assentior qui eu. Eum clita legere animal ea, no amet ullamcorper
+            vim. In ludus periculis ius, malis aliquid id pri.
+          </div>
+        </div>
+        <span
+          className="d-inline-block text-truncate"
+          style={{ maxWidth: "250px" }}
+        >
+          Lorem ipsum dolor sit amet, an latine aperiam maluisset his, possit
+          facilis graecis per ad. In augue suavitate eos, integre deserunt
+          assentior qui eu. Eum clita legere animal ea, no amet ullamcorper vim.
+          In ludus periculis ius, malis aliquid id pri.
+        </span>
+        <span
+          className="d-inline-block text-truncate"
+          style={{ maxWidth: "100%" }}
+        >
+          Lorem ipsum dolor sit amet, an latine aperiam maluisset his, possit
+          facilis graecis per ad. In augue suavitate eos, integre deserunt
+          assentior qui eu. Eum clita legere animal ea, no amet ullamcorper vim.
+          In ludus periculis ius, malis aliquid id pri.
+        </span>
+      </Container>
+      <Container>
+        <h5>Vertical rule</h5>
+
+        <div className="d-flex my-5">
+          <div className="vr me-3"></div>
+          <div>
+            Lorem ipsum dolor sit amet, an latine aperiam maluisset his, possit
+            facilis graecis per ad. In augue suavitate eos, integre deserunt
+            assentior qui eu. Eum clita legere animal ea, no amet ullamcorper
+            vim. In ludus periculis ius, malis aliquid id pri.
+          </div>
+        </div>
+
+        <p>They can also be used as separators in stacks:</p>
+        <div className="border p-2 hstack gap-3">
+          <div>First item</div>
+          <div className="ms-auto">Second item</div>
+          <div className="vr"></div>
+          <div>Third item</div>
+        </div>
+      </Container>
+
+      <Container>
+        <h5>Color</h5>
+        <div className="mb-5">
+          <p className="text-primary">.text-primary</p>
+          <p className="text-secondary">.text-secondary</p>
+          <p className="text-success">.text-success</p>
+          <p className="text-danger">.text-danger</p>
+          <p className="text-warning bg-dark">.text-warning</p>
+          <p className="text-info bg-dark">.text-info</p>
+          <p className="text-light bg-dark">.text-light</p>
+          <p className="text-dark">.text-dark</p>
+          <p className="text-body">.text-body</p>
+          <p className="text-muted">.text-muted</p>
+          <p className="text-white bg-dark">.text-white</p>
+        </div>
+
+        <h5>Reset color</h5>
+        <p>
+          Reset a text or link’s color with <code>.text-reset</code>, so that it
+          inherits the color from its parent.
+        </p>
+        <p className="text-muted">
+          Muted text with a{" "}
+          <a href="#" className="text-reset">
+            reset link
+          </a>
+          .
+        </p>
+
+        <h5 className="mt-5">Opacity</h5>
+        <div className="mb-5">
+          <div className="text-primary">This is default primary text</div>
+          <div className="text-primary text-opacity-75">
+            This is 75% opacity primary text
+          </div>
+          <div className="text-primary text-opacity-50">
+            This is 50% opacity primary text
+          </div>
+          <div className="text-primary text-opacity-25">
+            This is 25% opacity primary text
+          </div>
+        </div>
+      </Container>
+      <Container>
+        <h5>Monospace</h5>
+        <p>
+          Change a selection to our monospace font stack with{" "}
+          <code>.font-monospace</code>.
+        </p>
+        <p className="font-monospace">This is in monospace</p>
       </Container>
     </>
   );

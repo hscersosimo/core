@@ -122,6 +122,11 @@ const NavComponents = () => {
               Toasts
             </Link>
           </li>
+          <li>
+            <Link className="dropdown-item" href="/docs/content/utilities">
+              Utilities
+            </Link>
+          </li>
         </ul>
       </li>
     </>

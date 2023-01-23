@@ -1,0 +1,11 @@
+
+  {
+    "indigo": [
+      { "name": "indigo-100" },
+      { "name": "indigo-200" },
+      { "name": "indigo-300" },
+      { "name": "indigo-400" },
+      { "name": "indigo-500" },
+      { "name": "indigo-600" }
+    ]
+   }

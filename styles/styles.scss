@@ -49,6 +49,37 @@
 // Helpers
 @import "../node_modules/bootstrap/scss/helpers";
 
+// Generate color utilities for all colors
+$all-colors: map-merge-multiple($blues, $indigos, $reds, $oranges, $yellows, $greens, $teals, $cyans);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "color": map-merge(
+      map-get($utilities, "color"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "color"), "values"),
+          (
+            $all-colors
+          ),
+        ),
+      ),
+    ),
+    "bg": map-merge(
+      map-get($utilities, "background-color"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "background-color"), "values"),
+          (
+            $all-colors
+          ),
+        ),
+      ),
+    ),
+  )
+);
+
 // Utilities
 @import "../node_modules/bootstrap/scss/utilities/api";
 // scss-docs-end import-stack

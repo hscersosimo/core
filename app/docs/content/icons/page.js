@@ -5,16 +5,24 @@ const Icons = () => {
   return (
     <>
       <SectionHeader name="Icons" icon="icons" />
-      <div className="display-3 mb-4">FontAwesome</div>
-      <Container>
-        <p>
-          Font Awesome is the Internet's icon library and toolkit, used by
-          millions of designers, developers, and content creators.
-        </p>
-        <p>
-          <a href="https://fontawesome.com/">https://fontawesome.com/</a>
-        </p>
-      </Container>
+      <p className="mb-5">
+        Here you'll find a collection of visual elements that help to
+        communicate and reinforce our brand message. These icons are designed to
+        be simple, clear, and easy to understand. They can be used across
+        different mediums, such as web and mobile interfaces, as well as in
+        print materials. Here you can browse our icon library, learn about the
+        guidelines and best practices for using icons in your designs, and
+        download the icons in various formats for use in your own projects.
+      </p>
+
+      <div className="display-3">FontAwesome</div>
+      <p>
+        Font Awesome is the Internet's icon library and toolkit, used by
+        millions of designers, developers, and content creators.
+      </p>
+      <p className="mb-5">
+        <a href="https://fontawesome.com/">https://fontawesome.com/</a>
+      </p>
 
       <Container>
         <h5>Relative Sizing</h5>

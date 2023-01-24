@@ -5,8 +5,8 @@ const Header = () => {
   return (
     <>
       <nav
-        className="navbar navbar-expand-sm navbar-light mb-5"
-        aria-label="Third navbar example"
+        className="navbar navbar-expand-sm navbar-light fixed-top bg-white border-bottom mb-5"
+        aria-label="Navbar"
       >
         <div className="container-fluid">
           <Link href="/" className="navbar-brand">

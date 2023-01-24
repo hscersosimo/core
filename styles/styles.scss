@@ -50,11 +50,12 @@
 @import "../node_modules/bootstrap/scss/helpers";
 
 // Generate color utilities for all colors
-$all-colors: map-merge-multiple($blues, $indigos, $reds, $oranges, $yellows, $greens, $teals, $cyans);
+$all-colors: map-merge-multiple($blues, $indigos, $purples, $reds, $oranges, $yellows, $greens, $teals, $cyans, $grays);
 
 $utilities: map-merge(
   $utilities,
   (
+    // Generate text-color utilities for $all-colors
     "color": map-merge(
       map-get($utilities, "color"),
       (
@@ -66,6 +67,7 @@ $utilities: map-merge(
         ),
       ),
     ),
+    // Generate bg-color utilities for $all-colors
     "bg": map-merge(
       map-get($utilities, "background-color"),
       (
@@ -94,5 +96,6 @@ $utilities: map-merge(
 
 .bg-custom {
   background: rgb(255,255,255);
-  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(239,240,249,1) 50%, rgba(255,255,255,1) 100%);
-}
+  //background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(239,240,249,1) 50%, rgba(255,255,255,1) 100%);
+
+  background: linear-gradient(to right, #FFFFFF, #f4f4f4, #FFFFFF);}

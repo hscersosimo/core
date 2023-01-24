@@ -9,7 +9,7 @@ export default function RootLayout({ children }) {
       <header>
         <Header />
       </header>
-      <main>{children}</main>
+      <main style={{ paddingTop: "90px" }}>{children}</main>
       <footer>
         <Footer />
       </footer>

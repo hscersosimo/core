@@ -123,14 +123,22 @@ const Docs = () => {
     <>
       <div className="container">
         <div className="display-3 mb-3">Design System</div>
+        <h5>Welcome to our design system website</h5>
         <p className="">
-          A design system is a set of standards to manage design at scale by
-          reducing redundancy while creating a shared language and visual
-          consistency across different pages and channels.
+          Here, you'll find all the tools and resources you need to create
+          cohesive and consistent designs that align with our brand guidelines.
+          Our design system includes guidelines for color, typography, icons,
+          and more. You can explore our curated selection of colors, typefaces,
+          and icons, as well as learn about the best practices for using them in
+          your designs. We hope this website will serve as a valuable resource
+          for all designers and developers working on projects for our brand.
+          Let's create beautiful and effective designs together!
         </p>
         <p className="mb-5">
           Created by the Design Team - IT Panel Products &amp; Platforms -
-          Global Panels. Got any questions? Contact us at{" "}
+          Global Panels.
+          <br />
+          Got any questions? Contact us at{" "}
           <a href="mailto:iis-design@ipsos.com">iis-design@ipsos.com</a>
         </p>
 

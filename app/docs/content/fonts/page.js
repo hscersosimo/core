@@ -5,7 +5,15 @@ const Fonts = () => {
   return (
     <>
       <SectionHeader name="Fonts" icon="book-font" />
-
+      <p className="mb-5">
+        The fonts section of our design system is where you'll find the
+        foundation of our brand's visual language. Our carefully selected
+        typefaces and type styles provide a clear and consistent voice for all
+        of our digital and print materials. Here you can explore our typographic
+        hierarchy, learn about the different typefaces we use and how to use
+        them in different contexts, and access a range of type styles, weights,
+        and sizes to use in your own designs.
+      </p>
       <div className="display-3 mb-4">The Inter typeface family</div>
       <Container>
         <p className="fs-4">

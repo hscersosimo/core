@@ -6,38 +6,17 @@ import NavComponents from "./_nav/nav_components";
 const Nav = () => {
   return (
     <>
-      <nav className="navbar fixed-top navbar-light bg-white">
-        <div className="container-fluid">
-          <Link className="navbar-brand" href="/">
-            Core
+      <ul className="navbar-nav">
+        <li className="nav-item">
+          <Link href="/docs" className="nav-link" aria-current="page">
+            Design System
           </Link>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarToggler"
-            aria-controls="navbarToggler"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i className="fa-solid fa-bars"></i>
-          </button>
+        </li>
 
-          <div className="collapse navbar-collapse" id="navbarToggler">
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <Link href="/docs" className="nav-link" aria-current="page">
-                  Design System
-                </Link>
-              </li>
-
-              <NavStyles />
-              <NavSections />
-              <NavComponents />
-            </ul>
-          </div>
-        </div>
-      </nav>
+        <NavStyles />
+        <NavSections />
+        <NavComponents />
+      </ul>
     </>
   );
 };

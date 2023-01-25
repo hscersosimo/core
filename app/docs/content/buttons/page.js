@@ -8,72 +8,74 @@ const Buttons = () => {
       <Container>
         <div className="mb-3">
           <h5>Buttons</h5>
-          <button type="button" className="btn btn-primary">
+
+          <button type="button" className="btn btn-primary me-1">
             Primary
           </button>
-          &nbsp;
-          <button type="button" className="btn btn-secondary">
+
+          <button type="button" className="btn btn-secondary me-1">
             Secondary
           </button>
-          &nbsp;
-          <button type="button" className="btn btn-success">
+
+          <button type="button" className="btn btn-success me-1">
             Success
           </button>
-          &nbsp;
-          <button type="button" className="btn btn-danger">
+
+          <button type="button" className="btn btn-danger me-1">
             Danger
           </button>
-          &nbsp;
-          <button type="button" className="btn btn-warning">
+
+          <button type="button" className="btn btn-warning me-1">
             Warning
           </button>
-          <button type="button" className="btn btn-info">
+
+          <button type="button" className="btn btn-info me-1">
             Info
           </button>
-          &nbsp;
-          <button type="button" className="btn btn-light">
+
+          <button type="button" className="btn btn-light me-1">
             Light
           </button>
-          &nbsp;
-          <button type="button" className="btn btn-dark">
+
+          <button type="button" className="btn btn-dark me-1">
             Dark
           </button>
-          &nbsp;
+
           <button type="button" className="btn btn-link">
             Link
           </button>
         </div>
         <div className="mb-3">
           <h5>Outline Buttons</h5>
-          <button type="button" className="btn btn-outline-primary">
+          <button type="button" className="btn btn-outline-primary me-1">
             Primary
           </button>
-          &nbsp;
-          <button type="button" className="btn btn-outline-secondary">
+
+          <button type="button" className="btn btn-outline-secondary me-1">
             Secondary
           </button>
-          &nbsp;
-          <button type="button" className="btn btn-outline-success">
+
+          <button type="button" className="btn btn-outline-success me-1">
             Success
           </button>
-          &nbsp;
-          <button type="button" className="btn btn-outline-danger">
+
+          <button type="button" className="btn btn-outline-danger me-1">
             Danger
           </button>
-          &nbsp;
-          <button type="button" className="btn btn-outline-warning">
+
+          <button type="button" className="btn btn-outline-warning me-1">
             Warning
           </button>
-          &nbsp;
-          <button type="button" className="btn btn-outline-info">
+
+          <button type="button" className="btn btn-outline-info me-1">
             Info
           </button>
-          &nbsp;
-          <button type="button" className="btn btn-outline-light">
+
+          <button type="button" className="btn btn-outline-light me-1">
             Light
           </button>
-          &nbsp;
-          <button type="button" className="btn btn-outline-dark">
+
+          <button type="button" className="btn btn-outline-dark me-1">
             Dark
           </button>
         </div>
@@ -81,19 +83,19 @@ const Buttons = () => {
       <Container>
         <h5>Sizes</h5>
         <div className="mb-3">
-          <button type="button" className="btn btn-primary btn-lg">
+          <button type="button" className="btn btn-primary btn-lg me-1">
             Large button
           </button>
-          &nbsp;
-          <button type="button" className="btn btn-secondary btn-lg">
+
+          <button type="button" className="btn btn-secondary btn-lg me-1">
             Large button
           </button>
         </div>
         <div className="mb-3">
-          <button type="button" className="btn btn-primary btn-sm">
+          <button type="button" className="btn btn-primary btn-sm me-1">
             Small button
           </button>
-          &nbsp;
+
           <button type="button" className="btn btn-secondary btn-sm">
             Small button
           </button>
@@ -102,11 +104,19 @@ const Buttons = () => {
       <Container>
         <h5>Disabled</h5>
         <div className="mb-3">
-          <button type="button" className="btn btn-lg btn-primary" disabled>
+          <button
+            type="button"
+            className="btn btn-lg btn-primary me-1"
+            disabled
+          >
             Primary button
           </button>
-          &nbsp;
-          <button type="button" className="btn btn-secondary btn-lg" disabled>
+
+          <button
+            type="button"
+            className="btn btn-secondary btn-lg me-1"
+            disabled
+          >
             Button
           </button>
         </div>
@@ -133,17 +143,17 @@ const Buttons = () => {
           </div>
           <a
             href="#"
-            className="btn btn-primary btn-lg disabled"
+            className="btn btn-primary btn-lg disabled me-1"
             tabIndex="-1"
             role="button"
             aria-disabled="true"
           >
             Primary link
           </a>
-          &nbsp;
+
           <a
             href="#"
-            className="btn btn-secondary btn-lg disabled"
+            className="btn btn-secondary btn-lg disabled me-1"
             tabIndex="-1"
             role="button"
             aria-disabled="true"

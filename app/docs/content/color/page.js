@@ -2,6 +2,7 @@
 import SectionHeader from "../_ui/SectionHeader";
 import Container from "../_ui/Container";
 import { useRef, useEffect, useState } from "react";
+import rgbToHex from "../../../lib/rgbToHex";
 
 const ColorPage = () => {
   // List of colors to be displayed
@@ -9,39 +10,41 @@ const ColorPage = () => {
     {
       name: "indigo",
       description: "Primary",
-      contrast: "#5C6AC1", // background color for white text
     },
     {
       name: "teal",
       description: "Secondary",
-      contrast: "#5C6AC1", // background color for white text
     },
     {
       name: "purple",
       description: "Tertiary",
-      contrast: "#5C6AC1", // background color for white text
     },
     {
       name: "cyan",
       description: "Info",
-      contrast: "#5C6AC1", // background color for white text
     },
     {
       name: "green",
       description: "Success",
-      contrast: "#5C6AC1", // background color for white text
     },
     {
       name: "orange",
       description: "Warning",
-      contrast: "#5C6AC1", // background color for white text
     },
     {
       name: "red",
       description: "Danger",
-      contrast: "#5C6AC1", // background color for white text
     },
   ];
+
+  const [backgroundColor, setBackgroundColor] = useState("");
+  const [showAlert, setShowAlert] = useState(false);
+
+  // useEffect(() => {
+  //   const computedStyles = window.getComputedStyle(elementRef.current);
+  //   const color = computedStyles.getPropertyValue("background-color");
+  //   setBackgroundColor(rgbToHex(color));
+  // }, []);
 
   return (
     <>
@@ -56,28 +59,22 @@ const ColorPage = () => {
       <Container>
         <div className="row">
           {color_palette.map((color) => (
-            <>
-              <div key={color.name} className="col-sm-12 col-md-6">
-                <div className="text-center mb-3">
-                  <h5 className="text-capitalize mb-0">{color.name}</h5>
-                  <p className="text-black-50">{color.description}</p>
-                  <div className="text-white fw-bold">
-                    <ColorScale name={color.name} />
-                  </div>
-                </div>
-                <div className="mb-5">
-                  <h6 className="text-center">AA text</h6>
-                  <div className="text-white fw-bold">
-                    {
-                      <ColorUsability
-                        name={color.name}
-                        contrast={color.contrast}
-                      />
-                    }
-                  </div>
-                </div>
+            <div key={color.name} className="col-sm-12 col-md-6 col-lg-4">
+              <div className="text-center mb-1">
+                <h5 className="text-capitalize mb-3">
+                  {color.name} -{" "}
+                  <span className="fw-normal text-black-50">
+                    {color.description}
+                  </span>
+                </h5>
+
+                <ColorScale
+                  name={color.name}
+                  backgroundColor={backgroundColor}
+                  setBackgroundColor={setBackgroundColor}
+                />
               </div>
-            </>
+            </div>
           ))}
         </div>
       </Container>
@@ -88,21 +85,21 @@ const ColorPage = () => {
 export default ColorPage;
 
 const ColorScale = (props) =>
-  Array.from({ length: 9 }, (_, index) => {
-    // index starts from 1, since first color scale is 100
-    index = index + 1;
-    const color = props.name;
+  Array.from({ length: 10 }, (_, index) => {
     const [backgroundColor, setBackgroundColor] = useState("");
-
     const elementRef = useRef(null);
+
     useEffect(() => {
       const computedStyles = window.getComputedStyle(elementRef.current);
       const color = computedStyles.getPropertyValue("background-color");
-      //console.log(backgroundColor);
       setBackgroundColor(rgbToHex(color));
     }, []);
 
-    // define when we need styles, like rounded borders (top and bottom)
+    // index starts from 1, since first color scale is 100
+    index = index + 1;
+    const colorCode = props.name + "-" + index + "00";
+
+    // define when we need additional styles, like rounded borders (top and bottom)
     var styles;
     if (index == 1 || index == 6) {
       styles = "rounded-top";
@@ -111,65 +108,110 @@ const ColorScale = (props) =>
     } else if (index == 9 || index == 4) {
       styles = "rounded-bottom";
     }
-    return (
-      <div key={index}>
-        <div
-          ref={elementRef}
-          className={
-            "d-flex justify-content-between " +
-            styles +
-            " px-3 " +
-            " bg-" +
-            color +
-            "-" +
-            index +
-            "00"
-          }
-          style={{
-            height: "44px",
-            lineHeight: "44px",
-          }}
-        >
-          {color}-{index}00
-          <div>{backgroundColor}</div>
+
+    var textColor = "text-white";
+    if (index < 5) {
+      textColor = "text-dark";
+    }
+
+    if (index != 10) {
+      return (
+        <div key={index}>
+          <div
+            ref={elementRef}
+            className={styles + " px-3 " + " bg-" + colorCode}
+            style={{
+              height: "44px",
+              lineHeight: "44px",
+            }}
+          >
+            <ShowAndCopyColor
+              ref={elementRef}
+              backgroundColor={backgroundColor}
+              name={colorCode}
+              colorCode={colorCode}
+              textColor={textColor}
+            />
+          </div>
         </div>
-      </div>
-    );
+      );
+    } else {
+      return (
+        // AA Text
+        <div key={index}>
+          <div
+            ref={elementRef}
+            className={"rounded mt-1 px-3 mb-5 " + " bg-" + props.name + "-500"}
+            style={{
+              height: "44px",
+              lineHeight: "44px",
+            }}
+          >
+            <ShowAndCopyColor
+              ref={elementRef}
+              backgroundColor={backgroundColor}
+              name="AA Text"
+              colorCode={props.name + "-500"}
+              textColor={textColor}
+            />
+          </div>
+        </div>
+      );
+    }
   });
 
-const ColorUsability = (props) => {
-  // Component that displays background color for white text (AAA contrast)
-  const bg_color = props.contrast;
+const ShowAndCopyColor = (props) => {
+  const [showAlert, setShowAlert] = useState(false);
+
+  const copyToClipboard = (elementId) => {
+    const textArea = document.createElement("textarea");
+    const div = document.getElementById(elementId);
+    textArea.value = div.textContent;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand("copy");
+    textArea.remove();
+    setShowAlert(true);
+    setTimeout(() => setShowAlert(false), 1250);
+  };
+
   return (
-    <>
-      <div
-        className={"d-flex rounded justify-content-between px-3"}
-        style={{
-          height: "44px",
-          lineHeight: "44px",
-          backgroundColor: bg_color,
-        }}
+    <div>
+      <a
+        style={{ cursor: "pointer" }}
+        // copyToClipboard the content of the (#targetDiv)
+        onClick={() => copyToClipboard(props.colorCode)}
       >
-        {bg_color}
-      </div>
-    </>
+        {/* Styles and content for color cell */}
+        <div className={"d-flex justify-content-between " + props.textColor}>
+          <div className="fw-bold">{props.name}</div>
+          <div id={props.colorCode} className="fw-normal fs-7">
+            {props.backgroundColor}
+          </div>
+        </div>
+      </a>
+
+      {/* Styles and content for copied color alert */}
+      {showAlert && (
+        <div
+          className="alert alert-light p-1 border shadow-sm rounded"
+          role="alert"
+          style={{
+            position: "fixed",
+            top: "65px",
+            left: 0,
+            right: 0,
+            margin: "0 auto",
+            width: "490px",
+          }}
+        >
+          <i class="fa-solid fa-circle-check text-success me-1"></i>{" "}
+          <strong>
+            {props.colorCode} - {props.backgroundColor}
+          </strong>{" "}
+          copied to your clipboard.
+        </div>
+      )}
+    </div>
   );
 };
-
-function rgbToHex(rgb) {
-  // Extract the three RGB values
-  const [r, g, b] = rgb
-    .replace(/^(rgb|rgba)\(/, "")
-    .replace(/\)$/, "")
-    .replace(/\s/g, "")
-    .split(",")
-    .map(Number);
-
-  // Convert the RGB values to hex codes
-  const hexR = r.toString(16).padStart(2, "0");
-  const hexG = g.toString(16).padStart(2, "0");
-  const hexB = b.toString(16).padStart(2, "0");
-
-  // Return the concatenated hex code
-  return `#${hexR}${hexG}${hexB}`;
-}

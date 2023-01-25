@@ -96,6 +96,7 @@ $utilities: map-merge(
 
 .bg-custom {
   background: rgb(255,255,255);
-  //background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(239,240,249,1) 50%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(239,240,249,1) 50%, rgba(255,255,255,1) 100%);
 
-  background: linear-gradient(to right, #FFFFFF, #f4f4f4, #FFFFFF);}
+  //background: linear-gradient(to right, #FFFFFF, #f4f4f4, #FFFFFF);
+}

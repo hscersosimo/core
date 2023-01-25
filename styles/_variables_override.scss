@@ -37,16 +37,17 @@ $grays: (
 // fusv-enable
 
 // scss-docs-start color-variables
-$blue: #0d6efd !default;
 $indigo: #5C6AC1 !default;
-$purple: #6f42c1 !default;
-$pink: #d63384 !default;
-$red: #EF5350 !default;
-$orange: #FFCA28 !default;
+$teal: #1d8177 !default;
+$purple: #8369b5 !default;
+$cyan: #007DB9 !default;
+$green: #53831F !default;
+$orange: #a66811 !default;
+$red: #cd4947 !default;
+
 $yellow: #ffc107 !default;
-$green: #9CCC65 !default;
-$teal: #26A69A !default;
-$cyan: #29B6F6 !default;
+$blue: #0d6efd !default;
+$pink: #d63384 !default;
 
 $body-text: #3a405f !default;
 
@@ -56,14 +57,15 @@ $body-text: #3a405f !default;
 $colors: (
   "blue": $blue,
   "indigo": $indigo,
-  "purple": $purple,
-  "pink": $pink,
-  "red": $red,
-  "orange": $orange,
-  "yellow": $yellow,
-  "green": $green,
   "teal": $teal,
+  "purple": $purple,
   "cyan": $cyan,
+  "green": $green,
+  "orange": $orange,
+  "red": $red,
+  "yellow": $yellow,
+  
+  "pink": $pink,  
   "black": $black,
   "white": $white,
   "gray": $gray-600,
@@ -306,7 +308,7 @@ $primary: $indigo !default;
 $secondary: $teal !default;
 $success: $green !default;
 $info: $cyan !default;
-$warning: $yellow !default;
+$warning: $orange !default;
 $danger: $red !default;
 $light: $gray-100 !default;
 $dark: $gray-900 !default;

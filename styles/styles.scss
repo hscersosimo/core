@@ -90,13 +90,26 @@ $utilities: map-merge(
 
 .panel {
   border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
-  border-radius: 5px;
+  border-radius: var(--bs-border-radius);
   padding: 15px 20px;
 }
 
 .bg-custom {
   background: rgb(255,255,255);
   background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(239,240,249,1) 50%, rgba(255,255,255,1) 100%);
+}
 
-  //background: linear-gradient(to right, #FFFFFF, #f4f4f4, #FFFFFF);
+// Custom styles for framework's documentation
+@keyframes expand {
+  from {width: 100%;}
+  to {width: 105%;}
+}
+
+.docs-color-cell:hover {
+ // margin-right: -10px;
+
+  width: 105%; 
+  animation: expand 0.25s;
+
+
 }

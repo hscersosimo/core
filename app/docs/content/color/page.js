@@ -85,7 +85,7 @@ const ColorPage = () => {
 export default ColorPage;
 
 const ColorScale = (props) =>
-  Array.from({ length: 10 }, (_, index) => {
+  Array.from({ length: 11 }, (_, index) => {
     const [backgroundColor, setBackgroundColor] = useState("");
     const elementRef = useRef(null);
 
@@ -96,58 +96,57 @@ const ColorScale = (props) =>
     }, []);
 
     // index starts from 1, since first color scale is 100
-    index = index + 1;
+    //index = index + 1;
     const colorCode = props.name + "-" + index + "00";
 
     // define when we need additional styles, like rounded borders (top and bottom)
-    var styles;
+    var styles = "";
     if (index == 1 || index == 6) {
-      styles = "rounded-top";
+      //styles = "rounded-top ";
     } else if (index == 5) {
-      styles = "rounded my-1";
+      //styles = "my-2";
     } else if (index == 9 || index == 4) {
-      styles = "rounded-bottom";
+      //styles = "rounded-bottom ";
     }
 
     var textColor = "text-white";
-    if (index < 5) {
+    if (index < 5 && index > 0) {
+      // Change the text color to dark when
+      // color code is between 100 and 500
       textColor = "text-dark";
     }
 
-    if (index != 10) {
+    if (index == 0) {
+      // Color cell for main color
       return (
         <div key={index}>
           <div
             ref={elementRef}
-            className={styles + " px-3 " + " bg-" + colorCode}
-            style={{
-              height: "44px",
-              lineHeight: "44px",
-            }}
+            className={
+              "docs-color-cell mt-2 mb-2 p-4 py-5 bg-" + props.name + "-500"
+            }
           >
-            <ShowAndCopyColor
+            <ColorCell
               ref={elementRef}
               backgroundColor={backgroundColor}
-              name={colorCode}
-              colorCode={colorCode}
+              name={props.name}
+              colorCode={props.name + "-500"}
               textColor={textColor}
             />
           </div>
         </div>
       );
-    } else {
+    } else if (index == 10) {
+      // Color cell for AA Text
       return (
-        // AA Text
         <div key={index}>
           <div
             ref={elementRef}
-            className={"rounded mt-1 px-3 mb-5 " + " bg-" + props.name + "-500"}
-            style={{
-              height: "44px",
-              lineHeight: "44px",
-            }}
+            className={
+              "docs-color-cell mt-2 mb-5 p-4 bg-" + props.name + "-500"
+            }
           >
-            <ShowAndCopyColor
+            <ColorCell
               ref={elementRef}
               backgroundColor={backgroundColor}
               name="AA Text"
@@ -157,10 +156,28 @@ const ColorScale = (props) =>
           </div>
         </div>
       );
+    } else if (index != 0 && index != 10) {
+      // Color cell for everything else
+      return (
+        <div key={index}>
+          <div
+            ref={elementRef}
+            className={"docs-color-cell p-4 " + styles + " bg-" + colorCode}
+          >
+            <ColorCell
+              ref={elementRef}
+              backgroundColor={backgroundColor}
+              name={colorCode}
+              colorCode={colorCode}
+              textColor={textColor}
+            />
+          </div>
+        </div>
+      );
     }
   });
 
-const ShowAndCopyColor = (props) => {
+const ColorCell = (props) => {
   const [showAlert, setShowAlert] = useState(false);
 
   const copyToClipboard = (elementId) => {
@@ -183,9 +200,11 @@ const ShowAndCopyColor = (props) => {
         onClick={() => copyToClipboard(props.colorCode)}
       >
         {/* Styles and content for color cell */}
-        <div className={"d-flex justify-content-between " + props.textColor}>
+        <div
+          className={"d-flex justify-content-between fs-7 " + props.textColor}
+        >
           <div className="fw-bold">{props.name}</div>
-          <div id={props.colorCode} className="fw-normal fs-7">
+          <div id={props.colorCode} className="fw-normal">
             {props.backgroundColor}
           </div>
         </div>

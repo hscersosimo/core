@@ -7,13 +7,15 @@ const CardItem = (props) => {
         key={props.title}
         className="col-sm-6 col-md-3 col-lg-2 g-2 d-flex align-items-stretch"
       >
-        <div className="border rounded p-3 w-100 bg-white">
+        <div className="rounded p-3 w-100 bg-white shadow-sm">
           <h6 className="mb-1">
             <Link className="text-decoration-none" href={props.url}>
-              {props.title}
+              <i className="fa-solid fa-bracket-curly text-light"></i>{" "}
+              {props.title}{" "}
+              <i className="fa-solid fa-bracket-curly-right text-light"></i>
             </Link>
           </h6>
-          <div className="fs-7">{props.text}</div>
+          <div className="fs-7 text-dark">{props.text}</div>
         </div>
       </div>
     </>
@@ -222,48 +224,75 @@ const Docs = () => {
   return (
     <>
       <div className="container">
-        <div className="display-3 mb-3">Design System</div>
-        <h5>Welcome to our design system website</h5>
-        <p className="">
-          Here, you'll find all the tools and resources you need to create
-          cohesive and consistent designs that align with our brand guidelines.
-          Our design system includes guidelines for color, typography, icons,
-          and more. You can explore our curated selection of colors, typefaces,
-          and icons, as well as learn about the best practices for using them in
-          your designs. We hope this website will serve as a valuable resource
-          for all designers and developers working on projects for our brand.
-          Let's create beautiful and effective designs together!
-        </p>
-        <p className="mb-5">
-          Created by the Design Team - IT Panel Products &amp; Platforms -
-          Global Panels.
-          <br />
-          Got any questions? Contact us at{" "}
-          <a href="mailto:iis-design@ipsos.com">iis-design@ipsos.com</a>
-        </p>
-
-        <h2 className="border-bottom mb-0 pb-2">Brand styles</h2>
-        <div className="row">
-          {pages_style.map((page) => (
-            <CardItem title={page.title} text={page.text} url={page.url} />
-          ))}
-
-          <h2 className="border-bottom mt-5 mb-0 pb-2">Sections</h2>
-          <div className="row">
-            {pages_sections.map((page) => (
-              <CardItem title={page.title} text={page.text} url={page.url} />
-            ))}
-          </div>
-          {/* Row */}
-
-          <h2 className="border-bottom mt-5 mb-0 pb-2">Components</h2>
-          <div className="row">
-            {pages_components.map((page) => (
-              <CardItem title={page.title} text={page.text} url={page.url} />
-            ))}
-          </div>
-          {/* Row */}
+        <div className="display-1 mb-3">Design System</div>
+        <div className="border-top pt-4 mb-4">
+          <h2 className="m-0">
+            Welcome to the <span className="text-secondary">Ipsos Design</span>{" "}
+            website
+          </h2>
+          <p className="fs-7 text-dark mt-1 mb-0">
+            Created and maintained by the <strong>Design Team</strong> - IT
+            Panel Products &amp; Platforms - Global Panels.
+          </p>
         </div>
+        <div className="mb-5">
+          <p>
+            Here, you'll find all the tools and resources you need to create
+            cohesive and consistent designs that align with our brand
+            guidelines. Our design system includes guidelines for color,
+            typography, icons, and more. <br />
+            You can explore our curated selection of colors, typefaces, and
+            icons, as well as learn about the best practices for using them in
+            your designs. <br />
+            We hope this website will serve as a valuable resource for all
+            designers and developers working on projects for our brand. Let's
+            create beautiful and effective designs together! Got any questions?
+            Contact us at{" "}
+            <a href="mailto:iis-design@ipsos.com">iis-design@ipsos.com</a>
+          </p>
+        </div>
+        <div className="border-top pt-3 mb-2">
+          <h6 className="m-0">Brand styles</h6>
+        </div>
+        <div className="row mb-5">
+          {pages_style.map((page) => (
+            <CardItem
+              key={page.title}
+              title={page.title}
+              text={page.text}
+              url={page.url}
+            />
+          ))}
+        </div>
+        {/* Row */}
+        <div className="border-top pt-3 mb-2">
+          <h6 className="m-0">Sections</h6>
+        </div>
+        <div className="row mb-5">
+          {pages_sections.map((page) => (
+            <CardItem
+              key={page.title}
+              title={page.title}
+              text={page.text}
+              url={page.url}
+            />
+          ))}
+        </div>
+        {/* Row */}
+        <div className="border-top pt-3 mb-2">
+          <h6 className="m-0">Components</h6>
+        </div>
+        <div className="row mb-5">
+          {pages_components.map((page) => (
+            <CardItem
+              key={page.title}
+              title={page.title}
+              text={page.text}
+              url={page.url}
+            />
+          ))}
+        </div>
+        {/* Row */}
       </div>
       {/* Container */}
     </>

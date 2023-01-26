@@ -5,41 +5,30 @@ const Fonts = () => {
   return (
     <>
       <SectionHeader name="Fonts" icon="book-font" />
-      <p className="mb-5">
-        The fonts section of our design system is where you'll find the
-        foundation of our brand's visual language. Our carefully selected
-        typefaces and type styles provide a clear and consistent voice for all
-        of our digital and print materials. Here you can explore our typographic
-        hierarchy, learn about the different typefaces we use and how to use
-        them in different contexts, and access a range of type styles, weights,
-        and sizes to use in your own designs.
-      </p>
-      <div className="display-3 mb-4">The Inter typeface family</div>
-      <Container>
-        <p className="fs-4">
-          Inter is a typeface carefully crafted & designed for computer screens.
-        </p>
-        <p>
-          Inter features a tall x-height to aid in readability of mixed-case and
-          lower-case text. Several OpenType features are provided as well, like
-          contextual alternates that adjusts punctuation depending on the shape
-          of surrounding glyphs, slashed zero for when you need to disambiguate
-          "0" from "o", tabular numbers, etc.
-        </p>
-        <p>Inter is a free and open source font family.</p>
-        <p>
-          <a href="https://rsms.me/inter/">https://rsms.me/inter/</a>
-        </p>
-      </Container>
 
-      <Container>
-        <div className="display-1 text-center text-break">
+      <Container
+        title="The Inter typeface family"
+        description="Inter is a typeface carefully crafted & designed for computer screens."
+      >
+        <div className="display-1 text-center text-break my-5">
           ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 ?!()[]
         </div>
-      </Container>
-      <Container>
+        <div className="mb-5">
+          <p>
+            Inter features a tall x-height to aid in readability of mixed-case
+            and lower-case text. Several OpenType features are provided as well,
+            like contextual alternates that adjusts punctuation depending on the
+            shape of surrounding glyphs, slashed zero for when you need to
+            disambiguate "0" from "o", tabular numbers, etc.
+          </p>
+          <p>Inter is a free and open source font family.</p>
+          <p>
+            <a href="https://rsms.me/inter/">https://rsms.me/inter/</a>
+          </p>
+        </div>
+
         <h3>The story behind Inter</h3>
-        <div className="row">
+        <div className="row mb-5">
           <div className="col-sm-6">
             Inter started out in late 2016 as an experiment to build a perfectly
             pixel-fitting font at a specific small size (11px.) The idea was
@@ -63,11 +52,8 @@ const Fonts = () => {
             designer—and slowly improved upon based on experience and feedback.
           </div>
         </div>
-      </Container>
-
-      <Container>
         <div className="mb-5">
-          <div className="py-1 mb-2 fs-7 border-top text-secondary">
+          <div className="py-1 mb-2 fs-7 border-top text-dark">
             Bold - Font size 1 - lh-sm
           </div>
           <p className="fs-1 fw-bold lh-sm">
@@ -76,9 +62,9 @@ const Fonts = () => {
           </p>
         </div>
 
-        <div className="row">
+        <div className="row mb-4">
           <div className="col">
-            <div className="py-1 mb-2 fs-7 border-top text-secondary">
+            <div className="py-1 mb-2 fs-7 border-top text-dark">
               Regular - Font size 5 (large)
             </div>
             <p className="fs-5">
@@ -90,7 +76,7 @@ const Fonts = () => {
           </div>
           <div className="col">
             <div className="fs-6">
-              <div className="py-1 mb-2 fs-7 border-top text-secondary">
+              <div className="py-1 mb-2 fs-7 border-top text-dark">
                 Regular - Font size 6 (medium)
               </div>
               Est te rationibus efficiantur. Pri no iusto principes. Nam ad
@@ -102,7 +88,7 @@ const Fonts = () => {
             </div>
           </div>
           <div className="col">
-            <div className="py-1 mb-2 fs-7 border-top text-secondary">
+            <div className="py-1 mb-2 fs-7 border-top text-dark">
               Regular - Font size 7 (small)
             </div>
             <p className="fs-7">
@@ -120,9 +106,7 @@ const Fonts = () => {
             </p>
           </div>
         </div>
-      </Container>
-      <Container>
-        <div className="fs-7">
+        <div className="border-top pt-4 fs-7">
           <strong>Language support:</strong> Cyrillic Azerbaijani Belarusian
           Bosnian Bulgarian Chechen Macedonian Ossetic Russian Sakha Serbian
           Ukrainian Uzbek Greek Greek Latin Afrikaans Aghem Akan Albanian

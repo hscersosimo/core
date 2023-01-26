@@ -3,6 +3,7 @@ import SectionHeader from "../_ui/SectionHeader";
 import Container from "../_ui/Container";
 import { useRef, useEffect, useState } from "react";
 import rgbToHex from "../../../lib/rgbToHex";
+import BootstrapColorClasses from "./BootstrapColorClasses";
 
 const ColorPage = () => {
   // List of colors to be displayed
@@ -40,23 +41,41 @@ const ColorPage = () => {
   const [backgroundColor, setBackgroundColor] = useState("");
   const [showAlert, setShowAlert] = useState(false);
 
-  // useEffect(() => {
-  //   const computedStyles = window.getComputedStyle(elementRef.current);
-  //   const color = computedStyles.getPropertyValue("background-color");
-  //   setBackgroundColor(rgbToHex(color));
-  // }, []);
-
   return (
     <>
       <SectionHeader name="Color" icon="palette" />
       <p className="mb-5">
-        Welcome to the color palette section of our design system. Here, you'll
-        find a curated selection of colors that have been carefully chosen to
-        represent our brand and create a cohesive visual experience. These
-        colors can be used across all digital and print mediums to create a
-        consistent look and feel for our products and services.
+        Create a cohesive and visually appealing design with our robust color
+        system. Our color palette has been carefully curated to provide a wide
+        range of options for all your design needs. From bold accent colors to
+        subtle shades, our color system has everything you need to make your
+        design stand out.
       </p>
-      <Container>
+
+      <Container
+        title="Color palette"
+        description="Bring consistency and beauty to your design with our carefully chosen color choices. "
+      >
+        <div className="d-flex justify-content-start flex-wrap">
+          {color_palette.map((color) => (
+            <div className="p-2 mb-3 text-center">
+              <div
+                className={"bg-" + color.name + "-500 rounded"}
+                style={{ height: "100px", width: "100px" }}
+              ></div>
+              <div>
+                <div className="fw-bold text-capitalize mt-2">{color.name}</div>
+                <div className="fs-7 text-dark">{color.description}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </Container>
+
+      <Container
+        title="Color scales"
+        description="Our color scales provide a range of shades for each color, allowing you to create a cohesive and visually pleasing design. Click on a color to copy the HEX code to your clipboard."
+      >
         <div className="row">
           {color_palette.map((color) => (
             <div key={color.name} className="col-sm-12 col-md-6 col-lg-4">
@@ -78,6 +97,7 @@ const ColorPage = () => {
           ))}
         </div>
       </Container>
+      <BootstrapColorClasses />
     </>
   );
 };
@@ -113,7 +133,7 @@ const ColorScale = (props) =>
     if (index < 5 && index > 0) {
       // Change the text color to dark when
       // color code is between 100 and 500
-      textColor = "text-dark";
+      textColor = "text-black";
     }
 
     if (index == 0) {

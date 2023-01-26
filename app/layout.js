@@ -3,8 +3,7 @@ import { useEffect } from "react";
 
 // CSS Styles
 import "../styles/styles.scss";
-import "../public/fonts/fontawesome/css/fontawesome.min.css";
-import "../public/fonts/fontawesome/css/light.min.css";
+import "../public/fonts/fontawesome/css/all.min.css";
 //import * as bootstrap from "bootstrap";
 
 // Root layout (app/layout.js)
@@ -26,7 +25,7 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
       </head>
 
-      <body className="bg-custom">{children}</body>
+      <body>{children}</body>
     </html>
   );
 }

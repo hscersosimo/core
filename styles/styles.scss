@@ -50,66 +50,111 @@
 @import "../node_modules/bootstrap/scss/helpers";
 
 // Generate color utilities for all colors
-$all-colors: map-merge-multiple($blues, $indigos, $purples, $reds, $oranges, $yellows, $greens, $teals, $cyans, $grays);
+$all-colors: map-merge-multiple(
+  $blues,
+  $indigos,
+  $purples,
+  $reds,
+  $oranges,
+  $yellows,
+  $greens,
+  $teals,
+  $cyans,
+  $grays
+);
 
 $utilities: map-merge(
   $utilities,
   (
     // Generate text-color utilities for $all-colors
-    "color": map-merge(
-      map-get($utilities, "color"),
-      (
-        values: map-merge(
-          map-get(map-get($utilities, "color"), "values"),
-          (
-            $all-colors
-          ),
-        ),
+    "color":
+      map-merge(
+        map-get($utilities, "color"),
+        (
+          values:
+            map-merge(
+              map-get(map-get($utilities, "color"), "values"),
+              ($all-colors)
+            ),
+        )
       ),
-    ),
     // Generate bg-color utilities for $all-colors
-    "bg": map-merge(
-      map-get($utilities, "background-color"),
-      (
-        values: map-merge(
-          map-get(map-get($utilities, "background-color"), "values"),
-          (
-            $all-colors
-          ),
-        ),
-      ),
-    ),
+    "bg":
+      map-merge(
+        map-get($utilities, "background-color"),
+        (
+          values:
+            map-merge(
+              map-get(map-get($utilities, "background-color"), "values"),
+              ($all-colors)
+            ),
+        )
+      )
   )
 );
 
 // Utilities
 @import "../node_modules/bootstrap/scss/utilities/api";
+
 // scss-docs-end import-stack
 
-// Add additional custom code here
+/* ==============================================
 
-.panel {
-  border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
-  border-radius: var(--bs-border-radius);
-  padding: 15px 20px;
-}
+    Add any additional custom CSS here
 
-.bg-custom {
-  background: rgb(255,255,255);
-  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(239,240,249,1) 50%, rgba(255,255,255,1) 100%);
-}
+   ============================================== */
 
-// Custom styles for framework's documentation
+/* =======================
+    Custom styles for 
+    framework's 
+    documentation
+   ======================= */
+
 @keyframes expand {
-  from {width: 100%;}
-  to {width: 105%;}
+  from {
+    width: 100%;
+  }
+  to {
+    width: 105%;
+  }
 }
 
 .docs-color-cell:hover {
- // margin-right: -10px;
+  // margin-right: -10px;
 
-  width: 105%; 
+  width: 105%;
   animation: expand 0.25s;
+}
 
+/* =======================
+    END documentation
+   ======================= */
 
+// Font-weight declaration for Links
+a {
+  font-weight: bold;
+}
+
+// Adding !important to opacity utility classes,
+// otherwise opacity:1 from the SASS color creation helper above
+// are overwriting these values.
+
+.bg-opacity-10 {
+  --bs-bg-opacity: 0.1 !important;
+}
+
+.bg-opacity-25 {
+  --bs-bg-opacity: 0.25 !important;
+}
+
+.bg-opacity-50 {
+  --bs-bg-opacity: 0.5 !important;
+}
+
+.bg-opacity-75 {
+  --bs-bg-opacity: 0.75 !important;
+}
+
+.bg-opacity-100 {
+  --bs-bg-opacity: 1 !important;
 }

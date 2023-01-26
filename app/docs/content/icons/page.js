@@ -5,85 +5,31 @@ const Icons = () => {
   return (
     <>
       <SectionHeader name="Icons" icon="icons" />
-      <p className="mb-5">
-        Here you'll find a collection of visual elements that help to
-        communicate and reinforce our brand message. These icons are designed to
-        be simple, clear, and easy to understand. They can be used across
-        different mediums, such as web and mobile interfaces, as well as in
-        print materials. Here you can browse our icon library, learn about the
-        guidelines and best practices for using icons in your designs, and
-        download the icons in various formats for use in your own projects.
-      </p>
-
-      <div className="display-3">FontAwesome</div>
-      <p>
-        Font Awesome is the Internet's icon library and toolkit, used by
-        millions of designers, developers, and content creators.
-      </p>
-      <p className="mb-5">
-        <a href="https://fontawesome.com/">https://fontawesome.com/</a>
-      </p>
-
-      <Container>
-        <h5>Relative Sizing</h5>
-        <p>
-          Font Awesome includes a range of t-shirt based sizes that not only
-          increase or decrease an icon's size, but also help vertically align an
-          icon with surrounding text and elements (e.g. button padding). This is
-          great for increasing/decreasing an icon's size while maintaining
-          legibility and alignment alongside UI elements.
-        </p>
-        <p>
-          <i className="fa-light fa-coffee fa-2xs"></i> When my six o’clock
-          alarm buzzes, I require a pot of good java.
-        </p>
-        <p>
-          <i className="fa-light fa-coffee fa-xs"></i> When my six o’clock alarm
-          buzzes, I require a pot of good java.
-        </p>
-        <p>
-          <i className="fa-light fa-coffee fa-sm"></i> When my six o’clock alarm
-          buzzes, I require a pot of good java.
-        </p>
-        <p>
-          <i className="fa-solid fa-coffee"></i> When my six o’clock alarm
-          buzzes, I require a pot of good java.
-        </p>
-        <p>
-          <i className="fa-light fa-coffee fa-lg"></i> When my six o’clock alarm
-          buzzes, I require a pot of good java.
-        </p>
-        <p>
-          <i className="fa-light fa-coffee fa-xl"></i> When my six o’clock alarm
-          buzzes, I require a pot of good java.
-        </p>
-        <p>
-          <i className="fa-light fa-coffee fa-2xl"></i> When my six o’clock
-          alarm buzzes, I require a pot of good java.
-        </p>
-        <h5 className="mt-5">Literal Sizing</h5>
-        <p>
-          Font Awesome also includes a literal size scale to make increasing an
-          icon's size from 1x to 10x easy and efficient. Literal sizing is
-          useful for sizing icons at a larger scale or in cases where text
-          alignment isn't a primary concern.
-        </p>
-        <i className="fa-light fa-camera fa-1x"></i> &nbsp;
-        <i className="fa-light fa-camera fa-2x"></i>&nbsp;
-        <i className="fa-light fa-camera fa-3x"></i>&nbsp;
-        <i className="fa-light fa-camera fa-4x"></i>&nbsp;
-        <i className="fa-light fa-camera fa-5x"></i>&nbsp;
-        <i className="fa-light fa-camera fa-6x"></i>&nbsp;
-        <i className="fa-light fa-camera fa-7x"></i>&nbsp;
-        <i className="fa-light fa-camera fa-8x"></i>&nbsp;
-        <i className="fa-light fa-camera fa-9x"></i>&nbsp;
-        <i className="fa-light fa-camera fa-10x"></i>
-      </Container>
-      <Container>
-        <div className="text-center">
-          <i className="fa-light fa-coffee fa-5x"></i>
-          <h4>Coffee</h4>
+      <Container
+        title="FontAwesome"
+        description="Font Awesome is the Internet's icon library and toolkit, used by
+        millions of designers, developers, and content creators."
+      >
+        <div className="mb-5">
           <p>
+            Here you'll find a collection of visual elements that help to
+            communicate and reinforce our brand message. These icons are
+            designed to be simple, clear, and easy to understand. They can be
+            used across different mediums, such as web and mobile interfaces, as
+            well as in print materials. Here you can browse our icon library,
+            learn about the guidelines and best practices for using icons in
+            your designs, and download the icons in various formats for use in
+            your own projects.
+          </p>
+          <p>
+            <a href="https://fontawesome.com/">https://fontawesome.com/</a>
+          </p>
+        </div>
+
+        <div className="border bg-light rounded text-center text-black p-5 mb-5">
+          <i className="fa-light fa-coffee fa-5x"></i>
+          <h4 className="mt-2">Coffee</h4>
+          <p className="m-0">
             "It is inhumane, in{" "}
             <a href="https://www.washingtonpost.com/archive/lifestyle/magazine/1997/11/09/grounds-for-suspicion/075c7cfe-d5cf-4443-ae42-a95e6e46fed7/">
               my opinion
@@ -93,95 +39,158 @@ const Icons = () => {
             recreational activity."
           </p>
         </div>
-      </Container>
 
-      <Container>
-        <h5>Fixed Width Icons</h5>
-        <p>
-          Make all your icons the same width so they can easily vertically
-          align, like in a list or navigation menu. Add a className of{" "}
-          <code>fa-fw</code> on the HTML element referencing your icon to set
-          one or more icons to the same fixed width.
-        </p>
-        <p>
-          This is great to use when varying icon widths (e.g. a tall but skinny
-          icon atop a wide but short icon) would throw off vertical alignment.
-          For clarity in the following example, we’ve added a background color
-          on the icon so you can see the fixed width and also bumped up the
-          font-size of the parent element.
-        </p>
-        <div className="fs-1">
-          <div>
-            <i className="fa-solid fa-skating fa-fw bg-primary"></i> Skating
+        <h3>Relative Sizing</h3>
+        <div className="mb-5">
+          <p>
+            Font Awesome includes a range of sizes that not only increase or
+            decrease an icon's size, but also help vertically align an icon with
+            surrounding text and elements (e.g. button padding). This is great
+            for increasing/decreasing an icon's size while maintaining
+            legibility and alignment alongside UI elements.
+          </p>
+          <div className="border-top py-3">
+            <i className="fa-light fa-coffee fa-2xs me-1"></i> When my six
+            o’clock alarm buzzes, I require a pot of good java.
           </div>
-          <div>
-            <i className="fa-solid fa-skiing fa-fw bg-primary"></i> Skiing
+          <div className="border-top py-3">
+            <i className="fa-light fa-coffee fa-xs me-1"></i> When my six
+            o’clock alarm buzzes, I require a pot of good java.
           </div>
-          <div>
-            <i className="fa-solid fa-skiing-nordic fa-fw bg-primary"></i>{" "}
-            Nordic Skiing
+          <div className="border-top py-3">
+            <i className="fa-light fa-coffee fa-sm me-1"></i> When my six
+            o’clock alarm buzzes, I require a pot of good java.
           </div>
-          <div>
-            <i className="fa-solid fa-snowboarding fa-fw bg-primary"></i>{" "}
-            Snowboarding
+          <div className="border-top py-3">
+            <i className="fa-light fa-coffee me-1"></i> When my six o’clock
+            alarm buzzes, I require a pot of good java.
           </div>
-          <div>
-            <i className="fa-solid fa-snowplow fa-fw bg-primary"></i> Snowplow
+          <div className="border-top py-3">
+            <i className="fa-light fa-coffee fa-lg me-1"></i> When my six
+            o’clock alarm buzzes, I require a pot of good java.
+          </div>
+          <div className="border-top py-3">
+            <i className="fa-light fa-coffee fa-xl me-1"></i> When my six
+            o’clock alarm buzzes, I require a pot of good java.
+          </div>
+          <div className="border-top border-bottom py-3">
+            <i className="fa-light fa-coffee fa-2xl me-1"></i> When my six
+            o’clock alarm buzzes, I require a pot of good java.
           </div>
         </div>
-      </Container>
-      <Container>
-        <h5>Icons in a list</h5>
-        <p>
-          Use <code>fa-ul</code> and <code>fa-li</code> to replace default
-          bullets in unordered lists.
-        </p>
-        <ol className="fa-ul">
-          <li>
-            <span className="fa-li">
-              <i className="fa-solid fa-check-square"></i>
-            </span>
-            List icons can
-          </li>
-          <li>
-            <span className="fa-li">
-              <i className="fa-solid fa-check-square"></i>
-            </span>
-            be used to
-          </li>
-          <li>
-            <span className="fa-li">
-              <i className="fa-solid fa-spinner fa-pulse"></i>
-            </span>
-            replace bullets
-          </li>
-          <li>
-            <span className="fa-li">
-              <i className="fa-regular fa-square"></i>
-            </span>
-            in lists
-          </li>
-        </ol>
-      </Container>
-      <Container>
-        <h5>Rotate icons</h5>
-        <p>
-          To arbitrarily rotate and flip icons, use the <code>fa-rotate-*</code>{" "}
-          and
-          <code>fa-flip-*</code> classes when you reference an icon.
-        </p>
-        <div className="fa-3x">
-          <i className="fa-solid fa-snowboarding"></i>&nbsp;
-          <i className="fa-solid fa-snowboarding fa-rotate-90"></i>&nbsp;
-          <i className="fa-solid fa-snowboarding fa-rotate-180"></i>&nbsp;
-          <i className="fa-solid fa-snowboarding fa-rotate-270"></i>&nbsp;
-          <i className="fa-solid fa-snowboarding fa-flip-horizontal"></i>&nbsp;
-          <i className="fa-solid fa-snowboarding fa-flip-vertical"></i>&nbsp;
-          <i className="fa-solid fa-snowboarding fa-flip-both"></i>
+
+        <h3>Literal Sizing</h3>
+        <div className="mb-5">
+          <p>
+            Font Awesome also includes a literal size scale to make increasing
+            an icon's size from 1x to 10x easy and efficient. Literal sizing is
+            useful for sizing icons at a larger scale or in cases where text
+            alignment isn't a primary concern.
+          </p>
+          <i className="fa-light fa-camera fa-1x me-2"></i>
+          <i className="fa-light fa-camera fa-2x me-2"></i>
+          <i className="fa-light fa-camera fa-3x me-2"></i>
+          <i className="fa-light fa-camera fa-4x me-2"></i>
+          <i className="fa-light fa-camera fa-5x me-2"></i>
+          <i className="fa-light fa-camera fa-6x me-2"></i>
+          <i className="fa-light fa-camera fa-7x me-2"></i>
+          <i className="fa-light fa-camera fa-8x me-2"></i>
+          <i className="fa-light fa-camera fa-9x me-2"></i>
+          <i className="fa-light fa-camera fa-10x me-2"></i>
         </div>
-      </Container>
-      <Container>
-        <h5>Animating icons</h5>
+
+        <h3>Fixed Width Icons</h3>
+        <div className="mb-5">
+          <p>
+            Make all your icons the same width so they can easily vertically
+            align, like in a list or navigation menu. Add a className of{" "}
+            <code>fa-fw</code> on the HTML element referencing your icon to set
+            one or more icons to the same fixed width.
+          </p>
+          <p>
+            This is great to use when varying icon widths (e.g. a tall but
+            skinny icon atop a wide but short icon) would throw off vertical
+            alignment. For clarity in the following example, we’ve added a
+            background color on the icon so you can see the fixed width and also
+            bumped up the font-size of the parent element.
+          </p>
+          <div className="mt-4 fs-1">
+            <div>
+              <i className="fa-solid fa-skating fa-fw bg-light"></i> Skating
+            </div>
+            <div>
+              <i className="fa-solid fa-skiing fa-fw bg-light"></i> Skiing
+            </div>
+            <div>
+              <i className="fa-solid fa-skiing-nordic fa-fw bg-light"></i>{" "}
+              Nordic Skiing
+            </div>
+            <div>
+              <i className="fa-solid fa-snowboarding fa-fw bg-light"></i>{" "}
+              Snowboarding
+            </div>
+            <div>
+              <i className="fa-solid fa-snowplow fa-fw bg-light"></i> Snowplow
+            </div>
+          </div>
+        </div>
+
+        <h3>Icons in a list</h3>
+        <div className="mb-5">
+          <p>
+            Use <code>fa-ul</code> and <code>fa-li</code> to replace default
+            bullets in unordered lists.
+          </p>
+          <div className="py-3 border-top border-bottom">
+            <ol className="my-0 fa-ul">
+              <li>
+                <span className="fa-li">
+                  <i className="fa-solid fa-check-square"></i>
+                </span>
+                List icons can
+              </li>
+              <li>
+                <span className="fa-li">
+                  <i className="fa-solid fa-check-square"></i>
+                </span>
+                be used to
+              </li>
+              <li>
+                <span className="fa-li">
+                  <i className="fa-solid fa-spinner fa-pulse"></i>
+                </span>
+                replace bullets
+              </li>
+              <li>
+                <span className="fa-li">
+                  <i className="fa-regular fa-square"></i>
+                </span>
+                in lists
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <h3>Rotate icons</h3>
+        <div className="mb-5">
+          <p>
+            To arbitrarily rotate and flip icons, use the{" "}
+            <code>fa-rotate-*</code> and
+            <code>fa-flip-*</code> classes when you reference an icon.
+          </p>
+          <div className="fa-3x">
+            <i className="fa-solid fa-snowboarding me-1"></i>
+            <i className="fa-solid fa-snowboarding fa-rotate-90 me-1"></i>
+            <i className="fa-solid fa-snowboarding fa-rotate-180 me-1"></i>
+            <i className="fa-solid fa-snowboarding fa-rotate-270 me-1"></i>
+            <i className="fa-solid fa-snowboarding fa-flip-horizontal me-1"></i>
+
+            <i className="fa-solid fa-snowboarding fa-flip-vertical me-1"></i>
+            <i className="fa-solid fa-snowboarding fa-flip-both me-1"></i>
+          </div>
+        </div>
+
+        <h3>Animating icons</h3>
         <p>
           Check this{" "}
           <a
@@ -192,7 +201,7 @@ const Icons = () => {
           </a>{" "}
           for more details.
         </p>
-        <div className="fa-3x">
+        <div className="fa-3x border-top border-bottom py-4">
           <style>
             {`
               .test-anim1 {
@@ -257,57 +266,57 @@ const Icons = () => {
               }
             `}
           </style>
-          <i className="fa-solid fa-circle-plus fa-beat"></i>&nbsp;
-          <i className="fa-solid fa-heart fa-beat"></i>&nbsp;
-          <i className="test-anim1 fa-solid fa-heart fa-beat"></i>&nbsp;
-          <i className="test-anim2 fa-solid fa-heart fa-beat"></i>&nbsp;
+          <i className="fa-solid fa-circle-plus fa-beat me-3"></i>
+          <i className="fa-solid fa-heart fa-beat me-3"></i>
+          <i className="test-anim1 fa-solid fa-heart fa-beat me-3"></i>
+          <i className="test-anim2 fa-solid fa-heart fa-beat me-3"></i>
           <i className="test-anim3 fa-solid fa-heart fa-beat"></i>
         </div>
-        <div className="fa-3x">
-          <i className="fa-solid fa-triangle-exclamation fa-fade"></i>&nbsp;
-          <i className="fa-solid fa-skull-crossbones fa-fade"></i>&nbsp;
-          <i className="fa-solid fa-desktop-arrow-down fa-fade"></i>&nbsp;
+        <div className="fa-3x border-top border-bottom py-4">
+          <i className="fa-solid fa-triangle-exclamation fa-fade me-3"></i>
+          <i className="fa-solid fa-skull-crossbones fa-fade me-3"></i>
+          <i className="fa-solid fa-desktop-arrow-down fa-fade me-3"></i>
           <i className="test-anim4 fa-solid fa-i-cursor fa-fade"></i>
         </div>
-        <div className="fa-3x">
-          <i className="fa-solid fa-triangle-person-digging fa-beat-fade"></i>
-          &nbsp;
-          <i className="fa-solid fa-square-exclamation fa-beat-fade"></i>&nbsp;
-          <i className="test-anim5 fa-solid fa-poo-bolt fa-beat-fade"></i>&nbsp;
+        <div className="fa-3x border-top border-bottom py-4">
+          <i className="fa-solid fa-triangle-person-digging fa-beat-fade me-3"></i>
+
+          <i className="fa-solid fa-square-exclamation fa-beat-fade me-3"></i>
+          <i className="test-anim5 fa-solid fa-poo-bolt fa-beat-fade me-3"></i>
           <i className="test-anim6 fa-solid fa-circle-info fa-beat-fade"></i>
         </div>
-        <div className="fa-3x">
-          <i className="fa-solid fa-basketball fa-bounce"></i>&nbsp;
-          <i className="fa-solid fa-volleyball fa-bounce"></i>&nbsp;
-          <i className="test-anim7 fa-solid fa-frog fa-bounce"></i>&nbsp;
+        <div className="fa-3x border-top border-bottom py-4">
+          <i className="fa-solid fa-basketball fa-bounce me-3"></i>
+          <i className="fa-solid fa-volleyball fa-bounce me-3"></i>
+          <i className="test-anim7 fa-solid fa-frog fa-bounce me-3"></i>
           <i className="test-anim8 fa-solid fa-envelope fa-bounce"></i>
         </div>
-        <div className="fa-3x">
-          <i className="fa-solid fa-compact-disc fa-flip"></i>&nbsp;
-          <i className="fa-solid fa-camera-rotate fa-flip"></i>&nbsp;
-          <i className="fa-solid fa-cassette-tape fa-flip"></i>&nbsp;
-          <i className="test-anim9 fa-solid fa-scroll fa-flip"></i>&nbsp;
+        <div className="fa-3x border-top border-bottom py-4">
+          <i className="fa-solid fa-compact-disc fa-flip me-3"></i>
+          <i className="fa-solid fa-camera-rotate fa-flip me-3"></i>
+          <i className="fa-solid fa-cassette-tape fa-flip me-3"></i>
+          <i className="test-anim9 fa-solid fa-scroll fa-flip me-3"></i>
           <i className="fa-solid fa-money-check-dollar fa-flip"></i>
         </div>
-        <div className="fa-3x">
-          <i className="fa-solid fa-bell fa-shake"></i>&nbsp;
-          <i className="fa-solid fa-lock fa-shake"></i>&nbsp;
-          <i className="fa-solid fa-stopwatch fa-shake"></i>&nbsp;
+        <div className="fa-3x border-top border-bottom py-4">
+          <i className="fa-solid fa-bell fa-shake me-3"></i>
+          <i className="fa-solid fa-lock fa-shake me-3"></i>
+          <i className="fa-solid fa-stopwatch fa-shake me-3"></i>
           <i className="fa-solid fa-bomb fa-shake"></i>
         </div>
-        <div className="fa-3x">
-          <i className="fa-solid fa-sync fa-spin"></i>&nbsp;
-          <i className="fa-solid fa-circle-notch fa-spin"></i>&nbsp;
-          <i className="fa-solid fa-cog fa-spin"></i>&nbsp;
-          <i className="fa-solid fa-cog fa-spin fa-spin-reverse"></i>&nbsp;
-          <i className="fa-solid fa-spinner fa-spin-pulse"></i>&nbsp;
+        <div className="fa-3x border-top border-bottom py-4">
+          <i className="fa-solid fa-sync fa-spin me-3"></i>
+          <i className="fa-solid fa-circle-notch fa-spin me-3"></i>
+          <i className="fa-solid fa-cog fa-spin me-3"></i>
+          <i className="fa-solid fa-cog fa-spin fa-spin-reverse me-3"></i>
+          <i className="fa-solid fa-spinner fa-spin-pulse me-3"></i>
           <i className="fa-solid fa-spinner fa-spin-pulse fa-spin-reverse"></i>
         </div>
-        <div className="fa-3x">
-          <i className="fa-solid fa-cog fa-spin"></i>&nbsp;
-          <i className="test-anim11 fa-solid fa-cog fa-spin"></i>&nbsp;
-          <i className="test-anim12 fa-solid fa-cog fa-spin"></i>&nbsp;
-          <i className="test-anim13 fa-solid fa-compact-disc fa-spin"></i>&nbsp;
+        <div className="fa-3x border-top border-bottom py-4">
+          <i className="fa-solid fa-cog fa-spin me-3"></i>
+          <i className="test-anim11 fa-solid fa-cog fa-spin me-3"></i>
+          <i className="test-anim12 fa-solid fa-cog fa-spin me-3"></i>
+          <i className="test-anim13 fa-solid fa-compact-disc fa-spin me-3"></i>
           <i className="test-anim14 fa-solid fa-tire fa-spin"></i>
         </div>
       </Container>

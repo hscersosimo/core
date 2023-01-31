@@ -10,9 +10,8 @@ const CardItem = (props) => {
         <div className="rounded p-3 w-100 bg-white shadow-sm">
           <h6 className="mb-1">
             <Link className="text-decoration-none" href={props.url}>
-              <i className="fa-solid fa-bracket-curly text-light"></i>{" "}
-              {props.title}{" "}
-              <i className="fa-solid fa-bracket-curly-right text-light"></i>
+              <i className="fa-solid fa-slash-forward text-secondary me-1"></i>
+              {props.title}
             </Link>
           </h6>
           <div className="fs-7 text-dark">{props.text}</div>
@@ -60,11 +59,6 @@ const Docs = () => {
       title: "Links",
       text: "Navigation and action elements.",
       url: "/docs/content/links",
-    },
-    {
-      title: "Images",
-      text: "Guidelines for using images.",
-      url: "/docs/content/images",
     },
     {
       title: "Tables",
@@ -230,7 +224,7 @@ const Docs = () => {
             Welcome to the <span className="text-secondary">Ipsos Design</span>{" "}
             website
           </h2>
-          <p className="fs-7 text-dark mt-1 mb-0">
+          <p className="text-dark mt-1 mb-0">
             Created and maintained by the <strong>Design Team</strong> - IT
             Panel Products &amp; Platforms - Global Panels.
           </p>
@@ -239,15 +233,12 @@ const Docs = () => {
           <p>
             Here, you'll find all the tools and resources you need to create
             cohesive and consistent designs that align with our brand
-            guidelines. Our design system includes guidelines for color,
-            typography, icons, and more. <br />
-            You can explore our curated selection of colors, typefaces, and
-            icons, as well as learn about the best practices for using them in
-            your designs. <br />
-            We hope this website will serve as a valuable resource for all
-            designers and developers working on projects for our brand. Let's
-            create beautiful and effective designs together! Got any questions?
-            Contact us at{" "}
+            guidelines. You can explore our curated selection of colors,
+            typefaces, and icons, as well as learn about the best practices for
+            using them in your designs.
+          </p>
+          <p>
+            Got any questions? Contact us at{" "}
             <a href="mailto:iis-design@ipsos.com">iis-design@ipsos.com</a>
           </p>
         </div>

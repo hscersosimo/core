@@ -1,5 +1,6 @@
-import Container from "../_ui/Container";
-import SectionHeader from "../_ui/SectionHeader";
+import Container from "../../../components/Container";
+import SectionHeader from "../../../components/SectionHeader";
+import SubContainer from "../../../components/SubContainer";
 
 const Icons = () => {
   return (
@@ -26,19 +27,21 @@ const Icons = () => {
           </p>
         </div>
 
-        <div className="border bg-light rounded text-center text-black p-5 mb-5">
-          <i className="fa-light fa-coffee fa-5x"></i>
-          <h4 className="mt-2">Coffee</h4>
-          <p className="m-0">
-            "It is inhumane, in{" "}
-            <a href="https://www.washingtonpost.com/archive/lifestyle/magazine/1997/11/09/grounds-for-suspicion/075c7cfe-d5cf-4443-ae42-a95e6e46fed7/">
-              my opinion
-            </a>
-            , to force people who have a genuine medical need for coffee to wait
-            in line behind people who apparently view it as some kind of
-            recreational activity."
-          </p>
-        </div>
+        <SubContainer>
+          <div className="text-center">
+            <i className="fa-light fa-coffee fa-5x"></i>
+            <h4 className="mt-2">Coffee</h4>
+            <p className="m-0">
+              "It is inhumane, in{" "}
+              <a href="https://www.washingtonpost.com/archive/lifestyle/magazine/1997/11/09/grounds-for-suspicion/075c7cfe-d5cf-4443-ae42-a95e6e46fed7/">
+                my opinion
+              </a>
+              , to force people who have a genuine medical need for coffee to
+              wait in line behind people who apparently view it as some kind of
+              recreational activity."
+            </p>
+          </div>
+        </SubContainer>
 
         <h3>Relative Sizing</h3>
         <div className="mb-5">
@@ -80,13 +83,13 @@ const Icons = () => {
         </div>
 
         <h3>Literal Sizing</h3>
-        <div className="mb-5">
-          <p>
-            Font Awesome also includes a literal size scale to make increasing
-            an icon's size from 1x to 10x easy and efficient. Literal sizing is
-            useful for sizing icons at a larger scale or in cases where text
-            alignment isn't a primary concern.
-          </p>
+        <p>
+          Font Awesome also includes a literal size scale to make increasing an
+          icon's size from 1x to 10x easy and efficient. Literal sizing is
+          useful for sizing icons at a larger scale or in cases where text
+          alignment isn't a primary concern.
+        </p>
+        <SubContainer>
           <i className="fa-light fa-camera fa-1x me-2"></i>
           <i className="fa-light fa-camera fa-2x me-2"></i>
           <i className="fa-light fa-camera fa-3x me-2"></i>
@@ -97,7 +100,7 @@ const Icons = () => {
           <i className="fa-light fa-camera fa-8x me-2"></i>
           <i className="fa-light fa-camera fa-9x me-2"></i>
           <i className="fa-light fa-camera fa-10x me-2"></i>
-        </div>
+        </SubContainer>
 
         <h3>Fixed Width Icons</h3>
         <div className="mb-5">
@@ -114,25 +117,27 @@ const Icons = () => {
             background color on the icon so you can see the fixed width and also
             bumped up the font-size of the parent element.
           </p>
-          <div className="mt-4 fs-1">
-            <div>
-              <i className="fa-solid fa-skating fa-fw bg-light"></i> Skating
+          <SubContainer>
+            <div className="fs-1">
+              <div>
+                <i className="fa-solid fa-skating fa-fw bg-white"></i> Skating
+              </div>
+              <div>
+                <i className="fa-solid fa-skiing fa-fw bg-white"></i> Skiing
+              </div>
+              <div>
+                <i className="fa-solid fa-skiing-nordic fa-fw bg-white"></i>{" "}
+                Nordic Skiing
+              </div>
+              <div>
+                <i className="fa-solid fa-snowboarding fa-fw bg-white"></i>{" "}
+                Snowboarding
+              </div>
+              <div>
+                <i className="fa-solid fa-snowplow fa-fw bg-white"></i> Snowplow
+              </div>
             </div>
-            <div>
-              <i className="fa-solid fa-skiing fa-fw bg-light"></i> Skiing
-            </div>
-            <div>
-              <i className="fa-solid fa-skiing-nordic fa-fw bg-light"></i>{" "}
-              Nordic Skiing
-            </div>
-            <div>
-              <i className="fa-solid fa-snowboarding fa-fw bg-light"></i>{" "}
-              Snowboarding
-            </div>
-            <div>
-              <i className="fa-solid fa-snowplow fa-fw bg-light"></i> Snowplow
-            </div>
-          </div>
+          </SubContainer>
         </div>
 
         <h3>Icons in a list</h3>

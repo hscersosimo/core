@@ -1,6 +1,5 @@
-import Container from "../_ui/Container";
-import SectionHeader from "../_ui/SectionHeader";
-
+import Container from "../../../components/Container";
+import SectionHeader from "../../../components/SectionHeader";
 const Fonts = () => {
   return (
     <>
@@ -11,7 +10,7 @@ const Fonts = () => {
         description="Inter is a typeface carefully crafted & designed for computer screens."
       >
         <div className="display-1 text-center text-break my-5">
-          ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 ?!()[]
+          ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890?!()[]
         </div>
         <div className="mb-5">
           <p>
@@ -126,6 +125,30 @@ const Fonts = () => {
           Slovenian Soga Somali Spanish Swahili Swedish Swiss German Tachelhit
           Taita Tasawaq Teso Tongan Turkish Upper Sorbian Uzbek Vai Vietnamese
           Volapük Vunjo Walser Welsh Western Frisian Yangben Yoruba Zarma Zulu
+        </div>
+      </Container>
+      <Container title="Monospace font stack">
+        <div className="font-monospace display-3 text-center text-break my-5">
+          ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890?!()[]
+        </div>
+        <div>
+          <p>
+            Monospace fonts are a type of font that is composed of characters
+            that have the same character width, making them perfect for
+            situations where characters need to line up. Monospace fonts are
+            often used for code, as well as for writing out phone numbers and
+            addresses.
+          </p>
+          <p className="font-monospace bg-light p-3">
+            This is in monospace. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Beatae quisquam assumenda, error similique ipsam
+            veniam molestias suscipit dicta enim facere officia nobis amet
+            ducimus voluptas porro sed at odio eos.
+          </p>
+        </div>
+        <div className="fs-7">
+          Change a selection to the monospace font stack with{" "}
+          <code>.font-monospace</code>.
         </div>
       </Container>
     </>

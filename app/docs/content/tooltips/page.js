@@ -1,8 +1,8 @@
 "use client";
-import SectionHeader from "../_ui/SectionHeader";
-import Container from "../_ui/Container";
+import SectionHeader from "../../../components/SectionHeader";
+import Container from "../../../components/Container";
 
-import TooltipComponent from "../../../components/tooltip";
+import TooltipComponent from "../../../components/Tooltip";
 import { Button } from "react-bootstrap";
 
 const Tooltips = () => {

@@ -1,5 +1,5 @@
-import Container from "../_ui/Container";
-import SectionHeader from "../_ui/SectionHeader";
+import Container from "../../../components/Container";
+import SectionHeader from "../../../components/SectionHeader";
 const Select = () => {
   return (
     <>

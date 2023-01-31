@@ -13,9 +13,9 @@ const Nav = () => {
           </Link>
         </li>
 
-        <NavStyles />
+        {/* <NavStyles />
         <NavSections />
-        <NavComponents />
+        <NavComponents /> */}
       </ul>
     </>
   );

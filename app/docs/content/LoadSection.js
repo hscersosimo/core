@@ -2,7 +2,6 @@ import React from "react";
 import Fonts from "./fonts/page";
 import Icons from "./icons/page";
 import Typography from "./typography/page";
-import Images from "./images/page";
 import Tables from "./tables/page";
 import Buttons from "./buttons/page";
 import ButtonGroup from "./button_group/page";
@@ -54,7 +53,6 @@ const LoadSection = (props) => {
       { name: "Typography", component: <Typography /> },
       { name: "Links", component: <LinksPage /> },
       { name: "Buttons", component: <Buttons /> },
-      { name: "Images", component: <Images /> },
       { name: "Tables", component: <Tables /> },
       { name: "Forms", component: <Forms /> },
       { name: "Checks & Radios", component: <ChecksRadios /> },

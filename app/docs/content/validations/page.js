@@ -1,8 +1,7 @@
 "use client";
 import { useState } from "react";
-import Container from "../_ui/Container";
-import SectionHeader from "../_ui/SectionHeader";
-
+import Container from "../../../components/Container";
+import SectionHeader from "../../../components/SectionHeader";
 function handleClick() {
   // Fetch all the forms we want to apply custom Bootstrap validation styles to
   var forms = document.querySelectorAll(".needs-validation");

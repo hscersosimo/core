@@ -1,6 +1,6 @@
 "use client";
-import SectionHeader from "../_ui/SectionHeader";
-import Container from "../_ui/Container";
+import SectionHeader from "../../../components/SectionHeader";
+import Container from "../../../components/Container";
 
 import React from "react";
 import { useState } from "react";

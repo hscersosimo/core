@@ -6,36 +6,6 @@
 
 // Color system
 
-// scss-docs-start gray-color-variables
-$white: #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
-$black: #000 !default;
-// scss-docs-end gray-color-variables
-
-// fusv-disable
-// scss-docs-start gray-colors-map
-$grays: (
-  "100": $gray-100,
-  "200": $gray-200,
-  "300": $gray-300,
-  "400": $gray-400,
-  "500": $gray-500,
-  "600": $gray-600,
-  "700": $gray-700,
-  "800": $gray-800,
-  "900": $gray-900,
-) !default;
-// scss-docs-end gray-colors-map
-// fusv-enable
-
 // scss-docs-start color-variables
 $indigo: #5c6ac1 !default;
 $teal: #24847b !default;
@@ -45,17 +15,48 @@ $green: #53831f !default;
 $orange: #a66911 !default;
 $red: #cd4947 !default;
 
+$gray: #6e707c !default;
+$white: #fff !default;
+$black: #000 !default;
+
+$body-text: #464867 !default;
+$body-text-dark: shade-color($body-text, 25%) !default;
+$body-custom-bg: tint-color($body-text, 97%) !default;
+
+// Not being used:
 $yellow: #ffc107 !default;
 $blue: #0d6efd !default;
 $pink: #d63384 !default;
 
-$body-text: #4c4f67 !default;
-$body-custom-bg: #fcfcf9 !default;
-
 // scss-docs-end color-variables
+
+// scss-docs-start gray-color-variables
+// $gray-100: #f8f9fa !default;
+// $gray-200: #e9ecef !default;
+// $gray-300: #dee2e6 !default;
+// $gray-400: #ced4da !default;
+// $gray-500: #adb5bd !default;
+// $gray-600: #6c757d !default;
+// $gray-700: #495057 !default;
+// $gray-800: #343a40 !default;
+// $gray-900: #212529 !default;
+$gray-100: tint-color($gray, 96%) !default;
+$gray-200: tint-color($gray, 85%) !default;
+$gray-300: tint-color($gray, 65%) !default;
+$gray-400: tint-color($gray, 45%) !default;
+$gray-500: tint-color($gray, 25%) !default;
+$gray-600: $gray !default;
+$gray-700: shade-color($gray, 40%) !default;
+$gray-800: shade-color($gray, 60%) !default;
+$gray-900: shade-color($gray, 80%) !default;
+
+// scss-docs-end gray-color-variables
 
 // scss-docs-start colors-map
 $colors: (
+  "gray": $gray-600,
+  "gray-dark": $gray-800,
+
   "blue": $blue,
   "indigo": $indigo,
   "teal": $teal,
@@ -65,9 +66,6 @@ $colors: (
   "orange": $orange,
   "red": $red,
   "yellow": $yellow,
-
-  "gray": $gray-600,
-  "gray-dark": $gray-800,
 
   "black": $black,
   "white": $white,
@@ -184,6 +182,22 @@ $cyan-600: shade-color($cyan, 20%) !default;
 $cyan-700: shade-color($cyan, 40%) !default;
 $cyan-800: shade-color($cyan, 60%) !default;
 $cyan-900: shade-color($cyan, 80%) !default;
+// fusv-disable
+// scss-docs-start gray-colors-map
+$grays: (
+  "gray-100": $gray-100,
+  "gray-200": $gray-200,
+  "gray-300": $gray-300,
+  "gray-400": $gray-400,
+  "gray-500": $gray-500,
+  "gray-600": $gray-600,
+  "gray-700": $gray-700,
+  "gray-800": $gray-800,
+  "gray-900": $gray-900,
+) !default;
+
+// scss-docs-end gray-colors-map
+// fusv-enable
 
 $blues: (
   "blue-100": $blue-100,
@@ -314,7 +328,8 @@ $success: $green !default;
 $info: $cyan !default;
 $warning: $orange !default;
 $danger: $red !default;
-$light: $gray-400 !default;
+
+$light: $gray-100 !default;
 $dark: $gray-600 !default;
 
 // scss-docs-end theme-color-variables

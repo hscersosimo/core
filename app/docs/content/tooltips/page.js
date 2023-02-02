@@ -2,7 +2,7 @@
 import SectionHeader from "../../../components/SectionHeader";
 import Container from "../../../components/Container";
 
-import TooltipComponent from "../../../components/Tooltip";
+import TooltipComponent from "../../../components/TooltipComponent";
 import { Button } from "react-bootstrap";
 
 const Tooltips = () => {

@@ -186,7 +186,7 @@ const Docs = () => {
     {
       title: "Tooltips",
       text: "Hover-triggered information.",
-      url: "/docs/content/tootips",
+      url: "/docs/content/tooltips",
     },
     {
       title: "Progress bars",

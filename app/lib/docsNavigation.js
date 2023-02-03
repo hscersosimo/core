@@ -2,23 +2,15 @@ function docsNavigation() {
   const docsNavArray = [
     {
       main: "brand styles",
-      group: "fonts",
+      name: "All styles",
+      file: "all_styles",
+      desc: "View all brand styles.",
+    },
+    {
+      main: "brand styles",
+      name: "Fonts",
       file: "fonts",
-    },
-    {
-      main: "brand styles",
-      group: "icons",
-      file: "icons",
-    },
-    {
-      main: "brand styles",
-      group: "color",
-      file: "color",
-    },
-    {
-      main: "components",
-      group: "typography",
-      file: "typography",
+      desc: "Standardized typeface options.",
     },
   ];
   return docsNavArray;

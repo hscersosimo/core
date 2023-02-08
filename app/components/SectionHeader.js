@@ -1,3 +1,5 @@
+"use client";
+
 const SectionHeader = (props) => {
   const name = props.name;
 

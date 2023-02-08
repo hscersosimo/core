@@ -25,7 +25,10 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
       </head>
 
-      <body>{children}</body>
+      <body>
+        <div className="bg-custom"></div>
+        {children}
+      </body>
     </html>
   );
 }

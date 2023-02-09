@@ -70,7 +70,7 @@ const NavGroup = (props) => {
             aria-expanded="false"
             aria-controls="collapseExample"
           >
-            <i class="fa-solid fa-caret-right me-1"></i> {props.group}
+            <i className="fa-solid fa-caret-right me-1"></i> {props.group}
           </a>
         </div>
         <div className="collapse" id={"collapseNav" + group}>

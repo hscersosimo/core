@@ -2,12 +2,17 @@
 import { useState } from "react";
 
 const SubContainer = (props) => {
-  const [padding, setPadding] = useState(props.padding || "p-5");
-  const [margin, setMargin] = useState(props.margin || "mb-5");
+  const initialPadding = props?.padding || "p-5";
+  const [paddingState, setPadding] = useState(initialPadding);
+
+  const initialMargin = props?.margin || "mb-5";
+  const [marginState, setMargin] = useState(initialMargin);
 
   return (
     <>
-      <div className={"bg-gray-100 rounded " + padding + " " + margin}>
+      <div
+        className={"bg-gray-100 rounded " + paddingState + " " + marginState}
+      >
         {props.children}
       </div>
     </>

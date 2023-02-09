@@ -3,7 +3,7 @@ import SubContainer from "../../../components/SubContainer";
 import colorPalette from "../../../lib/colorPalette";
 import Link from "next/link";
 
-const BackgroundClasses = () => {
+const BgUtilitiesPage = () => {
   // brings an array with the color palette
   const colorPaletteArray = colorPalette("full");
   return (
@@ -26,8 +26,9 @@ const BackgroundClasses = () => {
           the background (for example, white text on top of a black background).
         </p>
         <div className="mb-5">
-          {colorPaletteArray.map((color) => (
+          {colorPaletteArray.map((color, i) => (
             <div
+              key={i}
               className={"border rounded text-bg-" + color.class + " p-3 mb-2"}
             >
               <div>
@@ -131,8 +132,9 @@ const BackgroundClasses = () => {
         </p>
 
         <SubContainer padding="p-3">
-          {colorPaletteArray.map((color) => (
+          {colorPaletteArray.map((color, i) => (
             <div
+              key={i}
               className={
                 "border rounded p-3 mb-2 bg-" +
                 color.class +
@@ -148,4 +150,4 @@ const BackgroundClasses = () => {
   );
 };
 
-export default BackgroundClasses;
+export default BgUtilitiesPage;

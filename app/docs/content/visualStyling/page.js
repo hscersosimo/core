@@ -2,7 +2,7 @@ import Container from "../../../components/Container";
 import SubContainer from "../../../components/SubContainer";
 import colorPalette from "../../../lib/colorPalette";
 
-const VisualStylingClasses = () => {
+const VisualStylingPage = () => {
   // brings an array with the color palette
   const colorPaletteArray = colorPalette();
   const arrayLoop = [...Array(6)];
@@ -119,8 +119,9 @@ const VisualStylingClasses = () => {
         </SubContainer>
         <h4>Color</h4>
         <div className="text-center mb-5" style={{ boxSizing: "border-box" }}>
-          {colorPaletteArray.map((color) => (
+          {colorPaletteArray.map((color, i) => (
             <span
+              key={i}
               className={
                 "border rounded me-2 border-" + color.class + " border-5"
               }
@@ -133,6 +134,7 @@ const VisualStylingClasses = () => {
           <div className="text-center" style={{ boxSizing: "border-box" }}>
             {arrayLoop.map((_, i) => (
               <span
+                key={i}
                 className={"border bg-white me-2 border-" + i}
                 style={{
                   display: "inline-block",
@@ -359,7 +361,7 @@ const VisualStylingClasses = () => {
         <h4>Border examples</h4>
         <SubContainer padding="p-3" margin="mb-0">
           <div className="rounded bg-white p-5 mb-3">
-            <label for="exampleFormControlInput1" className="form-label">
+            <label htmlFor="exampleFormControlInput1" className="form-label">
               Email address
             </label>
             <input
@@ -383,4 +385,4 @@ const VisualStylingClasses = () => {
   );
 };
 
-export default VisualStylingClasses;
+export default VisualStylingPage;

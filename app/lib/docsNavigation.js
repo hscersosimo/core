@@ -3,7 +3,7 @@ function docsNavigation() {
     {
       group: "brand styles",
       name: "All styles",
-      file: "all_styles",
+      file: "allStyles",
       desc: "View all brand styles",
     },
     {
@@ -26,6 +26,12 @@ function docsNavigation() {
     },
     {
       group: "components",
+      name: "All components",
+      file: "allComponents",
+      desc: "All components",
+    },
+    {
+      group: "components",
       name: "Typography",
       file: "typography",
       desc: "Headers, paragraphs & lists",
@@ -33,7 +39,7 @@ function docsNavigation() {
     {
       group: "components",
       name: "Alerts & Toasts",
-      file: "alerts_toasts",
+      file: "alertsToasts",
       desc: "Styles for alert and toast components",
     },
     {
@@ -64,7 +70,7 @@ function docsNavigation() {
     {
       group: "components",
       name: "Progress bars",
-      file: "progress",
+      file: "progressBars",
       desc: "Styles for progress bar components",
     },
     {
@@ -76,7 +82,7 @@ function docsNavigation() {
     {
       group: "components",
       name: "Tooltips & Popovers",
-      file: "tooltips_popovers",
+      file: "tooltipsPopovers",
       desc: "Styles for tooltip and popover components",
     },
 
@@ -85,6 +91,12 @@ function docsNavigation() {
       name: "Tables",
       file: "tables",
       desc: "Styles for table components",
+    },
+    {
+      group: "forms",
+      name: "All forms",
+      file: "allForms",
+      desc: "All forms",
     },
     {
       group: "forms",
@@ -107,7 +119,7 @@ function docsNavigation() {
     {
       group: "forms",
       name: "Checks & Radios",
-      file: "checks_radios",
+      file: "checksRadios",
       desc: "Checkbox and radio input options",
     },
     {
@@ -125,13 +137,13 @@ function docsNavigation() {
     {
       group: "forms",
       name: "Input groups",
-      file: "input_groups",
+      file: "inputGroups",
       desc: "Input group options for styling",
     },
     {
       group: "forms",
       name: "Form examples",
-      file: "form_examples",
+      file: "formExamples",
       desc: "Examples of form usage",
     },
     {
@@ -155,13 +167,13 @@ function docsNavigation() {
     {
       group: "navigation",
       name: "List groups",
-      file: "list_groups",
+      file: "listGroups",
       desc: "List group options",
     },
     {
       group: "navigation",
       name: "Expand/Collapse",
-      file: "expand_collapse",
+      file: "expandCollapse",
       desc: "Expand/collapse options",
     },
     {
@@ -179,26 +191,38 @@ function docsNavigation() {
     {
       group: "navigation",
       name: "Scroll spy",
-      file: "scroll_spy",
+      file: "scrollSpy",
       desc: "Scroll spy options",
     },
     {
       group: "utilities",
+      name: "All utilities",
+      file: "allUtilities",
+      desc: "All utilities",
+    },
+    {
+      group: "utilities",
       name: "Text utilities",
-      file: "text_utilities",
+      file: "textUtilities",
       desc: "Text formatting utilities",
     },
     {
       group: "utilities",
       name: "Background utilities",
-      file: "bg_utilities",
+      file: "bgUtilities",
       desc: "Background formatting utilities",
     },
     {
       group: "utilities",
       name: "Helper classes",
-      file: "helper_classes",
+      file: "helperClasses",
       desc: "Classes for adding margins, padding, text alignment and more",
+    },
+    {
+      group: "utilities",
+      name: "Visual classes",
+      file: "visualStyling",
+      desc: "Visual styling classes",
     },
   ];
   return docsNavArray;

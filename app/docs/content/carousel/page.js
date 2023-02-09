@@ -2,7 +2,7 @@ import SectionHeader from "../../../components/SectionHeader";
 import Container from "../../../components/Container";
 import Image from "next/image";
 
-const Carousel = () => {
+const CarouselPage = () => {
   return (
     <>
       <SectionHeader name="Carousel" icon="rectangle-vertical-history" />
@@ -424,4 +424,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default CarouselPage;

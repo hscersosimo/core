@@ -32,7 +32,6 @@ import ToastsPage from "./toasts/page";
 import ColorPage from "./color/page";
 import LinksPage from "./links/page";
 import BordersPage from "./borders/page";
-import UtilitiesPage from "./utilities/page";
 
 const LoadSection = (props) => {
   // First we define our ListOfSections

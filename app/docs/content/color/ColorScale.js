@@ -1,8 +1,9 @@
-import { useRef, useEffect, useState } from "react";
+import React, { forwardRef, useRef, useState, useEffect } from "react";
+
 import rgbToHex from "../../../lib/rgbToHex";
 
-const ColorScale = (props) =>
-  Array.from({ length: 11 }, (_, index) => {
+const ColorScale = React.forwardRef((props, ref) => {
+  return Array.from({ length: 11 }, (_, index) => {
     const [backgroundColor, setBackgroundColor] = useState("");
     const elementRef = useRef(null);
 
@@ -40,7 +41,7 @@ const ColorScale = (props) =>
             }
           >
             <ColorCell
-              ref={elementRef}
+              ref={ref}
               backgroundColor={backgroundColor}
               name={props.name}
               colorCode={props.name + colorValue}
@@ -59,7 +60,7 @@ const ColorScale = (props) =>
             }
           >
             <ColorCell
-              ref={elementRef}
+              ref={ref}
               backgroundColor={backgroundColor}
               name="AA Text"
               colorCode={props.name + colorValue}
@@ -79,7 +80,7 @@ const ColorScale = (props) =>
             className={"docs-color-cell p-4 bg-" + colorCode}
           >
             <ColorCell
-              ref={elementRef}
+              ref={ref}
               backgroundColor={backgroundColor}
               name={colorCode}
               colorCode={colorCode}
@@ -90,6 +91,7 @@ const ColorScale = (props) =>
       );
     }
   });
+});
 
 export default ColorScale;
 
@@ -139,7 +141,7 @@ const ColorCell = (props) => {
             width: "400px",
           }}
         >
-          <i class="fa-solid fa-circle-check text-success me-1"></i>{" "}
+          <i className="fa-solid fa-circle-check text-success me-1"></i>{" "}
           <strong>
             {props.colorCode} - {props.backgroundColor}
           </strong>{" "}

@@ -1,7 +1,7 @@
 import SectionHeader from "../../../components/SectionHeader";
 import Container from "../../../components/Container";
 
-const ProgressBars = () => {
+const ProgressBarsPage = () => {
   return (
     <>
       <SectionHeader name="Progress bars" icon="bars-progress" />
@@ -280,4 +280,4 @@ const ProgressBars = () => {
   );
 };
 
-export default ProgressBars;
+export default ProgressBarsPage;

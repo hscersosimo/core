@@ -1,6 +1,6 @@
 import Container from "../../../components/Container";
 import SectionHeader from "../../../components/SectionHeader";
-const Modal = () => {
+const ModalsPage = () => {
   return (
     <>
       <SectionHeader name="Modals" icon="list-dropdown" />
@@ -472,4 +472,4 @@ const Modal = () => {
   );
 };
 
-export default Modal;
+export default ModalsPage;

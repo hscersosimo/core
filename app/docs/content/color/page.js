@@ -28,14 +28,14 @@ const ColorPage = () => {
         description="Bring consistency and beauty to your design with our carefully chosen color choices."
       >
         <div className="d-flex justify-content-start flex-wrap">
-          {colorPaletteArray.map((color) => {
+          {colorPaletteArray.map((color, i) => {
             var colorValue = "500";
             // Changing colorValue bg indicator for gray
             if (color.name == "gray") {
               colorValue = "600";
             }
             return (
-              <div key={color} className="p-2 mb-3 text-center">
+              <div key={i} className="p-2 mb-3 text-center">
                 <div
                   className={"bg-" + color.name + "-" + colorValue + " rounded"}
                   style={{ height: "100px", width: "100px" }}
@@ -57,8 +57,8 @@ const ColorPage = () => {
         description="Our color scales provide a range of shades for each color, allowing you to create a cohesive and visually pleasing design. Click on a color to copy the HEX code to your clipboard."
       >
         <div className="row">
-          {colorPaletteArray.map((color) => (
-            <div key={color.name} className="col-sm-12 col-md-6 col-lg-4 my-4">
+          {colorPaletteArray.map((color, i) => (
+            <div key={i} className="col-sm-12 col-md-6 col-lg-4 my-4">
               <div className="text-center mb-1">
                 <h5 className="text-capitalize mb-3">
                   {color.name} -{" "}

@@ -6,7 +6,7 @@ const Dropdown = () => {
       <SectionHeader name="Dropdown" icon="list-dropdown" />
 
       <Container>
-        <h5>Dropdown</h5>
+        <h5>Dropdowns</h5>
 
         <div className="dropdown mb-3">
           <button

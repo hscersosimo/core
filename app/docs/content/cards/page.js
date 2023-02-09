@@ -1,7 +1,7 @@
 import SectionHeader from "../../../components/SectionHeader";
 import Container from "../../../components/Container";
 
-const Cards = () => {
+const CardsPage = () => {
   return (
     <>
       <SectionHeader name="Cards" icon="memo-pad" />
@@ -643,4 +643,4 @@ const Cards = () => {
   );
 };
 
-export default Cards;
+export default CardsPage;

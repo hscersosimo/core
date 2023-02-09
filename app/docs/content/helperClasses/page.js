@@ -1,9 +1,8 @@
 import Container from "../../../components/Container";
 import SubContainer from "../../../components/SubContainer";
 import colorPalette from "../../../lib/colorPalette";
-import Link from "next/link";
 
-const HelperClasses = () => {
+const HelperClassesPage = () => {
   // brings an array with the color palette
   const colorPaletteArray = colorPalette("full");
   return (
@@ -391,4 +390,4 @@ const HelperClasses = () => {
   );
 };
 
-export default HelperClasses;
+export default HelperClassesPage;

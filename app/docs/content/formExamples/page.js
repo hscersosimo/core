@@ -2,10 +2,10 @@ import SectionHeader from "../../../components/SectionHeader";
 import Container from "../../../components/Container";
 import SubContainer from "../../../components/SubContainer";
 
-const AlertsToastsPage = () => {
+const FormExamplesPage = () => {
   return (
     <>
-      <SectionHeader name="Alerts & Toasts" />
+      <SectionHeader name="Form examples" />
       <Container title="Title" description="Desc">
         <SubContainer>Test</SubContainer>
       </Container>
@@ -13,4 +13,4 @@ const AlertsToastsPage = () => {
   );
 };
 
-export default AlertsToastsPage;
+export default FormExamplesPage;

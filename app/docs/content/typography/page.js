@@ -2,7 +2,7 @@ import SectionHeader from "../../../components/SectionHeader";
 import Container from "../../../components/Container";
 import SubContainer from "../../../components/SubContainer";
 
-const Typography = () => {
+const TypographyPage = () => {
   return (
     <>
       <SectionHeader name="Typography" icon="book" />
@@ -204,4 +204,4 @@ const Typography = () => {
   );
 };
 
-export default Typography;
+export default TypographyPage;

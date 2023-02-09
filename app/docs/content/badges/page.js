@@ -1,7 +1,7 @@
 import SectionHeader from "../../../components/SectionHeader";
 import Container from "../../../components/Container";
 
-const Badge = () => {
+const BadgesPage = () => {
   return (
     <>
       <SectionHeader name="Badges" icon="badge" />
@@ -78,4 +78,4 @@ const Badge = () => {
   );
 };
 
-export default Badge;
+export default BadgesPage;

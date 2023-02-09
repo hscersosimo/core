@@ -66,8 +66,6 @@ const ToastsPage = () => {
           <Toast.Body>Woohoo, you're reading this text in a Toast!</Toast.Body>
         </Toast>
       </Container>
-
-      <Container></Container>
     </>
   );
 };

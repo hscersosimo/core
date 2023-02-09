@@ -3,7 +3,7 @@ import SubContainer from "../../../components/SubContainer";
 import colorPalette from "../../../lib/colorPalette";
 import Link from "next/link";
 
-const TextClasses = () => {
+const TextUtilitiesPage = () => {
   // brings an array with the color palette
   const colorPaletteArray = colorPalette("full");
   return (
@@ -168,9 +168,9 @@ const TextClasses = () => {
 
         <h3>Text color</h3>
         <SubContainer padding="p-3">
-          {colorPaletteArray.map((color) => (
+          {colorPaletteArray.map((color, i) => (
             <div
-              key={color}
+              key={i}
               className={`border rounded mb-3 p-3 text-${color.class} ${
                 // if color = white, add a dark background
                 color.class === "white" ? "bg-dark" : "bg-white"
@@ -199,8 +199,8 @@ const TextClasses = () => {
           <div className="bg-white p-3">
             <table className="table">
               <tbody>
-                {colorPaletteArray.map((color) => (
-                  <tr key={color}>
+                {colorPaletteArray.map((color, i) => (
+                  <tr key={i}>
                     <td className="py-3">
                       <code>link-{color.class}</code>
                     </td>
@@ -211,7 +211,7 @@ const TextClasses = () => {
                       }`}
                     >
                       Lorem ipsum dolor{" "}
-                      <a href="#" class={"link-" + color.class}>
+                      <a href="#" className={"link-" + color.class}>
                         this is a {color.name} link
                       </a>{" "}
                       excepturi vero impedit corporis iure blanditiis.
@@ -299,7 +299,7 @@ const TextClasses = () => {
         </p>
         <SubContainer padding="p-3">
           <div className="bg-white rounded border p-3 mb-3">
-            <a href="#" className="pe-none" tabindex="-1" aria-disabled="true">
+            <a href="#" className="pe-none" tabIndex="-1" aria-disabled="true">
               This link
             </a>{" "}
             can not be clicked.
@@ -313,7 +313,7 @@ const TextClasses = () => {
           </div>
           <div className="bg-white rounded border p-3 mb-3 pe-none">
             {" "}
-            <a href="#" tabindex="-1" aria-disabled="true">
+            <a href="#" tabIndex="-1" aria-disabled="true">
               This link
             </a>{" "}
             can not be clicked because the <code>pointer-events</code> property
@@ -434,7 +434,7 @@ const TextClasses = () => {
                 <td className="text-primary text-opacity-50">
                   This is 50% opacity primary text
                 </td>
-              </tr>{" "}
+              </tr>
               <tr>
                 <td>
                   <code>text-opacity-25</code>
@@ -447,7 +447,7 @@ const TextClasses = () => {
           </table>
           <div className="fs-7">
             <strong>
-              <i class="fa-solid fa-triangle-exclamation"></i> Attention!
+              <i className="fa-solid fa-triangle-exclamation"></i> Attention!
             </strong>{" "}
             Lowering the opacity of characters can lead to legibility and
             contrast issues, negatively impacting the usability and
@@ -653,4 +653,4 @@ const TextClasses = () => {
   );
 };
 
-export default TextClasses;
+export default TextUtilitiesPage;

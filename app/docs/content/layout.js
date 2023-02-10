@@ -13,7 +13,7 @@ const ContentLayout = ({ children }) => {
                   width={125}
                   height={94}
                   alt="Design System Logo"
-                  src="/../public/images/logos/logo_designsystem.png"
+                  src="/images/logos/logo_designsystem.png"
                 />
               </div>
               <DocsSideNav />

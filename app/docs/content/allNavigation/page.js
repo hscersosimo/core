@@ -4,7 +4,7 @@ import ListGroupsPage from "../listGroups/page";
 import ExpandCollapsePage from "../expandCollapse/page";
 import TabsPage from "../tabs/page";
 import PaginationPage from "../pagination/page";
-import ScrollSpyPage from "../scrollSpy/page";
+import ScrollSpyPage from "../scrollspy/page";
 
 const AllNavigation = () => {
   return (

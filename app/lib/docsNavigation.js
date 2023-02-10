@@ -197,7 +197,7 @@ function docsNavigation() {
     {
       group: "navigation",
       name: "Scroll spy",
-      file: "scrollSpy",
+      file: "scrollspy",
       desc: "Scroll spy options",
     },
     {

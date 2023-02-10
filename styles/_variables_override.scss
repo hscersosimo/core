@@ -517,7 +517,7 @@ $border-widths: (
 ) !default;
 
 $border-style: solid !default;
-$border-color: $gray-300 !default;
+$border-color: $gray-200 !default;
 $border-color-translucent: rgba($black, 0.175) !default;
 // scss-docs-end border-variables
 
@@ -1451,8 +1451,8 @@ $toast-padding-x: 0.75rem !default;
 $toast-padding-y: 0.5rem !default;
 $toast-font-size: 0.875rem !default;
 $toast-color: null !default;
-$toast-background-color: rgba($white, 0.85) !default;
-$toast-border-width: $border-width !default;
+$toast-background-color: rgba($white, 1) !default;
+$toast-border-width: 0px !default;
 $toast-border-color: var(--#{$prefix}border-color-translucent) !default;
 $toast-border-radius: $border-radius !default;
 $toast-box-shadow: $box-shadow !default;
@@ -1532,8 +1532,9 @@ $alert-padding-x: $spacer !default;
 $alert-margin-bottom: 1rem !default;
 $alert-border-radius: $border-radius !default;
 $alert-link-font-weight: $font-weight-bold !default;
-$alert-border-width: $border-width !default;
-$alert-bg-scale: -80% !default;
+// $alert-border-width: $border-width !default;
+$alert-border-width: 0px !default;
+$alert-bg-scale: -85% !default;
 $alert-border-scale: -70% !default;
 $alert-color-scale: 40% !default;
 $alert-dismissible-padding-r: $alert-padding-x * 3 !default; // 3x covers width of x plus default padding on either side

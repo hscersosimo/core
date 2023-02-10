@@ -5,12 +5,13 @@ import Link from "next/link";
 
 const BgUtilitiesPage = () => {
   // brings an array with the color palette
-  const colorPaletteArray = colorPalette("full");
+  const colorPaletteArray = colorPalette();
+  const colorPaletteArrayAll = colorPalette("all");
   return (
     <>
       <Container
         title="Background utility classes"
-        description="Background utility classes are used to quickly and easily apply background colors to elements. These classes provide developers with a convenient way to highlight different elements on the page without having to manually apply a style to each element."
+        desc="Background utility classes are used to quickly and easily apply background colors to elements. These classes provide developers with a convenient way to highlight different elements on the page without having to manually apply a style to each element."
       >
         <h3>Background</h3>
         <p>
@@ -26,10 +27,10 @@ const BgUtilitiesPage = () => {
           the background (for example, white text on top of a black background).
         </p>
         <div className="mb-5">
-          {colorPaletteArray.map((color, i) => (
+          {colorPaletteArrayAll.map((color, i) => (
             <div
               key={i}
-              className={"border rounded text-bg-" + color.class + " p-3 mb-2"}
+              className={"rounded text-bg-" + color.class + " p-3 mb-2"}
             >
               <div>
                 <span className="text-capitalize">{color.class}</span> with
@@ -136,9 +137,7 @@ const BgUtilitiesPage = () => {
             <div
               key={i}
               className={
-                "border rounded p-3 mb-2 bg-" +
-                color.class +
-                " bg-gradient text-white"
+                "rounded p-3 mb-2 text-bg-" + color.class + " bg-gradient"
               }
             >
               .bg-{color.class} .bg-gradient

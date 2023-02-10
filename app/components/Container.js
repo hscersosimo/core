@@ -8,7 +8,7 @@ const Container = (props) => {
               <i className="fa-solid fa-grip-lines-vertical text-tertiary me-1"></i>{" "}
               {props.title}
             </h2>
-            <p className="text-dark">{props.description}</p>
+            <p className="text-light mt-3">{props.desc}</p>
           </div>
         </div>
         <div className="p-4">{props.children}</div>

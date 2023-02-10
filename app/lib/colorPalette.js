@@ -1,100 +1,112 @@
 function colorPalette(mode) {
   // List of colors to be displayed in the
-  const colorsArray = [
+  const mainColorsArray = [
     {
       name: "indigo",
-      description: "Primary",
+      desc: "Primary",
       class: "primary",
       link: "white",
     },
     {
       name: "teal",
-      description: "Secondary",
+      desc: "Secondary",
       class: "secondary",
       link: "white",
     },
     {
       name: "purple",
-      description: "Tertiary",
+      desc: "Tertiary",
       class: "tertiary",
       link: "white",
     },
     {
       name: "cyan",
-      description: "Info",
+      desc: "Info",
       class: "info",
       link: "white",
     },
     {
       name: "green",
-      description: "Success",
+      desc: "Success",
       class: "success",
       link: "white",
     },
     {
       name: "orange",
-      description: "Warning",
+      desc: "Warning",
       class: "warning",
       link: "white",
     },
     {
       name: "red",
-      description: "Danger",
+      desc: "Danger",
       class: "danger",
       link: "white",
     },
     {
       name: "gray",
-      description: "Warm gray",
+      desc: "Warm gray",
       class: "gray",
       link: "primary",
     },
   ];
 
-  if (mode == "full") {
-    const fullColorsArray = [...colorsArray]; // create a copy of the array
-    fullColorsArray.push(
-      {
-        name: "body",
-        description: "body",
-        class: "body",
-        link: "primary",
-      },
-      {
-        name: "muted",
-        description: "muted",
-        class: "muted",
-        link: "primary",
-      },
-      {
-        name: "light",
-        description: "light",
-        class: "light",
-        link: "primary",
-      },
-      {
-        name: "dark",
-        description: "dark",
-        class: "dark",
-        link: "white",
-      },
-      {
-        name: "black",
-        description: "black",
-        class: "black",
-        link: "white",
-      },
-      {
-        name: "white",
-        description: "white",
-        class: "white",
-        link: "primary",
-      }
-    );
-    return fullColorsArray; // return the fullColorsArray
+  const extraColorsArray = [
+    {
+      name: "body",
+      desc: "Background",
+      class: "body",
+      link: "primary",
+    },
+    {
+      name: "body",
+      desc: "Text",
+      class: "body-text",
+      link: "white",
+    },
+    {
+      name: "muted",
+      desc: "Muted",
+      class: "muted",
+      link: "primary",
+    },
+    {
+      name: "light",
+      desc: "Light",
+      class: "light",
+      link: "primary",
+    },
+    {
+      name: "dark",
+      desc: "Dark",
+      class: "dark",
+      link: "white",
+    },
+    {
+      name: "black",
+      desc: "Black",
+      class: "black",
+      link: "white",
+    },
+    {
+      name: "white",
+      desc: "White",
+      class: "white",
+      link: "primary",
+    },
+  ];
+
+  if (mode == "all") {
+    const allColorsArray = [...mainColorsArray]; // create a copy of the array
+    allColorsArray.push(...extraColorsArray);
+    return allColorsArray;
+  }
+  if (mode == "extra") {
+    return extraColorsArray;
   }
 
-  return colorsArray;
+  // If no mode is defined, we return the main colors array
+  return mainColorsArray;
 }
 
 export default colorPalette;

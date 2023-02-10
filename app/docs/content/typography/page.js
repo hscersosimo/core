@@ -9,7 +9,7 @@ const TypographyPage = () => {
 
       <Container
         title="Displays & headers"
-        description="Documentation and examples for typography, including global settings, headings, body text, lists, and more."
+        desc="Documentation and examples for typography, including global settings, headings, body text, lists, and more."
       >
         <SubContainer>
           <p className="display-1 pb-3 mb-3 border-bottom">Display 1</p>
@@ -38,7 +38,7 @@ const TypographyPage = () => {
         </SubContainer>
       </Container>
 
-      <Container title="Paragraphs & font sizes" description="">
+      <Container title="Paragraphs & font sizes" desc="">
         <div className="mb-5">
           <h3>Lead paragraph</h3>
           <p className="lead">
@@ -91,7 +91,7 @@ const TypographyPage = () => {
 
       <Container
         title="Quotes & lists"
-        description="Quotes and lists are essential elements of any well-structured document. Quotes are used to emphasize or highlight a particular statement, while lists are a great way to break up text and make it easier to read. Quotes and lists can also be used to provide structure and context for the content, helping to make it more engaging and informative. With the right styling, quotes and lists can help to make a document more visually appealing and organized."
+        desc="Quotes and lists are essential elements of any well-structured document. Quotes are used to emphasize or highlight a particular statement, while lists are a great way to break up text and make it easier to read. Quotes and lists can also be used to provide structure and context for the content, helping to make it more engaging and informative. With the right styling, quotes and lists can help to make a document more visually appealing and organized."
       >
         <h3>Quotes</h3>
         <SubContainer>

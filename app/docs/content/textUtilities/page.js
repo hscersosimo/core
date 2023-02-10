@@ -5,12 +5,12 @@ import Link from "next/link";
 
 const TextUtilitiesPage = () => {
   // brings an array with the color palette
-  const colorPaletteArray = colorPalette("full");
+  const colorPaletteArray = colorPalette("all");
   return (
     <>
       <Container
         title="Text utility classes"
-        description="Text utility classes are used to stylize text based on the importance
+        desc="Text utility classes are used to stylize text based on the importance
     of the text according to markdown formatting. These classes allow
     developers to quickly and easily highlight text based on its
     importance, without having to manually apply a style to each element."

@@ -7,7 +7,7 @@ const Fonts = () => {
 
       <Container
         title="The Inter typeface family"
-        description="Inter is a typeface carefully crafted & designed for computer screens."
+        desc="Inter is a typeface carefully crafted & designed for computer screens."
       >
         <div className="display-1 text-center text-break my-5">
           ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890?!()[]

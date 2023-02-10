@@ -8,7 +8,7 @@ const Icons = () => {
       <SectionHeader name="Icons" icon="icons" />
       <Container
         title="FontAwesome"
-        description="Font Awesome is the Internet's icon library and toolkit, used by
+        desc="Font Awesome is the Internet's icon library and toolkit, used by
         millions of designers, developers, and content creators."
       >
         <div className="mb-5">

@@ -162,6 +162,12 @@ a {
   --bs-bg-opacity: 1 !important;
 }
 
+// Additional .bg classes
+
+.bg-body-text {
+  background-color: rgba($body-text, var(--bs-bg-opacity)) !important;
+}
+
 // Defining .bg-gray-# classes
 
 .bg-gray-100 {
@@ -261,28 +267,58 @@ a {
 }
 
 // .text-bg-color definitions
+// .alert extended definitions
 
-.text-bg-gray {
+.text-bg-gray,
+.alert-gray {
   color: $body-text-dark !important;
   background-color: rgba($gray-100, var(--bs-bg-opacity, 1)) !important;
 }
-.text-bg-body {
-  color: $body-text-dark !important;
+.text-bg-body,
+.alert-body {
+  color: $body-text !important;
   background-color: rgba($body-bg, var(--bs-bg-opacity, 1)) !important;
 }
-.text-bg-muted {
+
+.text-bg-body-text,
+.alert-body-text {
+  color: $white !important;
+  background-color: rgba($body-text, var(--bs-bg-opacity, 1)) !important;
+  .alert-link {
+    color: $white;
+  }
+}
+
+.bg-muted,
+.text-bg-muted,
+.alert-muted {
   color: $gray-600 !important;
   background-color: rgba($gray-100, var(--bs-bg-opacity, 1)) !important;
 }
-.text-bg-light {
+.text-bg-light,
+.alert-light {
   color: $body-text-dark !important;
-  background-color: rgba($gray-100, var(--bs-bg-opacity, 1)) !important;
+  background-color: rgba($light, var(--bs-bg-opacity, 1)) !important;
 }
-.text-bg-black {
+.text-bg-dark,
+.alert-dark {
+  color: $white !important;
+  background-color: rgba($dark, var(--bs-bg-opacity, 1)) !important;
+  .alert-link {
+    color: $white;
+  }
+}
+.text-bg-black,
+.alert-black {
   color: $white !important;
   background-color: rgba($black, var(--bs-bg-opacity, 1)) !important;
+  .alert-link {
+    color: $white;
+  }
 }
-.text-bg-white {
+
+.text-bg-white,
+.alert-white {
   color: $body-text !important;
   background-color: rgba($white, var(--bs-bg-opacity, 1)) !important;
 }

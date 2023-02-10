@@ -154,6 +154,12 @@ function docsNavigation() {
     },
     {
       group: "navigation",
+      name: "All navigation",
+      file: "allNavigation",
+      desc: "Navigation bar options",
+    },
+    {
+      group: "navigation",
       name: "Navbar",
       file: "navbar",
       desc: "Navigation bar options",

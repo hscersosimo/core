@@ -4,12 +4,12 @@ import colorPalette from "../../../lib/colorPalette";
 
 const HelperClassesPage = () => {
   // brings an array with the color palette
-  const colorPaletteArray = colorPalette("full");
+  const colorPaletteArray = colorPalette("all");
   return (
     <>
       <Container
         title="Helper classes"
-        description="The Helper classes section contains a variety of utility classes that can be used to quickly and easily apply various styles to elements, such as borders, shadows, flex, floats, etc."
+        desc="The Helper classes section contains a variety of utility classes that can be used to quickly and easily apply various styles to elements, such as borders, shadows, flex, floats, etc."
       >
         <h3>Display utilities</h3>
         <p>

@@ -11,7 +11,7 @@ const VisualStylingPage = () => {
     <>
       <Container
         title="Visual styling classes"
-        description="This module provides an overview of the Visual Styling Classes, which are used to quickly and easily apply various visual styles to elements, such as shadows and borders."
+        desc="This module provides an overview of the Visual Styling Classes, which are used to quickly and easily apply various visual styles to elements, such as shadows and borders."
       >
         <h3>Shadows</h3>
         <SubContainer padding="p-3">

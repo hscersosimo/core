@@ -6,7 +6,7 @@ const TooltipsPopoversPage = () => {
   return (
     <>
       <SectionHeader name="Tooltips & Popovers" />
-      <Container title="Title" description="Desc">
+      <Container title="Title" desc="Desc">
         <SubContainer>Test</SubContainer>
       </Container>
     </>

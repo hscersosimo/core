@@ -6,7 +6,7 @@ const AlertsToastsPage = () => {
   return (
     <>
       <SectionHeader name="Alerts & Toasts" />
-      <Container title="Title" description="Desc">
+      <Container title="Title" desc="Desc">
         <SubContainer>Test</SubContainer>
       </Container>
     </>

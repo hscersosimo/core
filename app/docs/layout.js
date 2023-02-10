@@ -1,4 +1,3 @@
-import Header from "./header";
 import Footer from "./footer";
 
 // Root layout (app/layout.js)
@@ -6,10 +5,7 @@ import Footer from "./footer";
 export default function RootLayout({ children }) {
   return (
     <>
-      <header>
-        <Header />
-      </header>
-      <main style={{ paddingTop: "90px" }}>{children}</main>
+      <main>{children}</main>
       <footer>
         <Footer />
       </footer>

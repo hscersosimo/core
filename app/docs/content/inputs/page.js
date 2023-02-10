@@ -6,7 +6,7 @@ const InputsPage = () => {
   return (
     <>
       <SectionHeader name="Inputs" />
-      <Container title="Title" description="Desc">
+      <Container title="Title" desc="Desc">
         <SubContainer>Test</SubContainer>
       </Container>
     </>

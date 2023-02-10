@@ -4,6 +4,8 @@ import Container from "../../../components/Container";
 import { useState } from "react";
 import ColorScale from "./ColorScale";
 import colorPalette from "../../../lib/colorPalette";
+import ExtraColors from "./extraColors";
+import Link from "next/link";
 
 const ColorPage = () => {
   // brings an array with the color palette
@@ -25,9 +27,9 @@ const ColorPage = () => {
 
       <Container
         title="Color palette"
-        description="Bring consistency and beauty to your design with our carefully chosen color choices."
+        desc="Bring consistency and beauty to your design with our carefully chosen color choices."
       >
-        <div className="d-flex justify-content-start flex-wrap">
+        <div className="d-flex justify-content-start flex-wrap mb-5">
           {colorPaletteArray.map((color, i) => {
             var colorValue = "500";
             // Changing colorValue bg indicator for gray
@@ -44,17 +46,26 @@ const ColorPage = () => {
                   <div className="fw-bold text-capitalize mt-2">
                     {color.name}
                   </div>
-                  <div className="fs-7 text-dark">{color.description}</div>
+                  <div className="fs-7 text-dark">{color.desc}</div>
                 </div>
               </div>
             );
           })}
         </div>
+        <div>
+          <h3>Additional colors</h3>
+          <p>
+            Refer to the{" "}
+            <Link href="/docs/content/allUtilities">utilities section</Link> for
+            more details on how to use these colors.
+          </p>
+          <ExtraColors />
+        </div>
       </Container>
 
       <Container
         title="Color scales"
-        description="Our color scales provide a range of shades for each color, allowing you to create a cohesive and visually pleasing design. Click on a color to copy the HEX code to your clipboard."
+        desc="Our color scales provide a range of shades for each color, allowing you to create a cohesive and visually pleasing design. Click on a color to copy the HEX code to your clipboard."
       >
         <div className="row">
           {colorPaletteArray.map((color, i) => (
@@ -62,9 +73,7 @@ const ColorPage = () => {
               <div className="text-center mb-1">
                 <h5 className="text-capitalize mb-3">
                   {color.name} -{" "}
-                  <span className="fw-normal text-black-50">
-                    {color.description}
-                  </span>
+                  <span className="fw-normal text-black-50">{color.desc}</span>
                 </h5>
 
                 <ColorScale

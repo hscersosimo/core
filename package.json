@@ -1,4 +1,10 @@
 {
+  "name": "Core",
+  "description": "a design system app",
+  "version": "1.0.0",
+  "engines": {
+    "node": "16.14.2"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import docsNavigation from "../lib/docsNavigation";
 
 const Docs = () => {
@@ -7,33 +8,42 @@ const Docs = () => {
   let prevMain;
   return (
     <>
-      <div className="container">
-        <div className="display-1 mb-3">Design System</div>
-        <div className="border-top pt-4 mb-4">
-          <h2 className="m-0">
-            Welcome to the <span className="text-secondary">Ipsos Design</span>{" "}
-            website
-          </h2>
-          <p className="text-dark mt-1 mb-0">
-            Created and maintained by the <strong>Design Team</strong> - IT
-            Panel Products &amp; Platforms - Global Panels.
-          </p>
-        </div>
-        <div className="mb-5">
-          <p>
-            Here, you'll find all the tools and resources you need to create
-            cohesive and consistent designs that align with our brand
-            guidelines. You can explore our curated selection of colors,
-            typefaces, and icons, as well as learn about the best practices for
-            using them in your designs.
-          </p>
-          <p>
-            Got any questions? Contact us at{" "}
-            <a href="mailto:iis-design@ipsos.com">iis-design@ipsos.com</a>
-          </p>
-        </div>
+      <div className="bg-white py-5">
+        <div className="container">
+          <div className="mb-4">
+            <Image
+              width={125}
+              height={94}
+              alt="Design System Logo"
+              src="/images/logos/logo_designsystem.png"
+            />
+          </div>
 
-        <div>
+          <h1>
+            Welcome to the Ipsos{" "}
+            <span className="text-secondary">Design System</span> website
+          </h1>
+          <div>
+            <p className="fs-5">
+              Created and maintained by the <strong>Design Team</strong> - IT
+              Panel Products &amp; Platforms - Global Panels.
+            </p>
+            <p>
+              Here, you'll find all the tools and resources you need to create
+              cohesive and consistent designs that align with our brand
+              guidelines. You can explore our curated selection of colors,
+              typefaces, and icons, as well as learn about the best practices
+              for using them in your designs.
+            </p>
+            <p className="mb-0">
+              Got any questions? Contact us at{" "}
+              <a href="mailto:iis-design@ipsos.com">iis-design@ipsos.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="container mt-5">
+        <div className="row">
           {docsNavigationArray.map((page, index) => {
             let prevMain = null;
             if (index > 0) {
@@ -80,33 +90,30 @@ const NavGroup = (props) => {
 
   return (
     <>
-      <h5 className="text-capitalize">
-        <i className="fa-solid fa-slash-forward text-secondary me-1"></i>
-        {props.group}
-      </h5>
-      <div className="row mb-5">{props.children}</div>
+      <div className="bg-white shadow-sm p-5 mb-3">
+        <h4 className="text-capitalize mb-3">
+          <i className="fa-solid fa-slash-forward text-secondary me-1"></i>
+          {props.group}
+        </h4>
+        <div>{props.children}</div>
+      </div>
     </>
   );
 };
 
 const NavItem = (props) => {
   return (
-    <div
-      key={props.title}
-      className="col-sm-6 col-md-3 g-2 d-flex align-items-stretch"
-    >
-      <div className="rounded shadow-sm bg-white w-100 p-3">
-        <h6 className="mb-1">
-          <Link
-            className="text-decoration-none"
-            href={"/docs/content/" + props.file}
-          >
-            <i className="fa-solid fa-grip-lines-vertical text-tertiary me-1"></i>
-            {props.name}
-          </Link>
-        </h6>
-        <div className="fs-7 text-light">{props.desc}</div>
-      </div>
+    <div key={props.title} className="p-3 border-top">
+      <h6 className="mb-1">
+        <Link
+          className="text-decoration-none"
+          href={"/docs/content/" + props.file}
+        >
+          <i className="fa-solid fa-grip-lines-vertical text-tertiary me-1"></i>
+          {props.name}
+        </Link>
+      </h6>
+      <div className="fs-7 text-light">{props.desc}</div>
     </div>
   );
 };

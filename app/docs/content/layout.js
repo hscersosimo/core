@@ -1,5 +1,6 @@
 import DocsSideNav from "./_local/DocsSideNav";
 import Image from "next/image";
+import Link from "next/link";
 
 const ContentLayout = ({ children }) => {
   return (
@@ -9,12 +10,14 @@ const ContentLayout = ({ children }) => {
           <div className="col-sm-3">
             <div className="sticky-top" style={{ alignSelf: "start" }}>
               <div className="pt-4 mb-4">
-                <Image
-                  width={125}
-                  height={94}
-                  alt="Design System Logo"
-                  src="/images/logos/logo_designsystem.png"
-                />
+                <Link href="/docs">
+                  <Image
+                    width={125}
+                    height={94}
+                    alt="Design System Logo"
+                    src="/images/logos/logo_designsystem.png"
+                  />
+                </Link>
               </div>
               <DocsSideNav />
             </div>

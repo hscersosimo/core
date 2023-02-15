@@ -6,6 +6,18 @@ const ListGroups = () => {
       <SectionHeader name="List Groups" icon="list-dropdown" />
 
       <Container>
+        <h5>List groups</h5>
+        <div className="card">
+          <div className="card-header">Featured</div>
+          <ul className="list-group list-group-flush">
+            <li className="list-group-item">An item</li>
+            <li className="list-group-item">A second item</li>
+            <li className="list-group-item">A third item</li>
+          </ul>
+          <div className="card-footer">Card footer</div>
+        </div>
+      </Container>
+      <Container>
         <ul className="list-group mb-5">
           <li className="list-group-item active">An active item</li>
           <li className="list-group-item disabled" aria-disabled="true">

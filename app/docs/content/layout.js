@@ -7,7 +7,7 @@ const ContentLayout = ({ children }) => {
     <>
       <div className="container">
         <div className="row justify-content-center">
-          <div className="col-sm-3">
+          <div className="col-12 col-md-3">
             <div className="sticky-top" style={{ alignSelf: "start" }}>
               <div className="pt-4 mb-4">
                 <Link href="/docs">
@@ -22,7 +22,7 @@ const ContentLayout = ({ children }) => {
               <DocsSideNav />
             </div>
           </div>
-          <div className="col-sm-9 mt-5">
+          <div className="col-12 col-md-9 mt-5">
             <div>{children}</div>
           </div>
         </div>

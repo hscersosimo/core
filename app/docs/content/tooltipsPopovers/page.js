@@ -1,14 +1,15 @@
+"use client";
+
 import SectionHeader from "../../../components/SectionHeader";
-import Container from "../../../components/Container";
-import SubContainer from "../../../components/SubContainer";
+import TooltipsPage from "./tooltipsPage";
+import PopoversPage from "./popoversPage";
 
 const TooltipsPopoversPage = () => {
   return (
     <>
       <SectionHeader name="Tooltips & Popovers" />
-      <Container title="Title" desc="Desc">
-        <SubContainer>Test</SubContainer>
-      </Container>
+      <TooltipsPage />
+      <PopoversPage />
     </>
   );
 };

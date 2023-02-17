@@ -11,7 +11,6 @@ import TooltipsPopoversPage from "../tooltipsPopovers/page";
 const AllComponents = () => {
   return (
     <>
-      <h1 className="mb-3">Components</h1>
       <TypographyPage />
       <AlertsToastsPage />
       <BadgesPage />

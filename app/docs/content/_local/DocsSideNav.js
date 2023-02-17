@@ -1,38 +1,49 @@
+"use client";
 import docsNavigation from "../../../lib/docsNavigation";
 import Link from "next/link";
+import { useState } from "react";
 
 const DocsSideNav = () => {
   // brings an array with the navigation info
   const docsNavigationArray = docsNavigation();
-  let prevMain;
+  const [expandedGroup, setExpandedGroup] = useState(null);
+
   return (
     <>
       {docsNavigationArray.map((page, index) => {
         let prevMain = null;
         if (index > 0) {
           prevMain = docsNavigationArray[index - 1].group;
-          <NavGroup key={index} group={page.group}>
+          <SideNavGroup
+            key={index}
+            group={page.group}
+            setExpandedGroup={setExpandedGroup}
+          >
             {docsNavigationArray
               .filter((p) => p.group === page.group)
               .map((p) => (
-                <NavItem key={p.file} file={p.file} />
+                <SideNavItem key={p.file} file={p.file} />
               ))}
-          </NavGroup>;
+          </SideNavGroup>;
         }
         if (prevMain !== page.group) {
           return (
-            <NavGroup key={index} group={page.group}>
+            <SideNavGroup
+              key={index}
+              group={page.group}
+              setExpandedGroup={setExpandedGroup}
+            >
               {docsNavigationArray
                 .filter((p) => p.group === page.group)
                 .map((p) => (
-                  <NavItem
+                  <SideNavItem
                     key={p.file}
                     file={p.file}
                     name={p.name}
                     desc={p.desc}
                   />
                 ))}
-            </NavGroup>
+            </SideNavGroup>
           );
         }
         return null;
@@ -43,10 +54,15 @@ const DocsSideNav = () => {
 
 export default DocsSideNav;
 
-const NavGroup = (props) => {
+const SideNavGroup = (props) => {
   const originGroup = props.group;
   // Replacing " " (space) to "" empty space
   const group = originGroup.replace(/ /g, "");
+  const [expanded, setExpanded] = useState(false);
+  const toggleExpanded = () => {
+    setExpanded(!expanded);
+    props.setExpandedGroup(expanded ? null : props.group);
+  };
 
   return (
     <>
@@ -59,11 +75,20 @@ const NavGroup = (props) => {
             role="button"
             aria-expanded="false"
             aria-controls="collapseExample"
+            onClick={toggleExpanded}
           >
-            <i className="fa-solid fa-caret-right me-1"></i> {props.group}
+            <i
+              className={
+                "fa-solid fa-caret-" + (expanded ? "down" : "right") + " me-1"
+              }
+            ></i>{" "}
+            {props.group}
           </a>
         </div>
-        <div className="collapse" id={"collapseNav" + group}>
+        <div
+          className={"collapse" + (expanded ? " show" : "")}
+          id={"collapseNav" + group}
+        >
           <div className="mt-2 ms-3">{props.children}</div>
         </div>
       </div>
@@ -71,7 +96,7 @@ const NavGroup = (props) => {
   );
 };
 
-const NavItem = (props) => {
+const SideNavItem = (props) => {
   return (
     <div>
       <Link

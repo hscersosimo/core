@@ -40,7 +40,7 @@ const PopoversPage = () => {
           </a>
           .
         </p>
-        <SubContainer margin="mb-0">
+        <SubContainer>
           <OverlayTrigger trigger="click" placement="right" overlay={popover}>
             <Button variant="tertiary">Click me to see</Button>
           </OverlayTrigger>

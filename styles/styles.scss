@@ -138,6 +138,11 @@ a {
   font-weight: bold;
 }
 
+// but with some exceptions:
+.list-group a {
+  font-weight: normal;
+}
+
 // Adding !important to opacity utility classes,
 // otherwise opacity:1 from the SASS color creation helper above
 // are overwriting these values.

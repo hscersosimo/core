@@ -17,7 +17,7 @@ You'll need to download and install all required node modules first. You can do 
 
 ## Naming Conventions
 
-`lower_case` for file names and folders, and `PascalCase` for component names. For example, a page (or a folder) can be named `design_system`, and a component `PageHeader`.
+`lowerCamelCase` for file names and folders, and `UpperCamelCase` for components. For example, a page (or a folder) can be named `designSystem`, and a component `PageHeader`.
 
 ## File Formatting
 

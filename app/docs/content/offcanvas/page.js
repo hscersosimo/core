@@ -1,12 +1,14 @@
 import SectionHeader from "../../../components/SectionHeader";
 import Container from "../../../components/Container";
+import SubContainer from "../../../components/SubContainer";
 
 const Offcanvas = () => {
   return (
     <>
-      <SectionHeader name="Offcanvas" icon="sidebar-flip" />
-      <Container>
-        <div className="mb-5">
+      <SectionHeader name="Offcanvas" />
+      <Container title="Offcanvas" desc="">
+        <h4>Offcanvas examples</h4>
+        <SubContainer>
           <a
             className="btn btn-primary me-2"
             data-bs-toggle="offcanvas"
@@ -25,7 +27,8 @@ const Offcanvas = () => {
           >
             Button with data-bs-target
           </button>
-        </div>
+        </SubContainer>
+
         <div
           className="offcanvas offcanvas-start"
           tabIndex="-1"
@@ -77,155 +80,7 @@ const Offcanvas = () => {
           </div>
         </div>
 
-        <h5>Body scrolling</h5>
-        <div className="mb-5">
-          <button
-            className="btn btn-primary me-2"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasScrolling"
-            aria-controls="offcanvasScrolling"
-          >
-            Enable body scrolling
-          </button>
-          <button
-            className="btn btn-primary"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasWithBothOptions"
-            aria-controls="offcanvasWithBothOptions"
-          >
-            Enable both scrolling & backdrop
-          </button>
-        </div>
-
-        <div
-          className="offcanvas offcanvas-start"
-          data-bs-scroll="true"
-          data-bs-backdrop="false"
-          tabIndex="-1"
-          id="offcanvasScrolling"
-          aria-labelledby="offcanvasScrollingLabel"
-        >
-          <div className="offcanvas-header">
-            <h5 className="offcanvas-title" id="offcanvasScrollingLabel">
-              Offcanvas with body scrolling
-            </h5>
-            <button
-              type="button"
-              className="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div className="offcanvas-body">
-            <p>
-              Try scrolling the rest of the page to see this option in action.
-            </p>
-          </div>
-        </div>
-
-        <div
-          className="offcanvas offcanvas-start"
-          data-bs-scroll="true"
-          tabIndex="-1"
-          id="offcanvasWithBothOptions"
-          aria-labelledby="offcanvasWithBothOptionsLabel"
-        >
-          <div className="offcanvas-header">
-            <h5 className="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-              Backdrop with scrolling
-            </h5>
-            <button
-              type="button"
-              className="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div className="offcanvas-body">
-            <p>
-              Try scrolling the rest of the page to see this option in action.
-            </p>
-          </div>
-        </div>
-
-        <h5>Static backdrop</h5>
-        <p>
-          When backdrop is set to static, the offcanvas will not close when
-          clicking outside of it.
-        </p>
-        <div className="mb-5">
-          <button
-            className="btn btn-primary"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#staticBackdrop"
-            aria-controls="staticBackdrop"
-          >
-            Toggle static offcanvas
-          </button>
-        </div>
-
-        <div
-          className="offcanvas offcanvas-start"
-          data-bs-backdrop="static"
-          tabIndex="-1"
-          id="staticBackdrop"
-          aria-labelledby="staticBackdropLabel"
-        >
-          <div className="offcanvas-header">
-            <h5 className="offcanvas-title" id="staticBackdropLabel">
-              Offcanvas
-            </h5>
-            <button
-              type="button"
-              className="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div className="offcanvas-body">
-            <div>I will not close if you click outside of me.</div>
-          </div>
-        </div>
-
-        <h5>Dark offcanvas</h5>
-        <button
-          className="btn btn-primary"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#darkOffcanvas"
-          aria-controls="staticBackdrop"
-        >
-          Toggle dark offcanvas
-        </button>
-
-        <div
-          className="offcanvas offcanvas-start text-bg-dark"
-          data-bs-backdrop="static"
-          tabIndex="-1"
-          id="darkOffcanvas"
-          aria-labelledby="staticBackdropLabel"
-        >
-          <div className="offcanvas-header">
-            <h5 className="offcanvas-title" id="staticBackdropLabel">
-              Offcanvas
-            </h5>
-            <button
-              type="button"
-              className="btn-close btn-close-white"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div className="offcanvas-body">
-            <div>Place offcanvas content here.</div>
-          </div>
-        </div>
-      </Container>
-      <Container>
-        <h5>Placement</h5>
+        <h4>Placement</h4>
         <p>
           There’s no default placement for offcanvas components, so you must add
           one of the modifier classes below.
@@ -248,9 +103,9 @@ const Offcanvas = () => {
             viewport
           </li>
         </ul>
-        <div>
+        <SubContainer>
           <button
-            className="btn btn-primary me-2"
+            className="btn btn-primary me-2 mb-2"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasTop"
@@ -259,7 +114,7 @@ const Offcanvas = () => {
             Toggle top offcanvas
           </button>
           <button
-            className="btn btn-primary me-2"
+            className="btn btn-primary me-2 mb-2"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasRight"
@@ -276,7 +131,7 @@ const Offcanvas = () => {
           >
             Toggle bottom offcanvas
           </button>
-        </div>
+        </SubContainer>
         <div
           className="offcanvas offcanvas-top"
           tabIndex="-1"
@@ -333,6 +188,159 @@ const Offcanvas = () => {
             ></button>
           </div>
           <div className="offcanvas-body small">...</div>
+        </div>
+
+        <h4>Body scrolling</h4>
+        <SubContainer>
+          <button
+            className="btn btn-primary me-2"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasScrolling"
+            aria-controls="offcanvasScrolling"
+          >
+            Enable body scrolling
+          </button>
+          <button
+            className="btn btn-primary"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions"
+            aria-controls="offcanvasWithBothOptions"
+          >
+            Enable both scrolling & backdrop
+          </button>
+        </SubContainer>
+
+        <div
+          className="offcanvas offcanvas-start"
+          data-bs-scroll="true"
+          data-bs-backdrop="false"
+          tabIndex="-1"
+          id="offcanvasScrolling"
+          aria-labelledby="offcanvasScrollingLabel"
+        >
+          <div className="offcanvas-header">
+            <h5 className="offcanvas-title" id="offcanvasScrollingLabel">
+              Offcanvas with body scrolling
+            </h5>
+            <button
+              type="button"
+              className="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div className="offcanvas-body">
+            <p>
+              Try scrolling the rest of the page to see this option in action.
+            </p>
+          </div>
+        </div>
+
+        <div
+          className="offcanvas offcanvas-start"
+          data-bs-scroll="true"
+          tabIndex="-1"
+          id="offcanvasWithBothOptions"
+          aria-labelledby="offcanvasWithBothOptionsLabel"
+        >
+          <div className="offcanvas-header">
+            <h5 className="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+              Backdrop with scrolling
+            </h5>
+            <button
+              type="button"
+              className="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div className="offcanvas-body">
+            <p>
+              Try scrolling the rest of the page to see this option in action.
+            </p>
+          </div>
+        </div>
+
+        <h4>Static backdrop</h4>
+        <p>
+          When backdrop is set to static, the offcanvas will not close when
+          clicking outside of it.
+        </p>
+        <SubContainer>
+          <button
+            className="btn btn-primary"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#staticBackdrop"
+            aria-controls="staticBackdrop"
+          >
+            Toggle static offcanvas
+          </button>
+        </SubContainer>
+
+        <div
+          className="offcanvas offcanvas-start"
+          data-bs-backdrop="static"
+          tabIndex="-1"
+          id="staticBackdrop"
+          aria-labelledby="staticBackdropLabel"
+        >
+          <div className="offcanvas-header">
+            <h5 className="offcanvas-title" id="staticBackdropLabel">
+              Offcanvas
+            </h5>
+            <button
+              type="button"
+              className="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div className="offcanvas-body">
+            <div>I will not close if you click outside of me.</div>
+          </div>
+        </div>
+
+        <h4>Background colors</h4>
+        <p>
+          You can use any of the color utility classes to add color to the
+          offcanva's elements.
+        </p>
+        <SubContainer>
+          <button
+            className="btn btn-primary"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#darkOffcanvas"
+            aria-controls="staticBackdrop"
+          >
+            Toggle dark offcanvas
+          </button>
+        </SubContainer>
+
+        <div
+          className="offcanvas offcanvas-start text-bg-dark"
+          data-bs-backdrop="static"
+          tabIndex="-1"
+          id="darkOffcanvas"
+          aria-labelledby="staticBackdropLabel"
+        >
+          <div className="offcanvas-header">
+            <h5 className="offcanvas-title" id="staticBackdropLabel">
+              Offcanvas
+            </h5>
+            <button
+              type="button"
+              className="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div className="offcanvas-body">
+            <div>Place offcanvas content here.</div>
+          </div>
         </div>
       </Container>
     </>

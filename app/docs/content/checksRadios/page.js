@@ -383,6 +383,100 @@ const ChecksRadios = () => {
           Danger radio
         </label>
       </Container>
+
+      <h4>List groups</h4>
+      <ul className="list-group mb-5">
+        <li className="list-group-item">
+          <input
+            className="form-check-input me-2"
+            type="checkbox"
+            value=""
+            id="firstCheckbox"
+          />
+          <label
+            className="form-check-label stretched-link"
+            htmlFor="firstCheckbox"
+          >
+            First checkbox
+          </label>
+        </li>
+        <li className="list-group-item">
+          <input
+            className="form-check-input me-2"
+            type="checkbox"
+            value=""
+            id="secondCheckbox"
+          />
+          <label
+            className="form-check-label stretched-link"
+            htmlFor="secondCheckbox"
+          >
+            Second checkbox
+          </label>
+        </li>
+        <li className="list-group-item">
+          <input
+            className="form-check-input me-2"
+            type="checkbox"
+            value=""
+            id="thirdCheckbox"
+          />
+          <label
+            className="form-check-label stretched-link"
+            htmlFor="thirdCheckbox"
+          >
+            Third checkbox
+          </label>
+        </li>
+      </ul>
+      <ul className="list-group">
+        <li className="list-group-item">
+          <input
+            className="form-check-input me-2"
+            type="radio"
+            name="listGroupRadio"
+            value=""
+            id="firstRadio"
+            defaultChecked
+          />
+          <label
+            className="form-check-label stretched-link"
+            htmlFor="firstRadio"
+          >
+            First radio
+          </label>
+        </li>
+        <li className="list-group-item">
+          <input
+            className="form-check-input me-2"
+            type="radio"
+            name="listGroupRadio"
+            value=""
+            id="secondRadio"
+          />
+          <label
+            className="form-check-label stretched-link"
+            htmlFor="secondRadio"
+          >
+            Second radio
+          </label>
+        </li>
+        <li className="list-group-item">
+          <input
+            className="form-check-input me-2"
+            type="radio"
+            name="listGroupRadio"
+            value=""
+            id="thirdRadio"
+          />
+          <label
+            className="form-check-label stretched-link"
+            htmlFor="thirdRadio"
+          >
+            Third radio
+          </label>
+        </li>
+      </ul>
     </>
   );
 };

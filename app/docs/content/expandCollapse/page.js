@@ -1,15 +1,16 @@
 import SectionHeader from "../../../components/SectionHeader";
 import Container from "../../../components/Container";
+import SubContainer from "../../../components/SubContainer";
 
 const ExpandCollapse = () => {
   return (
     <>
-      <SectionHeader
-        name="Expand/Collapse"
-        icon="up-right-and-down-left-from-center"
-      />
-      <Container>
-        <div>
+      <SectionHeader name="Expand/Collapse" />
+      <Container
+        title="Expand/Collapse"
+        desc="Expand/Collapse are a user interface component used to hide and reveal additional information or content, providing users with control over what they want to see. They provide a way to present more information in a compact format that is easy for users to scan and interact with."
+      >
+        <SubContainer>
           <a
             className="btn btn-primary me-2"
             data-bs-toggle="collapse"
@@ -30,20 +31,20 @@ const ExpandCollapse = () => {
           >
             Button with data-bs-target
           </button>
-        </div>
-        <div className="collapse" id="collapseExample">
-          <div className="card card-body mt-2">
-            Some placeholder content for the collapse component. This panel is
-            hidden by default but revealed when the user activates the relevant
-            trigger.
+
+          <div className="collapse" id="collapseExample">
+            <div className="card card-body mt-2">
+              Some placeholder content for the collapse component. This panel is
+              hidden by default but revealed when the user activates the
+              relevant trigger.
+            </div>
           </div>
-        </div>
-      </Container>
-      <Container>
-        <h5>Multiple targets</h5>
-        <div>
+        </SubContainer>
+
+        <h4>Multiple targets</h4>
+        <SubContainer>
           <a
-            className="btn btn-primary me-2"
+            className="btn btn-primary me-2 mb-2"
             data-bs-toggle="collapse"
             href="#multiCollapseExample1"
             role="button"
@@ -53,7 +54,7 @@ const ExpandCollapse = () => {
             Toggle first element
           </a>
           <button
-            className="btn btn-primary me-2"
+            className="btn btn-primary me-2 mb-2"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#multiCollapseExample2"
@@ -63,7 +64,7 @@ const ExpandCollapse = () => {
             Toggle second element
           </button>
           <button
-            className="btn btn-primary me-2"
+            className="btn btn-tertiary"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target=".multi-collapse"
@@ -72,30 +73,36 @@ const ExpandCollapse = () => {
           >
             Toggle both elements
           </button>
-        </div>
-        <div className="row mt-2">
-          <div className="col">
-            <div className="collapse multi-collapse" id="multiCollapseExample1">
-              <div className="card card-body">
-                Some placeholder content for the first collapse component of
-                this multi-collapse example. This panel is hidden by default but
-                revealed when the user activates the relevant trigger.
+          <div className="row mt-2">
+            <div className="col">
+              <div
+                className="collapse multi-collapse"
+                id="multiCollapseExample1"
+              >
+                <div className="card card-body">
+                  Some placeholder content for the first collapse component of
+                  this multi-collapse example. This panel is hidden by default
+                  but revealed when the user activates the relevant trigger.
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div
+                className="collapse multi-collapse"
+                id="multiCollapseExample2"
+              >
+                <div className="card card-body">
+                  Some placeholder content for the second collapse component of
+                  this multi-collapse example. This panel is hidden by default
+                  but revealed when the user activates the relevant trigger.
+                </div>
               </div>
             </div>
           </div>
-          <div className="col">
-            <div className="collapse multi-collapse" id="multiCollapseExample2">
-              <div className="card card-body">
-                Some placeholder content for the second collapse component of
-                this multi-collapse example. This panel is hidden by default but
-                revealed when the user activates the relevant trigger.
-              </div>
-            </div>
-          </div>
-        </div>
+        </SubContainer>
 
-        <h6 className="mt-5">Accessibility</h6>
-        <div className="fs-7">
+        <h4 className="mt-5">Accessibility</h4>
+        <div>
           <p>
             Be sure to add <code>aria-expanded</code> to the control element.
             This attribute explicitly conveys the current state of the
